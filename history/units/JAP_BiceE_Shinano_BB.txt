@@ -1,0 +1,15 @@
+### Battleship Shinano ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "3rd Battleship Fleet"
+		naval_base = 9998 # Tokyo
+		task_force = {
+			name = "Shinano Battle Group"
+			location =  9998
+			ship = { name = "Shinano" definition = battleship start_experience_factor = 0.6 equipment = { nrm_ship_hull_capital_4 = { amount = 1 owner = JAP version_name = "Shinano Class"} } }
+		}
+	}
+}
+### EOF ###

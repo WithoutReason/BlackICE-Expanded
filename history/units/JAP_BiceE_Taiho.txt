@@ -1,0 +1,20 @@
+### Taiho ###
+units = {
+	##### NAVAL UNITS #####
+	#### PACIFIC FLEET ####
+	fleet = {
+		name = "3rd Carrier Fleet"
+		naval_base = 9998 # Tokyo
+		task_force = {
+			name = "Taiho Carrier Group"
+			location =  9998
+			ship = { name = "Taiho" definition = carrier start_experience_factor = 0.6 equipment = { nrm_ship_hull_carrier_4 = { amount = 1 owner = JAP version_name = "Taiho Class"} } 
+				air_wings = {
+					nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 33 }
+					mitsubishi_b2m_equipment_1 =  { owner = "JAP" amount = 34 }
+				}
+			}
+		}
+	}
+}
+### EOF ###

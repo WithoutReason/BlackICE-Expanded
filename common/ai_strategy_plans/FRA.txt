@@ -1,0 +1,223 @@
+FRA_historical = {
+	name = "France historical plan"
+	desc = "Essentially historical behaviour for France"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+
+### 1936 ###												length	mm/dd/yyyy
+		FRA_promise_econ_renewal							# 14	01/15/1936
+		FRA_address_stagnant_econ							# 21	02/05/1936
+		FRA_cnrs											# 28	03/04/1936
+		FRA_tools_modernisation								# 28	04/01/1936
+		FRA_sncf											# 28	04/29/1936	May not have finished!
+	###	ELECTION CRISIS										# 133	09/09/1936
+		FRA_rearmament										# 14	09/23/1936
+		FRA_reckless_rearmament								# 21	10/14/1936
+		FRA_military_complex_nationalisation				# 28	11/11/1936
+		FRA_sncf											# 28	12/09/1936	In case this got cancled by crisis
+		FRA_military_review									# 14	12/23/1936
+### 1937 ###												length	mm/dd/yyyy
+		FRA_military_complex_nationalisation_2				# 28	01/20/1937
+		FRA_agriculture_national_office						# 28	02/17/1937
+	###	SPAIN CRISIS										# 140	07/07/1937 No exact date for this crisis - it fires if the SPR is loosing the war. All dats after this are indeterminate
+		FRA_foreign_diplo									# 14	07/21/1937
+		FRA_giraud_plan										# 21	08/11/1937
+		FRA_finish_maginot									# 28	09/08/1937
+		FRA_alpine_forts									# 28	10/06/1937
+		FRA_industrial_effort								# 28	11/03/1937
+		FRA_air_bases										# 28	12/01/1937
+		FRA_colonial_investments							# 14	12/15/1937
+### 1938 ###												length	mm/dd/yyyy
+		FRA_develop_algeria									# 28	10/12/1938
+		FRA_army_improvements								# 21	02/02/1938
+		FRA_motorized_focus									# 21	02/23/1938
+		FRA_industrial_effort_2								# 28	03/23/1938
+		FRA_decrease_unemployement							# 28	04/20/1938
+		FRA_aircraft_manufacturer_nationalisation			# 28	05/18/1938
+		FRA_tank_modernisation								# 21	06/08/1938
+		FRA_partial_mobilization							# 28	07/06/1938
+		FRA_infrastructure_effort							# 28	08/03/1938
+		FRA_research_grants									# 28	08/31/1938
+		FRA_the_german_threat								# 14	09/14/1938
+		FRA_defense_national_funds							# 21	10/05/1938
+		FRA_go_with_britain									# 21	10/26/1938
+		FRA_war_material_licence							# 21	11/16/1938
+		FRA_commit_automobile_manufacturer					# 21	12/07/1938
+		FRA_defensive_doctrine								# 21	12/28/1938
+### 1939 ###												length	mm/dd/yyyy
+		FRA_modernisation_program							# 28	01/25/1939
+		FRA_research_treaty									# 28	02/22/1939
+		FRA_fund_synthetics									# 28	03/22/1939
+		FRA_sahara_oil										# 28	04/19/1939
+		FRA_naval_contruction_program						# 28	05/17/1939
+		FRA_defend_bel										# 14	05/31/1939
+		FRA_develop_indochine								# 42	07/12/1939
+		FRA_army_reform										# 28	08/09/1939
+		FRA_further_armament_program						# 28	09/06/1939
+		########## War Begins September 1st ###########
+		FRA_another_great_war								# 7		09/13/1939
+		FRA_war_effort_law									# 28	10/11/1939
+		FRA_general_mobilisation_order						# 21	11/01/1939
+		FRA_wartime_organisation_act						# 21	11/22/1939
+		FRA_coordinate_with_allies							# 21	12/13/1939
+### 1940 ###												length	mm/dd/yyyy
+		FRA_the_phony_war									# 28	01/10/1940
+		FRA_rapid_military_factories_1						# 28	02/07/1940
+		FRA_rapid_military_factories_2						# 28	03/06/1940
+		FRA_propaganda_leaflets								# 14	03/20/1940
+		FRA_economic_warfare								# 28	04/17/1940
+		FRA_begin_strategic_bombing							# 28	05/15/1940
+		FRA_economic_cooperation_agreement					# 28	06/12/1940
+		FRA_shakeup_senior_staff							# 28	07/10/1940
+		FRA_new_strategy_textbooks							# 28	08/07/1940
+		FRA_army_research									# 28	09/04/1940
+		FRA_artillery_focus									# 28	10/02/1940
+		FRA_infantry_focus									# 28	10/30/1940
+		FRA_build_more_tanks								# 28	11/27/1940
+		FRA_buy_americain									# 28	12/25/1940
+### 1941 ###												length	mm/dd/yyyy
+		FRA_barrage_david									# 28	01/22/1941
+		FRA_parachute_battalions							# 28	02/19/1941
+		FRA_africa_army										# 28	03/19/1941
+		FRA_colonial_troops									# 28	04/16/1941
+		FRA_commandos_marine								# 28	05/14/1941
+		FRA_national_oil_co									# 28	06/11/1941
+		FRA_attack_westwall									# 28	07/09/1941
+		FRA_deal_with_ger_tanks								# 28	08/06/1941
+		FRA_final_push										# 28	09/03/1941
+		FRA_vienot_agreement								# 35	10/08/1941
+		FRA_develop_morocco									# 28	11/05/1941
+		FRA_develop_tunisia									# 28	12/03/1941
+		FRA_technology_sharing								# 28	12/31/1941
+### 1942 ###												length	mm/dd/yyyy
+		FRA_blum_viollette_project							# 28	01/28/1942
+		FRA_foreign_legion									# 28	02/25/1942
+
+	}
+	
+	weight = {
+		factor = 1.0
+	}
+}
+
+FRA_election_crisis_historical = {
+	name = "France election historical plan"
+	desc = "Essentially historical behaviour for French election"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_completed_focus = FRA_1936_election_crisis
+	}
+	abort = {
+		has_completed_focus = FRA_matignon_agreement_focus
+	}
+	
+	ai_national_focuses = {
+		
+		# 133 days in total for historical plan
+		FRA_1936_election_crisis
+		FRA_popular_front
+		FRA_rush_worker_reforms
+		FRA_40hr_week
+		FRA_right_to_union
+		FRA_minimum_wage
+		FRA_vacation_time
+		FRA_nationalisation_acts
+		FRA_matignon_agreement_focus
+	
+	}
+	
+	weight = {
+		factor = 2.0
+	}
+	
+}
+
+FRA_spain_crisis_historical = {
+	name = "France Spanish Civil War historical plan"
+	desc = "Essentially historical behaviour for France in Spanish Civil War"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_completed_focus = FRA_spain_crisis
+	}
+	abort = {
+		has_completed_focus = FRA_recognize_spainish_state
+	}
+	
+	ai_national_focuses = {
+		
+		# 140 days in total for historical plan
+		FRA_spain_crisis
+		FRA_non_intervention_agreement
+		FRA_blockade_spain
+		FRA_accept_spanish_refugees
+		FRA_support_daladier
+		FRA_recognize_spainish_state
+	
+	}
+	
+	weight = {
+		factor = 3.0
+	}
+	
+}
+
+FRA_wartime_plan = {
+	name = "France at war plan"
+	desc = "France goes to war"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = ITA
+			has_war_with = SOV
+			has_war_with = ENG
+			has_war_with = USA
+		}
+	}
+	
+	ai_national_focuses = {
+		
+		FRA_another_great_war
+		FRA_war_effort_law
+		FRA_general_mobilisation_order
+		FRA_army_reform
+		FRA_wartime_organisation_act
+		FRA_coordinate_with_allies
+		FRA_the_phony_war
+		FRA_rapid_military_factories_1
+		FRA_rapid_military_factories_2
+		FRA_propaganda_leaflets
+		FRA_economic_warfare
+		FRA_begin_strategic_bombing
+		FRA_economic_cooperation_agreement
+		FRA_shakeup_senior_staff
+		FRA_new_strategy_textbooks
+		FRA_army_research
+		FRA_artillery_focus
+		FRA_infantry_focus
+
+	
+	}
+	
+	weight = {
+		factor = 5.0
+	}
+	
+}
+
+### EOF ###

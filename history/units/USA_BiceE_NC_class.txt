@@ -1,0 +1,16 @@
+### North Carolina Class ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Battlefleet 1"
+		naval_base = 3878 # New York
+		task_force = {
+			name = "North Carolina"
+			location =  3878
+			ship = { name = "USS North Carolina" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "North Carolina Class"} } }
+			ship = { name = "USS Washington" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "North Carolina Class"} } }
+		}
+	}
+}
+### EOF ###

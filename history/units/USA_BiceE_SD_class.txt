@@ -1,0 +1,18 @@
+### South Dakota Class ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Battlefleet 2"
+		naval_base = 3878 # New York
+		task_force = {
+			name = "South Dakota"
+			location =  3878
+			ship = { name = "USS South Dakota" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "South Dakota Class"} } }
+			ship = { name = "USS Indiana" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "South Dakota Class"} } }
+			ship = { name = "USS Massachusetts" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "South Dakota Class"} } }
+			ship = { name = "USS Alabama" definition = battleship equipment = { nrm_ship_hull_capital_3 = { amount = 1 owner = USA version_name = "South Dakota Class"} } }
+		}
+	}
+}
+### EOF ###

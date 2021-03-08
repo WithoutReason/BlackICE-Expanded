@@ -1,0 +1,26 @@
+### HMS King George V and HMS Prince of Wales Player Construction ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_capital_3
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS King George V"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_capital_3
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS Prince of Wales"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+}
+### EOF ###

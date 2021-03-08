@@ -1,0 +1,44 @@
+### Essex Class Player Construction - one OOB to rule them all! ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "USA"
+			version_name = "Essex Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "USA"
+			version_name = "Essex Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "USA"
+			version_name = "Essex Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "USA"
+			version_name = "Essex Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+}
+### EOF ###

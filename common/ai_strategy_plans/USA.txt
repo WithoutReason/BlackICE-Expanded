@@ -1,0 +1,191 @@
+USA_historical = {
+	name = "United States historical plan"
+	desc = "Essentially historical behaviour for the United States"
+	allowed = { tag = USA }
+
+	enable = {
+		original_tag = USA
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		#Priority Override
+		USA_beast_of_america
+		USA_total_mobilisation
+		USA_war_production_board
+		USA_war_powers_act
+		USA_USACE_projects
+		USA_office_war_mobilization
+		
+		#Build up Navy
+		USA_two_ocean_navy_act
+		USA_deploy_yorktown
+		USA_naval_shipbuilding_program
+		USA_fund_the_navy
+		USA_torpedo_detonators
+		USA_deploy_NC_class
+		USA_deploy_SD_class
+		USA_deploy_essex_1
+		USA_deploy_iowa_1
+		USA_deploy_essex_2
+		USA_deploy_iowa_2
+		USA_deploy_essex_3
+		
+		#Override if available early
+		USA_air_war_plans_division
+		USA_carrier_primacy
+		USA_wartime_shipbuilding_program
+		
+		USA_new_war_coming
+		USA_army_incompetence
+		USA_war_changed
+		USA_prepare_intervention
+		USA_limited_intervention
+		USA_past_neurtrality_act36
+		USA_shadow_scheme
+		USA_national_guard
+		USA_extra_tech_team
+		USA_lend_lease_act
+		USA_war_plans_division
+		USA_embargo_germany
+		USA_war_propaganda
+		USA_destroyers_for_bases
+		USA_embargo_japan
+		USA_pearl_harbor_gambit
+		
+		#1936								#Duration		#Start Date			#Notes
+		USA_alphabet_agencies				#28				#1.1.36
+		USA_wpa								#28				#29.1
+		USA_complete_hoover					#35				#26.2
+		USA_social_security					#28				#1.4
+		USA_farm_credit_administration		#28				#29.4
+		USA_agriculture_adjust				#28				#27.5
+		USA_resettlement_admin				#28				#24.6
+		USA_soil_conservation				#42				#22.7
+		USA_emergency_relief				#35				#2.9
+		USA_rural_electrification			#28				#7.10
+		USA_new_young_adm					#28				#4.11
+		USA_civilian_conservation_corps		#28				#2.12
+		USA_shelter_belt					#49				#30.12
+		
+		#1937
+		USA_federal_project1				#28				#17.2.37
+		USA_surplus_commodities				#49				#17.3
+		USA_drought_relief					#42				#5.5
+		USA_quarantine						#15				#16.6
+		USA_adult_education					#28				#1.7
+		USA_form_us_maritime				#35				#29.7
+		USA_security_exchange				#28				#2.9
+		USA_fdic							#28				#30.9
+		USA_housing_administration			#28				#28.10
+		USA_housing_authority				#35				#25.11
+		USA_homeowner_loan_corporation		#35				#30.12
+		
+		#1938
+		USA_public_works					#49				#3.2.38
+		USA_end_great_depression			#56				#24.3
+		USA_fireside_chats					#28				#19.5
+		USA_power_to_the_president			#28				#16.6
+		USA_court_packing					#28				#14.7
+															#11.8
+		
+		#Tension locked
+		USA_fortress_concept
+		USA_fighter_effort
+		USA_new_sea_combat
+		USA_division_of_engineering
+		USA_developing_weapons
+		USA_committee_on_technocracy
+		USA_scientist_haven
+		USA_support_crysler
+		USA_support_rock_island
+		USA_reopen_smallarms
+		USA_reinforce_monroe_doctrine
+		USA_the_neighbors
+		USA_central_america
+		USA_carribean_sphere
+		USA_south_america
+		USA_pax_americana
+		USA_selective_training_act
+		USA_motorized_infantry_focus
+		USA_foreign_tank_inspiration
+		USA_higgins_boats
+		USA_medium_tank
+		USA_liberty_ships
+		USA_louisiana_maneuvers
+		USA_support_boeing
+		USA_rolls_royce
+		USA_bureau_of_aeronautics
+		USA_escort_effort
+		USA_convoy_tactics
+		USA_expand_the_USMC
+		USA_amphibious_operations
+		USA_office_price_administration
+		USA_office_of_strategic_services
+		USA_first_special_service_force
+		USA_idea_of_pentagon
+		USA_north_america_avi
+		USA_support_grumman
+		USA_b29
+		USA_long_range_strat
+		USA_clinton_engineer_work
+		USA_detroit_tank_plant
+		USA_contract_general_motors
+		USA_expand_detroit_tank_plant
+		USA_willow_run_air_plant
+		USA_seattle_air_plant
+		USA_douglas_air_plant
+		USA_manhattan_project
+		USA_issue_war_bonds
+		USA_war_rationing
+		USA_women_encouraged
+		USA_do_it_with_less_poster
+		USA_war_food_garden
+		USA_no_one_left_behind
+		USA_we_can_do_it
+		USA_spare_your_cars
+		USA_save_fat_for_bombs
+		USA_salvage_for_victory
+		USA_dollars_for_defense
+		USA_manifest_destiny
+		USA_feed_the_warmachine
+		USA_expand_ore
+		USA_steel_mills
+		USA_expand_ore2
+		USA_rubber_requisition
+		USA_synthetic_development
+		USA_synthetic_development2
+		USA_rubber_reserve_company
+		USA_resource_independence
+		USA_torch
+		USA_defense_of_the_pacific
+		USA_fascist_menace
+		USA_office_war_information
+		USA_naval_radar
+		USA_advanced_shells
+		USA_amphibious_operations_2
+		USA_jet_development
+		USA_ndrc
+		USA_reorganization_act
+
+		#Filler incase tension too low
+		USA_bonneville_power_administration
+		USA_tennessee_valley_authority
+		USA_start_highway
+		USA_infrastructure_east
+		USA_infrastructure_midwest
+		USA_infrastructure_west
+		USA_national_labor_act
+		USA_fair_labour_standards
+		USA_national_resources_plan
+		USA_huac
+		USA_deploy_essex_4
+		USA_deploy_essex_5
+		USA_jesus_christ_what_the_hell
+	}
+	
+	weight = {
+		factor = 1.0
+	}
+}
+### EOF ###
