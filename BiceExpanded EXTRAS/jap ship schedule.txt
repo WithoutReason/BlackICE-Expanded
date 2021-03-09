@@ -1,0 +1,26 @@
+
+# Zuiho class
+	Zuiho			1936	
+	Shoho			1936
+
+	Soryu			1937
+
+	Hiryu			1939
+
+# Shokaku class
+	Shokaku			1941
+	Zuikaku			1941
+
+	Hiei			1941
+
+# Yamato Class
+	Yamato			1941
+	Musashi			1942
+	Shinano			1944
+	Kii				1945
+
+# Hiyo class
+	Hiyo			1942
+	Jun'yo			1942
+
+	Taiho			1944

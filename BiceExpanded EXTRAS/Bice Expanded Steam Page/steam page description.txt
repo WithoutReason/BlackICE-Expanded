@@ -1,0 +1,25 @@
+[h1] Welcome to Black Ice Expanded [/h1]
+Version 1.2 - Britain Expanded
+
+Black Ice Expanded is a submod of the excellent Black Ice Historical Realism mod. As is the case with many of you, it's hard for me to play vanilla Hoi4 again after experiencing BICE. However, several parts of the mod - especially focus trees - are basically copies of the vanilla focus trees. If you want to play nations you like with better focus trees, you can't do it with BICE. I decided to change that. I shall go through several of the major nations who are still using the vanilla focus trees and expand them. All changes are made with historical accuracy in mind: BICE is a rigidly historical mod and I want to preserve that.
+
+[h1] Current Features [/h1]
+[b] British Focus Tree Expanded [/b]
+[list]
+ [*] The UK's focus tree has been almost entirely reworked. You now must choose how Britain shall rearm herself prior to the outbreak of war. As the rearmament programmes evolve, you will need to prioritize different armed services.
+ [*] There is also a new branch in the focus tree for after war breaks out - you must quickly assemble your forces to fight against the enemies of Britain!
+[/list]
+[b] New Naval Deployment System [/b]
+[list]
+ [*] Several English capital ships can be automatically deployed via national focuses. While this is completely optional for the player, it will massively help the AI build a proper historical navy that will pose a real challenge.
+[/list]
+
+[h1] Planned Features [/h1]
+
+The next focus tree I want to expand is the French focus tree. 
+I also plan to expand the naval deployment system to the other major nations including Japan, USA, France, Germany, and Italy. The goal of the naval rework is to force the AI to build historically accurate and modernized navies.
+
+ [hr][/hr] 
+
+[b] It should go without saying that this mod requires Black Ice to function  [/b] 
+[i] I would like to extend a special thanks to the team behind Black Ice - for making Hoi4 a much deeper and more rewarding game.  [/i] 

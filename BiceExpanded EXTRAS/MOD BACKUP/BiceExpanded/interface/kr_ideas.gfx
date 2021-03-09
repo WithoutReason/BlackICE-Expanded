@@ -1,0 +1,13 @@
+SpriteTypes = {
+
+	########## ENG ##########
+
+	SpriteType = {
+		name = "GFX_idea_eng_focus_raf"
+		texturefile = "gfx/interface/ideas/eng_focus_raf.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eng_focus_army"
+		texturefile = "gfx/interface/ideas/eng_focus_army.tga"
+	}
+}

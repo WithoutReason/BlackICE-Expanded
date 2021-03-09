@@ -1,0 +1,28 @@
+﻿### HMS King George V and HMS Prince of Wales ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Upgraded Battleship Fleet"
+		naval_base = 9458
+		task_force = {
+			name = "Queen Elizabeth Class"
+			location =  9458
+			ship = { name = "HMS Queen Elizabeth" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class B"} } }
+			ship = { name = "HMS Valiant" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class B"} } }
+			ship = { name = "HMS Barham" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Barham Class B"} } }
+			ship = { name = "HMS Malaya" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Barham Class B"} } }
+			ship = { name = "HMS Warspite" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Warspite Class B"} } }
+		}
+		task_force = {
+			name = "Revenge Class"
+			location =  9458
+			ship = { name = "HMS Revenge" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Revenge Class B"} } }
+			ship = { name = "HMS Royal Oak" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Revenge Class B"} } }
+			ship = { name = "HMS Royal Sovereign" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Revenge Class B"} } }
+			ship = { name = "HMS Ramillies" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Revenge Class B"} } }
+			ship = { name = "HMS Resolution" definition = battleship equipment = { nrm_ship_hull_capital_1 = { amount = 1 owner = ENG version_name = "Revenge Class B"} } }
+		}
+	}
+}
+### EOF ###

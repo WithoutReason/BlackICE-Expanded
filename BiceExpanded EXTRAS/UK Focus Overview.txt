@@ -1,0 +1,22 @@
+		=== Requires WW2 ===
+			Left to Right
+
+Cryptilogical bomb 			- crypto_bomb_focus
+All nuke focuses:
+	Tube Alloys 			- ENG_tube_alloy
+	The Tizard Mission 		- tizard_mission_focus
+	The MAUD Committee 		- maud_focus
+	Secret Weapons			- UK_secret_focus
+Emergency Powers Act		- ENG_EPA
+National Security Act		- ENG_NSA
+Bevin Boys Industry			- ENG_bevin_boys_coal
+Bevin Boys Army				- ENG_bevin_boys_army
+Appoint Lord Beaverbrook	- ENG_beaverbrook
+
+		=== New Focuses ===
+
+Found the BBC (first broadcast 2 Nov. 1936)
+Purchase US equipment/planes (shortly after war breaks out)
+London Blitz focuses
+More Strategic Bombing focuses
+

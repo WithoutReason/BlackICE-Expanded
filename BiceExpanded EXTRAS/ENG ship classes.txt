@@ -1,0 +1,320 @@
+
+=========== OLD DESIGNS =============
+
+create_equipment_variant = {
+	name = "Queen Elizabeth Class"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S2_070
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_1
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = empty
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_1_x12
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_1_x04
+		custom_slot_1 = empty
+		custom_slot_2 = nrm_support_capital_FP_1
+		custom_slot_3 = nrm_support_capital_AA_1
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = empty
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Barham Class"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S1_070
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_2
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = empty
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_1_x12
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_1_x04
+		custom_slot_1 = empty
+		custom_slot_2 = nrm_support_capital_FP_1
+		custom_slot_3 = nrm_support_capital_AA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = empty
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Warspite Class"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S1_080
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_2
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = nrm_fire_control_5
+		fixed_ship_fire_control_system_aa_slot = empty
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_1_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x08
+		custom_slot_1 = empty
+		custom_slot_2 = nrm_support_capital_FP_1
+		custom_slot_3 = nrm_support_capital_HAA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = nrm_support_capital_AA_2
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Revenge Class"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S1_040
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_1
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = empty
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_1_x12
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_1_x04
+		custom_slot_1 = empty
+		custom_slot_2 = empty
+		custom_slot_3 = nrm_support_capital_FP_1
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = nrm_support_capital_AA_2
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+================= UPGRADED DESIGNS ================
+
+create_equipment_variant = {
+	name = "Queen Elizabeth Class B"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S2_075
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_1
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = nrm_radar_1
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_DP_4_2_x08
+		custom_slot_1 = nrm_support_capital_FP_1
+		custom_slot_2 = nrm_support_capital_HAA_2
+		custom_slot_3 = nrm_support_capital_HAA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = empty
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Warspite Class B"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S2_090
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_2
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = nrm_radar_1
+		fixed_ship_fire_control_system_slot = nrm_fire_control_5
+		fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x08
+		custom_slot_1 = nrm_support_capital_FP_1
+		custom_slot_2 = nrm_support_capital_HAA_2
+		custom_slot_3 = nrm_support_capital_HAA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = nrm_support_capital_AA_2
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Barham Class B"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S2_070
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_2
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = nrm_radar_1
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x08
+		custom_slot_1 = nrm_support_capital_FP_1
+		custom_slot_2 = nrm_support_capital_HAA_2
+		custom_slot_3 = nrm_support_capital_AA_2
+		custom_slot_4 = nrm_support_capital_AA_2
+		custom_slot_5 = empty
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Revenge Class B"
+	type = nrm_ship_hull_capital_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	role_icon_index = 11
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_capital_1
+		fixed_ship_engine_slot = nrm_capital_engine_S1_040
+		fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+		fixed_ship_armor_slot = nrm_capital_armour_13_1
+		fixed_ship_subdivision_slot = nrm_subdivision_2
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+		fixed_ship_range_slot = nrm_range_capital_2
+		fixed_ship_radar_slot = nrm_radar_1
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+		fixed_ship_battery_slot = nrm_capital_battery_15_1_2x4
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x08
+		custom_slot_1 = nrm_support_capital_FP_1
+		custom_slot_2 = nrm_support_capital_HAA_2
+		custom_slot_3 = nrm_support_capital_AA_2
+		custom_slot_4 = nrm_support_capital_AA_2
+		custom_slot_5 = empty
+		custom_slot_6 = empty
+	}
+	obsolete = yes
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create_equipment_variant = {
+	name = "Ark Royal Class"
+	type = nrm_ship_hull_carrier_3
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	role_icon_index = 7
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_carrier_3
+		fixed_ship_engine_slot = nrm_capital_engine_S2_110
+		fixed_ship_armor_layout_slot = nrm_armour_layout_CV_3
+		fixed_ship_armor_slot = nrm_carrier_armour_04_2
+		fixed_ship_subdivision_slot = nrm_subdivision_3
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+		fixed_ship_range_slot = nrm_range_capital_3
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = empty
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_DP_4_2_x08
+		fixed_ship_flightdeck_slot = nrm_carrier_flightdeck_AH_070
+		custom_slot_1 = empty
+		custom_slot_2 = nrm_support_capital_AA_2
+		custom_slot_3 = nrm_support_capital_HAA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = nrm_support_capital_AA_2
+		custom_slot_6 = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Illustrious Class"
+	type = nrm_ship_hull_carrier_3
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	role_icon_index = 7
+	modules = {
+		fixed_ship_hullform_slot = nrm_ship_hullform_carrier_3
+		fixed_ship_engine_slot = nrm_capital_engine_S2_110
+		fixed_ship_armor_layout_slot = nrm_armour_layout_CV_3
+		fixed_ship_armor_slot = nrm_carrier_armour_04_2
+		fixed_ship_subdivision_slot = nrm_subdivision_3
+		fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+		fixed_ship_range_slot = nrm_range_capital_3
+		fixed_ship_radar_slot = nrm_radar_1
+		fixed_ship_fire_control_system_slot = nrm_fire_control_4
+		fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+		fixed_ship_secondary_slot = nrm_capital_secondary_DP_4_2_x08
+		fixed_ship_tertiary_slot = nrm_capital_tertiary_DP_4_2_x08
+		fixed_ship_flightdeck_slot = nrm_carrier_flightdeck_AH_070
+		custom_slot_1 = empty
+		custom_slot_2 = nrm_support_capital_HAA_2
+		custom_slot_3 = nrm_support_capital_HAA_2
+		custom_slot_4 = nrm_support_capital_HAA_2
+		custom_slot_5 = nrm_support_capital_AA_2
+		custom_slot_6 = nrm_support_capital_AA_2
+	}
+}
