@@ -1,0 +1,26 @@
+### Soryu and Hiryu ###
+units = {
+	##### NAVAL UNITS #####
+	#### PACIFIC FLEET ####
+	fleet = {
+		name = "1st Carrier Fleet"
+		naval_base = 9998 # Tokyo
+		task_force = {
+			name = "Hiryu Carrier Group"
+			location =  9998
+			ship = { name = "Hiryu" definition = carrier start_experience_factor = 0.6 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = JAP version_name = "Hiryu Class"} } 
+				air_wings = {
+					nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 30 }
+					mitsubishi_b2m_equipment_1 =  { owner = "JAP" amount = 35 }
+				}
+			}
+			ship = { name = "Soryu" definition = carrier start_experience_factor = 0.6 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = JAP version_name = "Soryu Class"} } 
+				air_wings = {
+					nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 30 }
+					mitsubishi_b2m_equipment_1 =  { owner = "JAP" amount = 35 }
+				}
+			}
+		}
+	}
+}
+### EOF ###

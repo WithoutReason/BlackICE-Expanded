@@ -1,0 +1,23 @@
+spriteTypes = {
+	##############################################################################
+	####  COUNTRY EVENTS need to be report_event_[name]gfxaddon.tga  #############
+	##############################################################################
+	
+######### FRA ##########
+
+	spriteType = {
+		name = "GFX_report_event_fra_flag_BiceE"
+		texturefile = "gfx/event_pictures/report_event_fra_flag_BiceE_gfxaddon.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_fra_louis_marin"
+		texturefile = "gfx/event_pictures/report_event_fra_louis_marin_gfxaddon.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_fra_protests"
+		texturefile = "gfx/event_pictures/report_event_fra_protests_gfxaddon.tga"
+	}
+
+}
+
+#EOF#

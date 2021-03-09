@@ -1,0 +1,16 @@
+### South Dakota Class ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Battlefleet Iowa 1"
+		naval_base = 3878 # New York
+		task_force = {
+			name = "Iowa Task Force 1"
+			location =  3878
+			ship = { name = "USS Iowa" definition = battleship start_experience_factor = 0.3 equipment = { nrm_ship_hull_capital_4 = { amount = 1 owner = USA version_name = "Iowa Class"} } }
+			ship = { name = "USS New Jersey" definition = battleship start_experience_factor = 0.3 equipment = { nrm_ship_hull_capital_4 = { amount = 1 owner = USA version_name = "Iowa Class"} } }
+		}
+	}
+}
+### EOF ###

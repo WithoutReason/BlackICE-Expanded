@@ -1,0 +1,37 @@
+### Illustrious Class Player Construction ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_3
+			creator = "ENG"
+			version_name = "Illustrious Class"
+		}
+		name = "HMS Illustrious"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_3
+			creator = "ENG"
+			version_name = "Illustrious Class"
+		}
+		name = "HMS Formitable"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_3
+			creator = "ENG"
+			version_name = "Illustrious Class"
+		}
+		name = "HMS Victorious"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+}
+### EOF ###

@@ -1,0 +1,42 @@
+### Yorktown Class ###
+units = {
+	##### NAVAL UNITS #####
+	### ATLANTIC FLEET ###
+	fleet = {
+		name = "Carrier Group 1"
+		naval_base = 3878 # New York
+		task_force = {
+			name = "Essex Carrier Group 1"
+			location =  3878
+			ship = { name = "USS Essex" definition = carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Essex Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 = { owner = "USA" amount = 40 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 = { owner = "USA" amount = 15 }
+				}
+			}
+			ship = { name = "USS Lexington" definition = carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Essex Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 = { owner = "USA" amount = 40 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 = { owner = "USA" amount = 15 }
+				}
+			}
+			ship = { name = "USS Bunker Hill" definition = carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Essex Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 = { owner = "USA" amount = 40 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 = { owner = "USA" amount = 15 }
+				}
+			}
+			ship = { name = "USS Yorktown" definition = carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Essex Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 = { owner = "USA" amount = 40 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 = { owner = "USA" amount = 15 }
+				}
+			}
+		}
+	}
+}
+### EOF ###

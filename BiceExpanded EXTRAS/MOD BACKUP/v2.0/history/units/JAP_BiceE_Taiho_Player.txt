@@ -1,0 +1,15 @@
+### Taiho CV Player Construction ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "JAP"
+			version_name = "Taiho Class"
+		}
+		name = "Taiho"
+		requested_factories = 1
+		progress = 0.27
+		amount = 1
+	}
+}
+### EOF ###

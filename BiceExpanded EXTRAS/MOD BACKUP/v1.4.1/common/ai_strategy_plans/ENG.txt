@@ -1,0 +1,305 @@
+ENG_historical = {
+	name = "England historical plan"
+	desc = "Essentially historical behaviour for England"
+	allowed = { tag = ENG }
+
+	enable = {
+		tag = ENG
+		is_historical_focus_on = yes
+	}
+	
+	ai_national_focuses = {
+### 1936 ###
+	# 70 days - 1/1
+		limited_rearmament_focus
+		ENG_general_rearmament_focus
+		ENG_steady_as_she_goes
+		uk_empire_focus
+	#63 days - 3/11
+		ENG_civil_programmes
+		naval_rearmament_focus
+		uk_mediterranean_focus
+	#84 - 5/13
+		ENG_focus_navy_1936
+		ENG_revitalize_naval_industry
+		air_rearmament_focus
+		fighter_command_focus
+	#77 - 8/5
+		ENG_hurricane
+		uk_colonial_focus
+		uk_rock_focus
+		ENG_first_bbc_braodcast
+	#84 - 10/21
+		ENG_POA
+		ENG_industrial_programme_focus
+		ENG_secure_the_imperial_shipping_routes
+		ENG_home_defence
+### 1937 ###
+	#77 - 1/13
+		shadow_scheme_focus
+		ENG_K6
+		coastal_command_focus
+		uk_industrial_focus
+	#63 - 3/31
+		bomber_command_focus
+		uk_commonwealth_focus
+		ENG_bbc_cricket
+	#70 - 6/2
+		uk_industrial_focus_2
+		uk_extra_tech_slot
+		uk_asia_focus
+	#84 - 8/11
+		ENG_spitfire
+		uk_canada_focus
+		uk_india_focus
+	#70 - 11/3
+		hongkong_focus
+		uk_service_focus
+		uk_experienced_command
+### 1938 ###
+	#70 - 1/12
+		hk_landward_forts_focus
+		ENG_general_rearmament_focus_2
+		ENG_focus_raf_1938
+	#77 - 3/23
+		aircraft_production_focus
+		uk_destroyer_focus
+		uk_australia_focus
+	#84 - 6/8
+		uk_new_zealand_focus
+		uk_commonwealth_knowledge
+		uk_burma_focus
+	#70 - 8/31
+		ENG_Limited_Liability
+		ENG_prepare_for_the_inevitable
+	#56 - 11/9
+		ENG_artillery_focus
+		ENG_continental_warfare
+### 1939 ###
+	#98 - 1/4
+		air_defense_focus
+		ENG_deploy_kgv_BBs
+		ENG_upgrade_old_BBs
+	#101 - 4/12 4/5
+		uk_malta_focus
+		ENG_press_censorship
+		ENG_military_training_act
+	#42 - 7/22
+		ENG_deploy_illustrious_class
+########## War Begins 9/1 ##########
+	#70 - 9/2
+		ENG_peace_has_failed
+		ENG_Blockade_Germany
+		ENG_EPA
+		ENG_BEF
+		ENG_Port_Garrisons
+	#56 - 11/11
+		ENG_seek_help_abroad
+		crypto_bomb_focus
+		ENG_home_front
+### 1940 ###
+	#70 - 1/6
+		ENG_issue_gasmasks
+		ENG_industrial_programme_focus2
+		ENG_national_registration_act
+	#70 - 3/16
+		radar_focus
+		royal_ordinance_focus
+		ENG_ration_petrol
+	#77 - 5/25
+		tizard_mission_focus
+		ENG_beaverbrook
+		uk_protect_suez
+	#84 - 8/10
+		ENG_deploy_hms_indomitable
+		ENG_deploy_duke_of_york
+	#84 - 11/2
+		ENG_chiefs_of_staff_committee
+		uk_small_arms_focus
+		ENG_seek_help_from_usa
+### 1941 ###
+	#91 - 1/25
+		ENG_HomeGuard
+		ENG_time_is_now
+		ENG_GHQ_Line
+		ENG_purchase_usa_planes
+	#84 - 4/26
+		ENG_raf_ace_program
+		uk_convoy_focus
+		ENG_skies
+	#70 - 7/19
+		ENG_AA
+		uk_anglo_soviet_occupation
+		sp_landward_forts_focus
+	#84 - 9/27
+		ENG_inchindown_tanks
+		ENG_anti_submarine_training_school
+		ENG_radar_networks
+	#14 - 12/20
+		ENG_NSA
+### 1942 ###		
+	#84 - 1/3
+		ENG_special_air_service
+		peninsular_focus
+		ENG_defend_the_commonwealth
+	#84 - 3/28
+		ENG_anzac_force
+		ENG_defend_ast
+		ENG_heavy_aircraft_research
+	#84 - 6/20
+		ENG_peoples_war
+		ENG_ration_civ_clothing
+		ENG_motorized_focus
+	#84 - 9/12
+		ENG_tank_focus
+		ENG_cruiser_tanks
+		ENG_bouncing_bomb	
+	#28 - 12/5
+		ENG_support_france
+### 1943 ###
+	# - 1/2
+		ENG_canada_force
+		ENG_british_india_army
+		ENG_propaganda_posters
+		ENG_women_land_army
+		ENG_Gurkha_focus
+		ENG_tall_boy_bomb
+		ENG_royal_parachute_regiment
+		uk_waves_focus
+		uk_waves_research
+		uk_amphibious_focus
+		uk_battleship_focus
+		ENG_expand_the_repair_yards
+		ENG_bevin_boys_coal
+		ENG_deploy_implacable_class
+		ENG_tube_alloy
+		maud_focus
+		UK_secret_focus
+		uk_jet_focus
+	}
+	weight = {
+		factor = 1.0
+	}
+}
+
+ENG_ahistorical_start = {
+	name = "England ahistorical plan start"
+	desc = "Essentail beginning focuses for England"
+	allowed = { tag = ENG }
+
+	enable = {
+		tag = ENG
+		is_historical_focus_on = no
+	}
+
+	ai_national_focuses = {
+
+##### Priority Override#####
+
+### 1936 ###
+	# 70 days - 1/1
+		limited_rearmament_focus
+		ENG_general_rearmament_focus
+		ENG_steady_as_she_goes
+		uk_empire_focus
+	#63 days - 3/11
+		ENG_civil_programmes
+		naval_rearmament_focus
+		uk_mediterranean_focus
+	#84 - 5/13
+		ENG_focus_navy_1936
+		ENG_revitalize_naval_industry
+		air_rearmament_focus
+		fighter_command_focus
+	#77 - 8/5
+		ENG_hurricane
+		uk_colonial_focus
+		uk_rock_focus
+		ENG_first_bbc_braodcast
+	#84 - 10/21
+		ENG_POA
+		ENG_industrial_programme_focus
+		ENG_secure_the_imperial_shipping_routes
+		shadow_scheme_focus
+	}
+	weight = {
+		factor = 1.0
+	}
+}
+
+ENG_at_war_plan = {
+	name = "England At War Plan"
+	desc = "War Programmes"
+	allowed = { tag = ENG }
+
+	enable = {
+		tag = ENG
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = ITA
+			has_war_with = SOV
+			has_war_with = FRA
+			has_war_with = USA
+		}
+	}
+	
+	ai_national_focuses = {
+		ENG_peace_has_failed
+		ENG_Blockade_Germany
+		ENG_time_is_now
+		ENG_GHQ_Line
+		ENG_emergency_draft
+		ENG_EPA
+		ENG_BEF
+		ENG_Port_Garrisons
+		ENG_seek_help_abroad
+		crypto_bomb_focus
+		ENG_home_front
+		ENG_deploy_kgv_BBs
+		ENG_deploy_illustrious_class
+		ENG_issue_gasmasks
+		ENG_industrial_programme_focus2
+		ENG_national_registration_act
+		radar_focus
+		royal_ordinance_focus
+		ENG_ration_petrol
+		tizard_mission_focus
+		ENG_beaverbrook
+		uk_protect_suez
+		ENG_deploy_hms_indomitable
+		ENG_deploy_duke_of_york
+		ENG_chiefs_of_staff_committee
+		uk_small_arms_focus
+		ENG_seek_help_from_usa
+		ENG_HomeGuard
+		ENG_purchase_usa_planes
+		ENG_raf_ace_program
+		uk_convoy_focus
+		ENG_skies
+		ENG_AA
+		uk_anglo_soviet_occupation
+		sp_landward_forts_focus
+		ENG_inchindown_tanks
+		ENG_anti_submarine_training_school
+		ENG_radar_networks
+		ENG_NSA
+		ENG_special_air_service
+		peninsular_focus 
+		ENG_defend_the_commonwealth
+		ENG_anzac_force
+		ENG_defend_ast
+		ENG_heavy_aircraft_research
+		ENG_peoples_war
+		ENG_ration_civ_clothing
+		ENG_motorized_focus
+		ENG_tank_focus
+		ENG_cruiser_tanks
+		ENG_bouncing_bomb
+		ENG_support_france
+	}
+	
+	weight = {
+		factor = 5.0
+	}
+}
