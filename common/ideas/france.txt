@@ -1171,7 +1171,32 @@ ideas = {
 			}
 		}
 	#### MOD ####
-		FRA_inflation1 = {
+		FRA_inflation4 = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = conservatism
+					has_government = liberalism
+					has_government = socialism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation4
+
+			modifier = {
+				political_power_cost = 1
+				min_export = 0.25
+				production_speed_buildings_factor = -0.25
+				opposition_party_drift = 0.06
+			}
+		}
+		FRA_inflation3 = {
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1221,7 +1246,7 @@ ideas = {
 				opposition_party_drift = 0.02
 			}
 		}
-		FRA_inflation3 = {
+		FRA_inflation1 = {
 			allowed = {
 				original_tag = FRA
 				always = no

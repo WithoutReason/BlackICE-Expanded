@@ -49,21 +49,32 @@ FRA_troops_free_france = {
 	}
 }
 
-fra_prioritize_mainland_1 = {
+fra_prioritize_europe = {
 	allowed = { tag = FRA }
 	enable = {
-		has_capitulated = no
-		has_war_with = GER
+		OR = {
+			has_war_with = GER
+			has_war_with = ITA
+			has_war_with = SPR
+		}
 	}
 	abort = {
-		has_capitulated = yes
-		GER = { has_capitulated = yes }
+		OR = {
+			has_capitulated = yes
+			GER = { has_capitulated = yes }
+			ITA = { has_capitulated = yes }
+		}
 	}
 	
 	ai_strategy = {
 		type = ignore
 		id = "ETH"
-		value = 200
+		value = 300
+	}
+	ai_strategy = {
+		type = ignore
+		id = "JAP"
+		value = 100
 	}
 	ai_strategy = {
 		type = front_unit_request
@@ -233,7 +244,7 @@ FRA_front_against_germany = {
     ai_strategy = {
 		type = front_unit_request
 		strategic_region = 238
-		value = 50
+		value = 10
 	}	
 	ai_strategy = {
 		type = front_unit_request
@@ -270,7 +281,7 @@ FRA_prepare_front_against_italy = {
     ai_strategy = {
 		type = prepare_for_war
 		id = ITA
-		value = 400
+		value = 700
 	}	
 }
 
@@ -290,7 +301,7 @@ FRA_front_against_italy = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = ITA
-		value = 35
+		value = 200
 	}
 }
 

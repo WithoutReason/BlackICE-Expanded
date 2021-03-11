@@ -396,7 +396,6 @@ ENG_defend_belgium = {
 		OR = {		
 			FRA = { has_capitulated = yes }
 			FRA = { has_global_flag = fall_of_france }
-			BEL = { has_war_with = GER }
 			BEL = { has_capitulated = yes }
 			date > 1941.1.1
 		}
@@ -404,7 +403,7 @@ ENG_defend_belgium = {
     ai_strategy = {
 		type = force_defend_ally_borders
 		id = BEL
-		value = 100
+		value = 300
 	}
 }
 
