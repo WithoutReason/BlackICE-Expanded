@@ -9658,7 +9658,7 @@ focus_tree = {
 					value = 0.031
 				}
 			}
-			custom_effect_tooltip = Raj_force_2
+			custom_effect_tooltip = Line_break_end_format
 			if = {
 				limit = {
 					has_idea = foreign_none

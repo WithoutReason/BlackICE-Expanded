@@ -168,7 +168,6 @@ allies_dont_join_soviet_polish_war = {
 	}
 }
 
-
 i_fin_eng = {
 	allowed = { tag = ENG }
 	enable = {
@@ -268,7 +267,6 @@ i_baltics_eng = {
 	}
 }
 
-
 defend_poland_against_germany = {
 	allowed = { tag = ENG }
 	enable = {
@@ -294,7 +292,6 @@ defend_poland_against_germany = {
 		value = 5000
 	}	
 }
-
 
 defend_benelux_against_germany = {
 	allowed = { tag = ENG }
@@ -339,9 +336,9 @@ defend_DEN_against_germany = {
 		type = alliance
 		id = "DEN"			
 		value = 200
-	}	
-		
+	}
 }
+
 defend_LUX_against_germany = {
 	allowed = { tag = ENG }
 	enable = {
@@ -356,8 +353,7 @@ defend_LUX_against_germany = {
 		type = alliance
 		id = "LUX"			
 		value = 200
-	}	
-		
+	}
 }
 
 # English Strategies to help counter Blitzkrieg
@@ -367,20 +363,18 @@ ENG_prepare_for_blitz = {
 		has_war_with = GER
 		is_in_faction_with = FRA
 		NOT = { is_in_faction_with = BEL }
-		FRA = { has_completed_focus = FRA_defend_bel }
+		#FRA = { has_completed_focus = FRA_defend_bel }
 	}
 	abort = {
 		OR = {
 			is_in_faction_with = BEL
 			FRA = { has_capitulated = yes }
-			FRA = { has_global_flag = fall_of_france }
-			date > 1941.1.1
 		}
 	}
-    ai_strategy = {
+	ai_strategy = {
 		type = front_unit_request
-		tag = BEL
-		value = 100
+		strategic_region = 19
+		value = 5000
 	}
 }
 
@@ -390,7 +384,7 @@ ENG_defend_belgium = {
 		is_in_faction_with = FRA
 		is_in_faction_with = BEL
 		has_war_with = GER
-		FRA = { has_completed_focus = FRA_defend_bel }
+		#FRA = { has_completed_focus = FRA_defend_bel }
 	}
 	abort = {
 		OR = {		

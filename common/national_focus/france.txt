@@ -1281,9 +1281,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
-		#allow_branch = {
-		#	has_country_flag = FRA_budget_crisis
-		#}
+		allow_branch = {
+			has_country_flag = FRA_budget_crisis
+		}
 		
 		bypass = {
 			has_country_flag = FRA_budget_crisis
@@ -1862,7 +1862,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_fight_inequality
+		id = FRA_further_industrialization
 		icon = GFX_goal_fra_factory_deal
 		prerequisite = { focus = FRA_no_compromises }
 		relative_position_id = FRA_no_compromises
@@ -1980,8 +1980,8 @@ focus_tree = {
 	focus = {
 		id = FRA_raise_taxes
 		icon = GFX_goal_fra_factory_deal
-		prerequisite = { focus = FRA_fight_inequality }
-		relative_position_id = FRA_fight_inequality
+		prerequisite = { focus = FRA_further_industrialization }
+		relative_position_id = FRA_further_industrialization
 		x = 0
 		y = 1
 		cost = 4
@@ -2519,7 +2519,7 @@ focus_tree = {
 	focus = {
 		id = FRA_promise_econ_renewal
 		icon = GFX_goal_fra_factory_deal
-		x = 17
+		x = 0
 		y = 0
 		offset = {
 			x = 17
@@ -2625,6 +2625,12 @@ focus_tree = {
 					add_idea = FRA_stagnant_econ_4
 				}
 			}
+			add_tech_bonus = {
+				name = FRA_industrial_effort
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	
@@ -2655,12 +2661,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_industrial_effort
-				bonus = 0.50
-				uses = 2
-				category = industry
-			}
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -2703,6 +2703,12 @@ focus_tree = {
 					add_idea = FRA_stagnant_econ_4
 				}
 			}
+			add_tech_bonus = {
+				name = FRA_industrial_effort
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
 		}
 	}
 	
@@ -2733,6 +2739,48 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
 			custom_effect_tooltip = FRA_sncf_tooltip
 			hidden_effect = {
 				28 = {
@@ -2776,48 +2824,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				remove_ideas = FRA_stagnant_econ_1
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_5
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
+			custom_effect_tooltip = Line_break
 		}
 	}
 	
@@ -2847,7 +2854,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = FRA_agriculture_office
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -2890,6 +2896,7 @@ focus_tree = {
 					add_idea = FRA_stagnant_econ_4
 				}
 			}
+			add_ideas = FRA_agriculture_office
 		}
 	}
 	
@@ -2919,7 +2926,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = -5000
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -2962,6 +2968,24 @@ focus_tree = {
 					add_idea = FRA_stagnant_econ_4
 				}
 			}
+			random_owned_controlled_state = {
+				limit = {									
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_unemployment_civfactory1
+			}
+			add_manpower = -5000
 		}
 	}
 	
@@ -3213,7 +3237,6 @@ focus_tree = {
 				}
 				set_state_flag = FRA_metropolitan_civilian_factory_2
 			}
-		
 			random_owned_controlled_state = {
 				prioritize = { 10 }
 				limit = {									
@@ -3232,7 +3255,6 @@ focus_tree = {
 				}
 				set_state_flag = FRA_metropolitan_civilian_factory_2
 			}
-
 			random_owned_controlled_state = {
 				prioritize = { 10 }
 				limit = {									
@@ -4235,20 +4257,41 @@ focus_tree = {
 				has_country_flag = FRA_in_crisis
 			}
 		}
-		bypass = {
-			OR = {
-				has_idea = low_economic_mobilisation
-				has_idea = partial_economic_mobilisation
-				has_idea = war_economy
-				has_idea = tot_economic_mobilisation
-			}
-	 	}
-
 		available_if_capitulated = yes
 
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = FRA_military_factories_ReArm }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
 		completion_reward = {
-			add_ideas = low_economic_mobilisation
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_on_continent = europe				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_ReArm
+			}
 			add_political_power = -50
+			custom_effect_tooltip = Line_break
+			add_ideas = low_economic_mobilisation
 		}
 	}
 
@@ -4326,6 +4369,30 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_BR0
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
 			}
 		}
 	}
@@ -4591,7 +4658,31 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_RR2
-			}					
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
+			}
 		}
 	}
 	
@@ -4730,6 +4821,30 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_1MF
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
 			}
 		}
 	}
@@ -4888,6 +5003,30 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_1MF
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
+			}
 		}
 	}
 	
@@ -4952,6 +5091,30 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_NonNat1
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
+			}
 		}
 	}
 
@@ -5015,7 +5178,31 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_NonNat2
-			}					
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
+			}
 		}
 	}
 
@@ -5079,7 +5266,31 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_NonNat3
-			}					
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							is_on_continent = europe				
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = FRA_military_factories_hidden
+					}
+				}
+			}
 		}
 	}
 
