@@ -1275,15 +1275,15 @@ focus_tree = {
 	focus = {
 		id = FRA_budget_crisis
 		icon = GFX_goal_fra_crisis_budget
-		x = 2
+		x = 4
 		y = 0
 		cost = 0.2
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
-		allow_branch = {
-			has_country_flag = FRA_budget_crisis
-		}
+		#allow_branch = {
+		#	has_country_flag = FRA_budget_crisis
+		#}
 		
 		bypass = {
 			has_country_flag = FRA_budget_crisis
@@ -1300,26 +1300,1217 @@ focus_tree = {
 		#mutually_exclusive = { focus =  FRA_social_reforms }
 		prerequisite = { focus = FRA_budget_crisis }
 		relative_position_id = FRA_budget_crisis
-		x = 1
+		x = 3
 		y = 1
-		cost = 5
+		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
-			has_global_flag = matignon_agreements
+			OR = {
+				has_idea = FRA_matignon_agreements
+				has_idea = FRA_matignon_agreements_weak
+			}
 		}
-		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_global_flag = matignon_agreements }
+					has_idea = FRA_matignon_agreements
 				}
-				custom_effect_tooltip = FRA_matignon_agreements_tooltip
+				swap_ideas = {
+					remove_idea = FRA_matignon_agreements
+					add_idea = FRA_matignon_agreements_weak
+				}
+			}
+			else = {
+				remove_idea = FRA_matignon_agreements_weak
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_abandon_social_reforms
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_matignon_agreements_amendement }
+		relative_position_id = FRA_matignon_agreements_amendement
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_cut_worker_pay
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_abandon_social_reforms }
+		relative_position_id = FRA_abandon_social_reforms
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_cut_welfare_spending
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_cut_worker_pay }
+		relative_position_id = FRA_cut_worker_pay
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+					OR = {
+						has_completed_focus = FRA_spanish_democracy
+						has_completed_focus = FRA_spanish_puppet
+						has_completed_focus = FRA_recognize_spainish_state
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_no_compromises
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_budget_crisis }
+		relative_position_id = FRA_budget_crisis
+		x = -3
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_fight_inequality
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_no_compromises }
+		relative_position_id = FRA_no_compromises
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_raise_taxes
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_fight_inequality }
+		relative_position_id = FRA_fight_inequality
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_cut_military_spending
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_raise_taxes }
+		relative_position_id = FRA_raise_taxes
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+		}
+		bypass = {
+			has_country_flag = no_stagnant_econ
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_nationalisation_acts
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_stagnant_econ_reckless
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							has_completed_focus = FRA_spanish_democracy
+							has_completed_focus = FRA_spanish_puppet
+							has_completed_focus = FRA_recognize_spainish_state
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+						NOT = {
+							has_country_flag = no_stagnant_econ
+						}
+					}
+				}
+				custom_effect_tooltip = Bypass_no_stagnant_econ
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_2
+					add_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_3
+					add_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_4
+					add_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				swap_ideas = {
+					remove_idea = FRA_stagnant_econ_5
+					add_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = FRA_stagnant_econ_5
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_1
+						}
+					}
+					OR = {
+						AND = {
+							has_completed_focus = FRA_nationalisation_acts
+							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
+						}
+						has_completed_focus = FRA_deregulate_arms_industry
+					}
+				}
+				set_country_flag = no_stagnant_econ
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_economic_reforms2
+		icon = GFX_goal_generic_inflation
+		prerequisite = { focus = FRA_budget_crisis }
+		relative_position_id = FRA_budget_crisis
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+			has_idea = FRA_inflation1
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FRA_stagnant_econ_5
+						has_idea = FRA_stagnant_econ_4
+						has_idea = FRA_stagnant_econ_3
+						has_idea = FRA_stagnant_econ_2
+						has_idea = FRA_stagnant_econ_1
+					}
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FRA_not_in_crisis_tooltip
+				NOT = {
+					has_country_flag = FRA_in_crisis
+				}
+			}
+		}
+		cancel = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_in_crisis_tooltip
+				has_country_flag = FRA_in_crisis
+			}
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_idea = FRA_inflation1 }
+				}
+				custom_effect_tooltip = FRA_economic_reforms_tooltip
 			}
 			add_stability = -0.03
-			add_timed_idea = { idea = FRA_matignon_agreements2 days = 300 }
+			add_political_power = 60
+		}
+	}
+	
+	focus = {
+		id = FRA_devaluation2
+		icon = GFX_goal_fra_devaluate_the_franc
+		prerequisite = { focus = FRA_economic_reforms2 }
+		relative_position_id = FRA_economic_reforms2
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FRA_stagnant_econ_5
+						has_idea = FRA_stagnant_econ_4
+						has_idea = FRA_stagnant_econ_3
+						has_idea = FRA_stagnant_econ_2
+						has_idea = FRA_stagnant_econ_1
+					}
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FRA_not_in_crisis_tooltip
+				NOT = {
+					has_country_flag = FRA_in_crisis
+				}
+			}
+		}
+		cancel = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_in_crisis_tooltip
+				has_country_flag = FRA_in_crisis
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_inflation2
+				remove_idea = FRA_inflation1
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_budget_deficit_law2
+		icon = GFX_goal_fra_paper
+		prerequisite = { focus = FRA_devaluation2 }
+		relative_position_id = FRA_devaluation2
+		x = 0
+		y = 1
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		available = {
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_5
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FRA_stagnant_econ_5
+						has_idea = FRA_stagnant_econ_4
+						has_idea = FRA_stagnant_econ_3
+						has_idea = FRA_stagnant_econ_2
+						has_idea = FRA_stagnant_econ_1
+					}
+				}
+				NOT = {
+					has_idea = FRA_stagnant_econ_1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FRA_not_in_crisis_tooltip
+				NOT = {
+					has_country_flag = FRA_in_crisis
+				}
+			}
+		}
+		cancel = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_in_crisis_tooltip
+				has_country_flag = FRA_in_crisis
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.03
+			swap_ideas = {
+				add_idea = FRA_inflation3
+				remove_idea = FRA_inflation2
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_budget_balanced
+		icon = GFX_goal_fra_factory_deal
+		prerequisite = { focus = FRA_cut_military_spending focus = FRA_cut_welfare_spending }
+		relative_position_id = FRA_budget_crisis
+		x = 0
+		y = 5
+		cost = 4
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_not_in_crisis_tooltip
+				NOT = {
+					has_country_flag = FRA_in_crisis
+				}
+			}
+		}
+		cancel = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_in_crisis_tooltip
+				has_country_flag = FRA_in_crisis
+			}
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_stable
+				days = 100
+			}
 		}
 	}
 
@@ -1328,7 +2519,7 @@ focus_tree = {
 	focus = {
 		id = FRA_promise_econ_renewal
 		icon = GFX_goal_fra_factory_deal
-		x = 0
+		x = 17
 		y = 0
 		offset = {
 			x = 17
@@ -2558,11 +3749,17 @@ focus_tree = {
 
 		available = {
 			OR = {
-				AND = {
-					has_completed_focus  =  FRA_support_blum
-					NOT = { has_global_flag = front_explosed }
-				}
 				has_government = communism
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Pop_front_not_dead
+						NOT = { has_global_flag = front_explosed }
+					}
+					custom_trigger_tooltip = {
+						tooltip = Unlock_w_crisis_blum
+						has_completed_focus  =  FRA_support_blum
+					}
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
@@ -2579,15 +3776,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { 
-						has_completed_focus  =  FRA_support_blum
-						has_government = communism
-					}
-				}
-				custom_effect_tooltip = FRA_exchange_rate_stabilisation_tooltip
-			}
 			remove_ideas = FRA_inflation3
 		}
 	}
@@ -2604,11 +3792,17 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				AND = {
-					has_completed_focus  =  FRA_support_blum
-					NOT = { has_global_flag = front_explosed }
-				}
 				has_government = communism
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Pop_front_not_dead
+						NOT = { has_global_flag = front_explosed }
+					}
+					custom_trigger_tooltip = {
+						tooltip = Unlock_w_crisis_blum
+						has_completed_focus  =  FRA_support_blum
+					}
+				}
 			}
 		}
 		available = {
@@ -2646,12 +3840,13 @@ focus_tree = {
 		
 		available = {
 			OR = {
-			    has_completed_focus  =  FRA_support_daladier
 				has_government = fascism
 				has_government = monarchism
+				custom_trigger_tooltip = {
+					tooltip = Unlock_w_crisis_daladier
+					has_completed_focus  =  FRA_support_daladier
+				}
 			}
-		}
-		available = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -2685,11 +3880,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
-			OR = {
-			    has_completed_focus  =  FRA_support_daladier
+			custom_trigger_tooltip = {
+				tooltip = Unlock_w_crisis_daladier
+				has_completed_focus  =  FRA_support_daladier
 			}
-		}
-		available = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -2881,8 +4075,11 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				has_completed_focus = FRA_reckless_rearmament
-				has_completed_focus = FRA_balanced_rearmament
+				has_government = fascism
+				custom_trigger_tooltip = {
+					tooltip = Unlock_w_crisis_daladier
+					has_completed_focus  =  FRA_support_daladier
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
@@ -2920,8 +4117,11 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				has_completed_focus  =  FRA_support_daladier
 				has_government = fascism
+				custom_trigger_tooltip = {
+					tooltip = Unlock_w_crisis_daladier
+					has_completed_focus  =  FRA_support_daladier
+				}
 			}
 		}
 		available = {
@@ -2943,7 +4143,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { 
+					NOT = {
 						has_completed_focus  =  FRA_support_daladier
 						has_government = fascism
 					}
@@ -2966,8 +4166,11 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				has_completed_focus  =  FRA_support_daladier
 				has_government = fascism
+				custom_trigger_tooltip = {
+					tooltip = Unlock_w_crisis_daladier
+					has_completed_focus  =  FRA_support_daladier
+				}
 			}
 		}
 		available = {
