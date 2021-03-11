@@ -255,7 +255,7 @@ FRA_front_against_germany = {
 		type = front_unit_request
 		strategic_region = 239
 		value = 50
-	}	
+	}
 }
 
 FRA_prepare_front_against_italy = {
@@ -358,7 +358,7 @@ stay_defensive_on_maginot = {
 	ai_strategy = {
 		type = consider_weak
 		id = GER
-		value = -20
+		value = -30
 	}
 }
 
