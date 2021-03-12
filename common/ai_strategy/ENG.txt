@@ -363,7 +363,7 @@ ENG_prepare_for_blitz = {
 		has_war_with = GER
 		is_in_faction_with = FRA
 		NOT = { is_in_faction_with = BEL }
-		#FRA = { has_completed_focus = FRA_defend_bel }
+		FRA = { has_completed_focus = FRA_defend_bel }
 	}
 	abort = {
 		OR = {
@@ -372,9 +372,11 @@ ENG_prepare_for_blitz = {
 		}
 	}
 	ai_strategy = {
-		type = front_unit_request
-		strategic_region = 19
-		value = 5000
+		type = put_unit_buffers 
+		order_id = 1
+		states = { 29 } #Pad de Calais
+		ratio = 0.15
+		subtract_invasions_from_need = no
 	}
 }
 
@@ -387,9 +389,8 @@ ENG_defend_belgium = {
 		#FRA = { has_completed_focus = FRA_defend_bel }
 	}
 	abort = {
-		OR = {		
+		OR = {
 			FRA = { has_capitulated = yes }
-			FRA = { has_global_flag = fall_of_france }
 			BEL = { has_capitulated = yes }
 			date > 1941.1.1
 		}
@@ -479,10 +480,6 @@ ENG_dont_defend_HOL_or_LUX = {
 			is_in_faction_with = HOL
 			is_in_faction_with = LUX
 		}
-		OR = {
-			HOL = { has_war_with = GER }
-			LUX = { has_war_with = GER }
-		}
 	}
 	
 	abort = {
@@ -511,14 +508,8 @@ ENG_dont_defend_france = {
 	allowed = { tag = ENG }
 	enable = {
 		is_in_faction_with = FRA
-		FRA = { has_capitulated = no }
-		OR = {
-			has_war_with = GER
-			GER = { focus_progress = {
-				focus = GER_danzig_or_war
-				progress > 0.01
-			} }
-		}
+		has_war_with = GER
+		BEL = { has_capitulated = yes }
 	}
 	
 	abort = {

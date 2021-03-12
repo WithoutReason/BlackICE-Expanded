@@ -301,7 +301,7 @@ FRA_front_against_italy = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = ITA
-		value = 200
+		value = 400
 	}
 }
 
@@ -358,7 +358,7 @@ stay_defensive_on_maginot = {
 	ai_strategy = {
 		type = consider_weak
 		id = GER
-		value = -30
+		value = -50
 	}
 }
 
@@ -408,6 +408,7 @@ FRA_dont_defend_syria = {
 		value = 200
 	}
 }
+
 FRA_defend_france = {
 	allowed = { tag = FRA }
 	enable = {
