@@ -311,7 +311,7 @@ focus_tree = {
 			custom_effect_tooltip = Matignon_promise
 		}
 	}
-	
+
 	focus = {
 		id = FRA_right_to_union
 		icon = GFX_goal_fra_ref_unions
@@ -1275,18 +1275,18 @@ focus_tree = {
 	focus = {
 		id = FRA_budget_crisis
 		icon = GFX_goal_fra_crisis_budget
-		x = 4
+		x = 5
 		y = 0
 		cost = 0.2
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
 		allow_branch = {
-			has_country_flag = FRA_budget_crisis
+			has_country_flag = FRA_budget_crisis_flag
 		}
-		
+
 		bypass = {
-			has_country_flag = FRA_budget_crisis
+			has_country_flag = FRA_budget_crisis_flag
 		}
 
 		completion_reward = {
@@ -1297,12 +1297,12 @@ focus_tree = {
 	focus = {
 		id = FRA_matignon_agreements_amendement 
 		icon = GFX_goal_generic_forceful_treaty
-		#mutually_exclusive = { focus =  FRA_social_reforms }
+		mutually_exclusive = { focus =  FRA_no_compromises }
 		prerequisite = { focus = FRA_budget_crisis }
 		relative_position_id = FRA_budget_crisis
-		x = 3
+		x = 2
 		y = 1
-		cost = 4
+		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1394,12 +1394,12 @@ focus_tree = {
 
 	focus = {
 		id = FRA_abandon_social_reforms
-		icon = GFX_goal_fra_factory_deal
+		icon = GFX_goal_indyclone_funding_restraints
 		prerequisite = { focus = FRA_matignon_agreements_amendement }
 		relative_position_id = FRA_matignon_agreements_amendement
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1410,38 +1410,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_nationalisation_acts
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_stagnant_econ_reckless
-			}
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_no_stagnant_econ
-			}
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -1510,12 +1478,12 @@ focus_tree = {
 
 	focus = {
 		id = FRA_cut_worker_pay
-		icon = GFX_goal_fra_factory_deal
+		icon = GFX_goal_sieze_capital
 		prerequisite = { focus = FRA_abandon_social_reforms }
 		relative_position_id = FRA_abandon_social_reforms
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		search_filters = { FOCUS_FILTER_STABILITY }
 
 		available = {
@@ -1526,38 +1494,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_nationalisation_acts
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_stagnant_econ_reckless
-			}
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_no_stagnant_econ
-			}
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -1617,127 +1553,6 @@ focus_tree = {
 							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
 						}
 						has_completed_focus = FRA_deregulate_arms_industry
-					}
-				}
-				set_country_flag = no_stagnant_econ
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_cut_welfare_spending
-		icon = GFX_goal_fra_factory_deal
-		prerequisite = { focus = FRA_cut_worker_pay }
-		relative_position_id = FRA_cut_worker_pay
-		x = 0
-		y = 1
-		cost = 4
-		search_filters = { FOCUS_FILTER_STABILITY }
-		
-		available = {
-		}
-		bypass = {
-			has_country_flag = no_stagnant_econ
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_nationalisation_acts
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_stagnant_econ_reckless
-			}
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_no_stagnant_econ
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				remove_ideas = FRA_stagnant_econ_1
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_5
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_idea = FRA_stagnant_econ_5
-							has_idea = FRA_stagnant_econ_4
-							has_idea = FRA_stagnant_econ_3
-							has_idea = FRA_stagnant_econ_2
-							has_idea = FRA_stagnant_econ_1
-						}
-					}
-					OR = {
-						AND = {
-							has_completed_focus = FRA_nationalisation_acts
-							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-					}
-					OR = {
-						has_completed_focus = FRA_spanish_democracy
-						has_completed_focus = FRA_spanish_puppet
-						has_completed_focus = FRA_recognize_spainish_state
 					}
 				}
 				set_country_flag = no_stagnant_econ
@@ -1747,170 +1562,20 @@ focus_tree = {
 
 	focus = {
 		id = FRA_no_compromises
-		icon = GFX_goal_fra_factory_deal
+		icon = GFX_goal_fra_popular_front
+		mutually_exclusive = { focus =  FRA_matignon_agreements_amendement }
 		prerequisite = { focus = FRA_budget_crisis }
 		relative_position_id = FRA_budget_crisis
-		x = -3
+		x = -2
 		y = 1
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
 		}
-		bypass = {
-			has_country_flag = no_stagnant_econ
-		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_nationalisation_acts
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_stagnant_econ_reckless
-			}
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_no_stagnant_econ
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				remove_ideas = FRA_stagnant_econ_1
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_5
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_idea = FRA_stagnant_econ_5
-							has_idea = FRA_stagnant_econ_4
-							has_idea = FRA_stagnant_econ_3
-							has_idea = FRA_stagnant_econ_2
-							has_idea = FRA_stagnant_econ_1
-						}
-					}
-					OR = {
-						AND = {
-							has_completed_focus = FRA_nationalisation_acts
-							has_completed_focus = FRA_aircraft_manufacturer_nationalisation
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-					}
-				}
-				set_country_flag = no_stagnant_econ
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_further_industrialization
-		icon = GFX_goal_fra_factory_deal
-		prerequisite = { focus = FRA_no_compromises }
-		relative_position_id = FRA_no_compromises
-		x = 0
-		y = 1
-		cost = 4
-		search_filters = { FOCUS_FILTER_STABILITY }
-		
-		available = {
-		}
-		bypass = {
-			has_country_flag = no_stagnant_econ
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_nationalisation_acts
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_stagnant_econ_reckless
-			}
-			if = {
-				limit = {
-					AND = {
-						OR = {
-							has_completed_focus = FRA_spanish_democracy
-							has_completed_focus = FRA_spanish_puppet
-							has_completed_focus = FRA_recognize_spainish_state
-						}
-						has_completed_focus = FRA_deregulate_arms_industry
-						NOT = {
-							has_country_flag = no_stagnant_econ
-						}
-					}
-				}
-				custom_effect_tooltip = Bypass_no_stagnant_econ
-			}
 			if = {
 				limit = {
 					has_idea = FRA_stagnant_econ_1
@@ -1979,12 +1644,12 @@ focus_tree = {
 
 	focus = {
 		id = FRA_raise_taxes
-		icon = GFX_goal_fra_factory_deal
-		prerequisite = { focus = FRA_further_industrialization }
-		relative_position_id = FRA_further_industrialization
+		icon = GFX_control_money_supply
+		prerequisite = { focus = FRA_no_compromises }
+		relative_position_id = FRA_no_compromises
 		x = 0
 		y = 1
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -2095,12 +1760,12 @@ focus_tree = {
 
 	focus = {
 		id = FRA_cut_military_spending
-		icon = GFX_goal_fra_factory_deal
+		icon = GFX_goal_fra_soldiers_fire
 		prerequisite = { focus = FRA_raise_taxes }
 		relative_position_id = FRA_raise_taxes
 		x = 0
 		y = 1
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -2212,96 +1877,25 @@ focus_tree = {
 	focus = {
 		id = FRA_stop_the_inflation
 		icon = GFX_goal_generic_inflation
-		prerequisite = { focus = FRA_budget_crisis }
+		prerequisite = { focus = FRA_cut_military_spending focus = FRA_cut_worker_pay }
 		relative_position_id = FRA_budget_crisis
 		x = 0
-		y = 1
-		cost = 4
+		y = 4
+		cost = 3
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
-			has_idea = FRA_inflation1
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = FRA_not_in_crisis_tooltip
-				NOT = {
-					has_country_flag = FRA_in_crisis
-				}
-			}
-		}
-		cancel = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_in_crisis_tooltip
-				has_country_flag = FRA_in_crisis
-			}
 		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_idea = FRA_inflation1 }
-				}
-				custom_effect_tooltip = FRA_economic_reforms_tooltip
+			swap_ideas = {
+				remove_idea = FRA_inflation4
+				add_idea = FRA_inflation3
 			}
-			add_stability = -0.03
-			add_political_power = 60
 		}
 	}
-	
+
 	focus = {
 		id = FRA_devaluation2
 		icon = GFX_goal_fra_devaluate_the_franc
@@ -2309,88 +1903,17 @@ focus_tree = {
 		relative_position_id = FRA_stop_the_inflation
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = FRA_not_in_crisis_tooltip
-				NOT = {
-					has_country_flag = FRA_in_crisis
-				}
-			}
-		}
-		cancel = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_in_crisis_tooltip
-				has_country_flag = FRA_in_crisis
-			}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = FRA_inflation2
-				}
-				swap_ideas = {
-					add_idea = FRA_inflation2
-					remove_idea = FRA_inflation1
-				}
+			swap_ideas = {
+				remove_idea = FRA_inflation3
+				add_idea = FRA_inflation2
 			}
 		}
 	}
@@ -2402,83 +1925,16 @@ focus_tree = {
 		relative_position_id = FRA_devaluation2
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = FRA_not_in_crisis_tooltip
-				NOT = {
-					has_country_flag = FRA_in_crisis
-				}
-			}
-		}
-		cancel = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_in_crisis_tooltip
-				has_country_flag = FRA_in_crisis
-			}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.03
 			swap_ideas = {
-				add_idea = FRA_inflation3
+				add_idea = FRA_inflation1
 				remove_idea = FRA_inflation2
 			}
 		}
@@ -2487,34 +1943,45 @@ focus_tree = {
 	focus = {
 		id = FRA_budget_balanced
 		icon = GFX_goal_fra_factory_deal
-		prerequisite = { focus = FRA_cut_military_spending focus = FRA_cut_welfare_spending }
-		relative_position_id = FRA_budget_crisis
+		prerequisite = { focus = FRA_budget_deficit_law2 }
+		relative_position_id = FRA_budget_deficit_law2
 		x = 0
-		y = 5
+		y = 1
 		cost = 4
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_not_in_crisis_tooltip
-				NOT = {
-					has_country_flag = FRA_in_crisis
-				}
-			}
 		}
-		cancel = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_in_crisis_tooltip
-				has_country_flag = FRA_in_crisis
-			}
-		}
-		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_stable
-				days = 100
+			custom_effect_tooltip = FRA_clear_crisis
+			clr_country_flag = FRA_in_crisis
+			clr_country_flag = FRA_budget_crisis_flag
+			remove_ideas = FRA_inflation1
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_4
+				}
+				remove_ideas = FRA_stagnant_econ_4
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_3
+				}
+				remove_ideas = FRA_stagnant_econ_3
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_2
+				}
+				remove_ideas = FRA_stagnant_econ_2
+			}
+			if = {
+				limit = {
+					has_idea = FRA_stagnant_econ_1
+				}
+				remove_ideas = FRA_stagnant_econ_1
 			}
 		}
 	}
@@ -2638,7 +2105,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = FRA_tools_modernisation
 		icon = GFX_goal_generic_production
@@ -2716,7 +2183,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	#French National Railway Company
 	focus = {
 		id = FRA_sncf
@@ -2832,7 +2299,7 @@ focus_tree = {
 			custom_effect_tooltip = Line_break
 		}
 	}
-	
+
 	focus = {
 		id = FRA_agriculture_national_office
 		icon = GFX_goal_industrialized_agrarian_state
@@ -2904,7 +2371,7 @@ focus_tree = {
 			add_ideas = FRA_agriculture_office
 		}
 	}
-	
+
 	focus = {
 		id = FRA_decrease_unemployement
 		icon = GFX_focus_generic_the_giant_wakes
@@ -2993,7 +2460,7 @@ focus_tree = {
 			add_manpower = -5000
 		}
 	}
-	
+
 	focus = {
 		id = FRA_fund_synthetics
 		icon = GFX_goal_autarky
@@ -3070,7 +2537,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = FRA_national_oil_co
 		icon = GFX_goal_fra_co_synthetic
@@ -3503,59 +2970,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
-			has_idea = FRA_inflation1
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
+			custom_trigger_tooltip = {
+				tooltip = Get_dat_inflation
+				OR = {
+					has_idea = FRA_inflation1
+					has_idea = FRA_inflation2
+					has_idea = FRA_inflation3
+					has_idea = FRA_inflation4
 				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
+			custom_trigger_tooltip = {
+				tooltip = Your_econ_sucks_too_much
+				AND = {
+					NOT = { has_idea = FRA_stagnant_econ_5 }
+					NOT = { has_idea = FRA_stagnant_econ_4 }
+					NOT = { has_idea = FRA_stagnant_econ_3 }
+					NOT = { has_idea = FRA_stagnant_econ_2 }
+					NOT = { has_idea = FRA_stagnant_econ_1 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -3563,6 +2994,15 @@ focus_tree = {
 				NOT = {
 					has_country_flag = FRA_in_crisis
 				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = { has_idea = FRA_inflation1 }
+				NOT = { has_idea = FRA_inflation2 }
+				NOT = { has_idea = FRA_inflation3 }
+				NOT = { has_idea = FRA_inflation4 }
+				has_country_flag = FRA_inflation2_flag
 			}
 		}
 		cancel = {
@@ -3576,12 +3016,48 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_idea = FRA_inflation1 }
+					NOT = {
+						has_idea = FRA_inflation1
+						has_idea = FRA_inflation2
+						has_idea = FRA_inflation3
+						has_idea = FRA_inflation4
+					}
 				}
-				custom_effect_tooltip = FRA_economic_reforms_tooltip
+				custom_effect_tooltip = No_inflation_yet
 			}
-			add_stability = -0.03
-			add_political_power = 60
+			if = {
+				limit = {
+					has_idea = FRA_inflation1
+				}
+				remove_ideas = FRA_inflation1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation2
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation1
+					remove_idea = FRA_inflation2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation3
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation2
+					remove_idea = FRA_inflation3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation4
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation3
+					remove_idea = FRA_inflation4
+				}
+			}
 		}
 	}
 	
@@ -3596,58 +3072,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
+			custom_trigger_tooltip = {
+				tooltip = Get_dat_inflation
+				OR = {
+					has_idea = FRA_inflation1
+					has_idea = FRA_inflation2
+					has_idea = FRA_inflation3
+					has_idea = FRA_inflation4
 				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
+			custom_trigger_tooltip = {
+				tooltip = Your_econ_sucks_too_much
+				AND = {
+					NOT = { has_idea = FRA_stagnant_econ_5 }
+					NOT = { has_idea = FRA_stagnant_econ_4 }
+					NOT = { has_idea = FRA_stagnant_econ_3 }
+					NOT = { has_idea = FRA_stagnant_econ_2 }
+					NOT = { has_idea = FRA_stagnant_econ_1 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -3655,6 +3096,15 @@ focus_tree = {
 				NOT = {
 					has_country_flag = FRA_in_crisis
 				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = { has_idea = FRA_inflation1 }
+				NOT = { has_idea = FRA_inflation2 }
+				NOT = { has_idea = FRA_inflation3 }
+				NOT = { has_idea = FRA_inflation4 }
+				has_country_flag = FRA_inflation2_flag
 			}
 		}
 		cancel = {
@@ -3666,9 +3116,49 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = FRA_inflation2
-				remove_idea = FRA_inflation1
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FRA_inflation1
+						has_idea = FRA_inflation2
+						has_idea = FRA_inflation3
+						has_idea = FRA_inflation4
+					}
+				}
+				custom_effect_tooltip = No_inflation_yet
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation1
+				}
+				remove_ideas = FRA_inflation1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation2
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation1
+					remove_idea = FRA_inflation2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation3
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation2
+					remove_idea = FRA_inflation3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation4
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation3
+					remove_idea = FRA_inflation4
+				}
 			}
 		}
 	}
@@ -3684,58 +3174,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_5
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_4
+			custom_trigger_tooltip = {
+				tooltip = Get_dat_inflation
+				OR = {
+					has_idea = FRA_inflation1
+					has_idea = FRA_inflation2
+					has_idea = FRA_inflation3
+					has_idea = FRA_inflation4
 				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FRA_stagnant_econ_5
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_1
-					}
-				}
-				NOT = {
-					has_idea = FRA_stagnant_econ_1
+			custom_trigger_tooltip = {
+				tooltip = Your_econ_sucks_too_much
+				AND = {
+					NOT = { has_idea = FRA_stagnant_econ_5 }
+					NOT = { has_idea = FRA_stagnant_econ_4 }
+					NOT = { has_idea = FRA_stagnant_econ_3 }
+					NOT = { has_idea = FRA_stagnant_econ_2 }
+					NOT = { has_idea = FRA_stagnant_econ_1 }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -3743,6 +3198,15 @@ focus_tree = {
 				NOT = {
 					has_country_flag = FRA_in_crisis
 				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = { has_idea = FRA_inflation1 }
+				NOT = { has_idea = FRA_inflation2 }
+				NOT = { has_idea = FRA_inflation3 }
+				NOT = { has_idea = FRA_inflation4 }
+				has_country_flag = FRA_inflation2_flag
 			}
 		}
 		cancel = {
@@ -3755,13 +3219,42 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.03
-			swap_ideas = {
-				add_idea = FRA_inflation3
-				remove_idea = FRA_inflation2
+			if = {
+				limit = {
+					has_idea = FRA_inflation1
+				}
+				remove_ideas = FRA_inflation1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation2
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation1
+					remove_idea = FRA_inflation2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation3
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation2
+					remove_idea = FRA_inflation3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_inflation4
+				}
+				swap_ideas = {
+					add_idea = FRA_inflation3
+					remove_idea = FRA_inflation4
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = FRA_exchange_rate_stabilisation
 		icon = GFX_goal_generic_positive_trade_relations
@@ -3803,7 +3296,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = FRA_inflation3
+			if = {
+				limit = {
+					has_idea = FRA_inflation1
+				}
+				remove_ideas = FRA_inflation1
+			}
+			else = {
+				add_political_power = 150
+				add_stability = 0.1
+			}
 		}
 	}
 
@@ -3890,8 +3392,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_stability = -0.05
-			remove_ideas = FRA_inflation3
+			if = {
+				limit = {
+					has_idea = FRA_inflation1
+				}
+				remove_ideas = FRA_inflation1
+			}
+			add_stability = -0.1
 		}
 	}
 
@@ -4008,7 +3515,7 @@ focus_tree = {
 		}
 	}
 	
-	#Creat the CGOC
+	#Create the CGOC
 	focus = {
 		id = FRA_economic_fasc
 		icon = GFX_goal_generic_production2
@@ -5567,7 +5074,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 3
 		y = 1
-		cost = 4
+		cost = 3
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -5910,7 +5417,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 8
 		y = 1
-		cost = 4
+		cost = 3
 		search_filters = { FOCUS_FILTER_AIRFORCE }
 
 		available = {
@@ -7925,6 +7432,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				or = {
+					has_army_experience > 20
+					threat > 0.1
+					has_war = yes
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -7994,6 +7511,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				or = {
+					has_army_experience > 30
+					threat > 0.2
+					has_war = yes
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8063,6 +7590,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				or = {
+					has_army_experience > 40
+					threat > 0.3
+					has_war = yes
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8133,10 +7670,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = {
-			or = {
-				threat > 0.45
-				has_war = yes
-			}				
+			if = {
+				limit = {
+					is_ai = no
+				}
+				or = {
+					has_army_experience > 50
+					threat > 0.4
+					has_war = yes
+				}
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -8481,7 +8024,7 @@ focus_tree = {
 		relative_position_id = FRA_go_with_britain
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = { 
@@ -8576,6 +8119,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
+			SYR = { is_subject_of = FRA }
+			LEB = { is_subject_of = FRA }
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8670,6 +8215,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
+			MAR = { is_subject_of = FRA }
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8738,6 +8284,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE FOCUS_FILTER_INDUSTRY }
 		
 		available = {
+			TUN = { is_subject_of = FRA }
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8807,10 +8354,14 @@ focus_tree = {
 		relative_position_id = FRA_colonial_investments
 		x = -2
 		y = 1
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
+			FRA = {
+				controls_state = 459
+				controls_state = 460
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -8929,6 +8480,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE FOCUS_FILTER_NAVY }
 		
 		available = {
+			FRI = { is_subject_of = FRA }
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -9165,6 +8717,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 		
 		available = {
+			OR = {
+				FRI = { is_subject_of = FRA }
+				SYR = { is_subject_of = FRA }
+				MAR = { is_subject_of = FRA }
+				LEB = { is_subject_of = FRA }
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -9197,6 +8755,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
+			OR = {
+				FRI = { is_subject_of = FRA }
+				SYR = { is_subject_of = FRA }
+				MAR = { is_subject_of = FRA }
+				LEB = { is_subject_of = FRA }
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -9606,7 +9170,7 @@ focus_tree = {
 				}
 			}
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			CZE = {
@@ -9637,7 +9201,7 @@ focus_tree = {
 				}
 			}
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			POL = {
@@ -9668,7 +9232,7 @@ focus_tree = {
 				}
 			}
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			FIN = {
@@ -9746,7 +9310,7 @@ focus_tree = {
 				has_completed_focus = FRA_offensive_doctrine
 			}
 		}
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			if = {
@@ -9798,7 +9362,7 @@ focus_tree = {
 		relative_position_id = FRA_propaganda_leaflets
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {

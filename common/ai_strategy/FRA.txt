@@ -65,7 +65,7 @@ fra_prioritize_europe = {
 			ITA = { has_capitulated = yes }
 		}
 	}
-	
+
 	ai_strategy = {
 		type = ignore
 		id = "ETH"
@@ -77,59 +77,74 @@ fra_prioritize_europe = {
 		value = 100
 	}
 	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TUN"
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAR"
+		value = 10
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 126
+		value = -100
+	}
+	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 17
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 181
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 85
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 102
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 140
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 252
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 121
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 53
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 163
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 83
-		value = -200
+		value = -1000
 	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 165
-		value = -200
+		value = -1000
 	}
 }
 
@@ -209,9 +224,16 @@ FRA_prepare_border_against_germany = {
 				}
 			}
 		}
+		NOT = { has_global_flag = fall_of_france }
 	}
 	abort = {
-		has_capitulated = yes
+		OR = {
+			has_global_flag = fall_of_france
+			AND = {
+				is_in_faction_with = BEL
+				BEL = { has_capitulated = yes }
+			}
+		}
 	}
 	ai_strategy = {
 		type = prepare_for_war
@@ -237,8 +259,11 @@ FRA_front_against_germany = {
 	}
 	abort = {
 		OR = {
-			has_capitulated = yes 
 			has_global_flag = fall_of_france
+			AND = {
+				is_in_faction_with = BEL
+				BEL = { has_capitulated = yes }
+			}
 		}
 	}
     ai_strategy = {
@@ -249,12 +274,12 @@ FRA_front_against_germany = {
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 19
-		value = 50
-	}	
+		value = 30
+	}
 	ai_strategy = {
 		type = front_unit_request
 		strategic_region = 239
-		value = 50
+		value = 30
 	}
 }
 
@@ -262,7 +287,6 @@ FRA_prepare_front_against_italy = {
 	allowed = { tag = FRA }
 	enable = {
 		OR = {
-			has_war_with = ITA 
 			AND = {
 				has_war_with = GER 
 				ITA = { has_government = fascism }
@@ -274,15 +298,24 @@ FRA_prepare_front_against_italy = {
 	}
 	abort = {
 		OR = {
-			has_capitulated = yes 
 			has_global_flag = fall_of_france
+			has_war_with = ITA
+			AND = {
+				is_in_faction_with = BEL
+				BEL = { has_capitulated = yes }
+			}
 		}
 	}
     ai_strategy = {
 		type = prepare_for_war
 		id = ITA
-		value = 700
-	}	
+		value = 1200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ITA
+		value = 150
+	}
 }
 
 FRA_front_against_italy = {
@@ -293,15 +326,65 @@ FRA_front_against_italy = {
 	}
 	abort = {
 		OR = {
-			has_capitulated = yes
 			has_global_flag = fall_of_france
-			BEL = { has_capitulated = yes }
+			AND = {
+				is_in_faction_with = BEL
+				BEL = { has_capitulated = yes }
+			}
 		}
 	}
 	ai_strategy = {
 		type = front_unit_request
 		tag = ITA
-		value = 400
+		value = 200
+	}
+}
+
+FRA_oh_shit_it_just_got_real = {
+	allowed = { tag = FRA }
+	enable = {
+		has_war_with = GER
+		AND = {
+			is_in_faction_with = BEL
+			BEL = { has_capitulated = yes }
+		}
+		NOT = { has_global_flag = fall_of_france }
+	}
+	abort = {
+		OR = {
+			has_capitulated = yes
+			has_global_flag = fall_of_france
+		}
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 126
+		value = -1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TUN"
+		value = 800
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAR"
+		value = 200
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "EGY"
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ITA
+		value = 170
 	}
 }
 

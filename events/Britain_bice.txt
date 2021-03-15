@@ -12,19 +12,17 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ENG
-		#date > 1936.1.30
-		not = { has_country_flag = K6 }
-		#has_country_flag = impossible #has no trigger so will never fire
+	#	tag = ENG
+	#	#date > 1936.1.30
+	#	not = { has_country_flag = K6 }
+	#	#has_country_flag = impossible #has no trigger so will never fire
 	}
 
 	option = {
 		name = BICE_britain.1.a	#A British icon
 		set_country_flag = K6
-		add_stability = 0.02 # social cohesion
-		add_political_power = 30 # pride in British Telecoms !
-		
-}
+		add_stability = 0.02
+	}
 }
 #Churchill is upset
 country_event = {
@@ -52,7 +50,6 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = BICE_britain.5 days = 168 }
 		}
-
 	}
 }
 #English Communists

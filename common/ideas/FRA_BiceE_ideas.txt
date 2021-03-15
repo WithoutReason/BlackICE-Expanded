@@ -659,7 +659,7 @@ ideas = {
 			picture = tdlra_aerial_interest
 			
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.02
 			}
 		}
 		FRA_abandon_navy = {

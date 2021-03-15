@@ -9,6 +9,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/ideas/general_strikes_fire.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_generic_hyperinflation"
+		texturefile = "gfx/interface/ideas/generic_hyperinflation.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_generic_production_bonus_fire"
 		texturefile = "gfx/interface/ideas/generic_production_bonus_fire.dds"
 	}

@@ -1140,7 +1140,7 @@ country_event = {
 	option = {
 		name = france.35.a
 		custom_effect_tooltip = FRA_inflation_tooltip
-		add_ideas = FRA_inflation1
+		add_ideas = FRA_inflation2
 		set_country_flag = inflation
 	}
 }
@@ -3553,6 +3553,91 @@ country_event = {
 
 	option = {
 		name = franceBiceE.20.a
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+# Inflation gets Worse
+country_event = {
+	id = franceBiceE.21
+	title = franceBiceE.21.t
+	desc = franceBiceE.21.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+	
+	trigger = {
+        tag = FRA
+		has_start_date < 1936.01.02
+		date > 1937.8.1
+	}
+
+	option = {
+		name = franceBiceE.21.a
+		if = {
+			limit = {
+				has_idea = FRA_inflation2
+			}
+			swap_ideas = {
+				remove_idea = FRA_inflation2
+				add_idea = FRA_inflation3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = FRA_inflation1
+			}
+			swap_ideas = {
+				remove_idea = FRA_inflation1
+				add_idea = FRA_inflation2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = FRA_inflation1
+					has_idea = FRA_inflation2
+					has_idea = FRA_inflation3
+				}
+			}
+			add_ideas = FRA_inflation1
+		}
+		hidden_effect = {
+			set_country_flag = FRA_inflation2_flag
+		}
+	}
+}
+
+# Begin Budget Crisis
+country_event = {
+	id = franceBiceE.22
+	title = franceBiceE.22.t
+	desc = franceBiceE.22.d
+	picture = GFX_report_event_generic_factory
+	fire_only_once = yes
+
+	trigger = {
+        tag = FRA
+		has_idea = FRA_inflation3
+		OR = {
+			has_idea = FRA_matignon_agreements
+			has_idea = FRA_matignon_agreements_weak
+			has_idea = FRA_stagnant_econ_5
+		}
+		date > 1938.4.1
+	}
+
+	option = {
+		name = franceBiceE.22.a
+		swap_ideas = {
+			remove_idea = FRA_inflation3
+			add_idea = FRA_inflation4
+		}
+		hidden_effect = {
+			set_country_flag = FRA_in_crisis
+			set_country_flag = FRA_budget_crisis_flag
+		}
+		add_stability = -0.1
 		mark_focus_tree_layout_dirty = yes
 	}
 }

@@ -2003,16 +2003,18 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				set_province_controller = 7069
-				set_province_controller = 10070
-				set_province_controller = 11943
-				set_province_controller = 7132
-				set_province_controller = 4116
-				set_province_controller = 11923
-				set_province_controller = 7166
-				set_province_controller = 1013
-				set_province_controller = 11939
-				set_province_controller = 9964
+				USA = {
+					set_province_controller = 7069
+					set_province_controller = 10070
+					set_province_controller = 11943
+					set_province_controller = 7132
+					set_province_controller = 4116
+					set_province_controller = 11923
+					set_province_controller = 7166
+					set_province_controller = 1013
+					set_province_controller = 11939
+					set_province_controller = 9964
+				}
 				if = {
 					limit = {
 						is_ai = yes

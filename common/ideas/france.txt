@@ -1187,7 +1187,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_hyper_inflation4
+			picture = generic_hyperinflation
 
 			modifier = {
 				political_power_cost = 1
