@@ -18,16 +18,68 @@ SpriteTypes = {
 ########## ENG ##########
 
 	SpriteType = {
+		name = "GFX_goal_commonweath_air_training_plan"
+		texturefile = "gfx/interface/goals/ENG/goal_commonweath_air_training_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_fort_hk"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_fort_hk.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_fort_mal"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_fort_mal.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_industry"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_ast"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_ast.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_can"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_can.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_egy"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_egy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_ire"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_ire.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_nzl"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_nzl.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_raj"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_raj.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_saf"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_develop_saf.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_tank_churchill"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_tank_churchill.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_indian_army"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_indian_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_canadian_armor"
+		texturefile = "gfx/interface/goals/ENG/goal_eng_canadian_armor.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_battle_of_britain"
 		texturefile = "gfx/interface/goals/ENG/goal_battle_of_britain.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_eng_bbc_logo"
 		texturefile = "gfx/interface/goals/ENG/goal_eng_bbc_logo.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_commonweath_air_training_plan"
-		texturefile = "gfx/interface/goals/ENG/goal_commonweath_air_training_plan.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_eng_avro_bomber"
@@ -40,10 +92,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_eng_BEF"
 		texturefile = "gfx/interface/goals/ENG/goal_eng_BEF.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_eng_bigben_fire"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_bigben_fire.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_eng_commonwealth_shield"
@@ -82,10 +130,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/goal_eng_fortifications.tga"
 	}
 	SpriteType = {
-		name = "GFX_goal_eng_gold"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_gold.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_eng_hawker"
 		texturefile = "gfx/interface/goals/ENG/goal_eng_hawker.tga"
 	}
@@ -94,32 +138,12 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/goal_eng_heavy_armor.tga"
 	}
 	SpriteType = {
-		name = "GFX_goal_eng_iraq"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_iraq.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_eng_iraq"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_iraq.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_eng_ire_deal"
 		texturefile = "gfx/interface/goals/ENG/goal_eng_ire_deal.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_eng_land_and_sea"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_land_and_sea.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_eng_london"
 		texturefile = "gfx/interface/goals/ENG/goal_eng_london.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_eng_navy_glorious"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_navy_glorious.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_eng_paratrooper"
-		texturefile = "gfx/interface/goals/ENG/goal_eng_paratrooper.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_eng_registration_act"
@@ -205,16 +229,15 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/FIN/goal_fin_soldier_deal.dds"
 	}
 
-########## FRA ##########
+########## FIN ##########
 
 	SpriteType = {
-		name = "GFX_goal_fra_algeria"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_algeria.dds"
+		name = "GFX_goal_fin_soldier_deal"
+		texturefile = "gfx/interface/goals/FIN/goal_fin_soldier_deal.dds"
 	}
-	SpriteType = {
-		name = "GFX_goal_fra_arch_law"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_arch_law.dds"
-	}
+
+########## FRA ##########
+
 	SpriteType = {
 		name = "GFX_goal_fra_army"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_army.dds"
@@ -222,10 +245,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_fra_army_seal"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_army_seal.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_ban_commies"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_ban_commies.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_fra_bank_of_france"
@@ -256,10 +275,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/FRA/goal_fra_crisis_spain.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_fra_de_gaule_portrait"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_de_gaule_portrait.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_fra_de_gaulle"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_de_gaulle.dds"
 	}
@@ -278,10 +293,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_fra_factory_deal"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_factory_deal.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_fascism"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_fascism.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_fra_fighter"
@@ -328,10 +339,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/FRA/goal_fra_land_citizens.tga"
 	}
 	SpriteType = {
-		name = "GFX_goal_fra_liberte_egalite_solidarite"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_liberte_egalite_solidarite.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_fra_mainland"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_mainland.tga"
 	}
@@ -342,22 +349,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_fra_Marine_Nationale"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_Marine_Nationale.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_milice"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_milice.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_monarchy"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_monarchy.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_msr"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_msr.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_moroco"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_moroco.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_fra_nuclear_research"
@@ -374,18 +365,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_fra_popular_party"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_popular_party.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_purge"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_purge.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_purge_commies"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_purge_commies.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_purge_royals"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_purge_royals.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_fra_ref_40hrs"
@@ -416,10 +395,6 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/FRA/goal_fra_rural_farmers.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_fra_soldiers"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_soldiers.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_fra_soldiers_fire"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_soldiers_fire.tga"
 	}
@@ -442,14 +417,6 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_fra_usa_support"
 		texturefile = "gfx/interface/goals/FRA/goal_fra_usa_support.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_vichy"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_vichy.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_fra_vichy_support"
-		texturefile = "gfx/interface/goals/FRA/goal_fra_vichy_support.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_fra_west_africa"
@@ -595,16 +562,8 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/Flags/goal_gre_flag.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_hong_kong_deal"
-		texturefile = "gfx/interface/goals/Flags/goal_hong_kong_deal.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_india_freed_flag"
 		texturefile = "gfx/interface/goals/Flags/goal_india_freed_flag.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_mal_flag"
-		texturefile = "gfx/interface/goals/Flags/goal_mal_flag.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_nor_flag"

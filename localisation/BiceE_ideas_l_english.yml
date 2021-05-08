@@ -9,6 +9,7 @@ ENG_raf_ace_program_idea:0 "RAF Ace Programme"
  ENG_focus_navy_1936_idea_desc:0 "The current focus of English rearmament programmes are the Royal Navy."
  ENG_focus_raf_1938_idea:0 "1938 RAF Expansion"
  ENG_focus_raf_1938_idea_desc:0 "The current focus of English rearmament programmes are the Royal Airforce."
+ ENG_ship_upgrades:0 "Ship Refit Programme"
 FRA_general_strike_3:0 "General Strikes"
  FRA_general_strike_3_desc:0 "The nation's industry has ground to a halt!"
  FRA_general_strike_2:0 "General Strikes"
@@ -57,6 +58,34 @@ FRA_general_strike_3:0 "General Strikes"
  FRA_strat_bombing:0 "Increase Strategic Bombing"
  FRA_abandon_navy:0 "Abandon the Navy"
  FRA_abandon_navy_desc:0 "With tensions rising across Europe, we cannot afford to waste resources on foolish ventures. The Royal Navy is by far the most powerful navy in the world. While we are allied with Britain, we will rely on their navy and focus all our resources on our army and air force."
+ FRA_freedom_resistance_1:0 "French Resistance"
+ FRA_freedom_resistance_2:0 "French Resistance"
+ FRA_freedom_resistance_3:0 "French Resistance"
+ FRA_freedom_resistance_4:0 "French Resistance"
+ FRA_commie_resistance_1:0 "French Communist Resistance"
+ FRA_commie_resistance_2:0 "French Communist Resistance"
+ FRA_defeatism_1:0 "Defeatism"
+ FRA_defeatism_1_desc:0 "Our loss of Mainland France has broken the spirit of our people. In order to get back into the fight, we must first restore the people's faith in our victory."
+ FRA_defeatism_2:0 "Defeatism"
+ FRA_defeatism_2_desc:0 "Our loss of Mainland France has broken the spirit of our people. In order to get back into the fight, we must first restore the people's faith in our victory."
+ FRA_defeatism_3:0 "Defeatism"
+ FRA_defeatism_3_desc:0 "Our loss of Mainland France has broken the spirit of our people. In order to get back into the fight, we must first restore the people's faith in our victory."
+ FRA_allied_fuel_imports:0 "Allied Fuel Imports"
+ FRA_allied_fuel_imports_desc:0 "Our allies have agreed to spare us some fuel for our military."
+ FRA_free_fra_airforce_1:0 "Free France Airforce"
+ FRA_repair_roads:0 "Infrastructure Repairs Programme"
+ FRA_repair_factories:0 "Factory Repair Programme"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  ## EOF ##
