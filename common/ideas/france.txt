@@ -2,6 +2,23 @@
 ideas = {
 
 	country = {
+		FRA_increased_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.1
+			}
+		}
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {
@@ -734,10 +751,6 @@ ideas = {
 				always = no
 			}
 			available = { 
-				any_other_country = {
-					original_tag = FRA
-					is_in_faction_with = GER
-				}
 			}
 			allowed_civil_war = {
 				always = yes
@@ -1152,7 +1165,7 @@ ideas = {
 		}	
 
 		FRA_matignon_agreements = {
-			picture = generic_production_bonus
+			picture = FRA_matignon_agreements
 			allowed = {
 				always = no
 			}
@@ -1171,6 +1184,29 @@ ideas = {
 			}
 		}
 	#### MOD ####
+		FRA_matignon_agreements_weak = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				stability_weekly = 0.003
+				consumer_goods_factor = 0.03
+			}
+		}
 		FRA_inflation4 = {
 			allowed = {
 				original_tag = FRA
@@ -1269,6 +1305,335 @@ ideas = {
 				min_export = 0.05
 				production_speed_buildings_factor = -0.05
 				opposition_party_drift = 0.01
+			}
+		}
+		FRA_general_strike_3 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = general_strikes_fire
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.75
+				industrial_capacity_dockyard = -0.75
+				stability_weekly = -0.005
+				war_support_weekly = -0.015
+				opposition_party_drift = 0.04
+			}
+		}
+		FRA_general_strike_2 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = general_strikes_fire
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				stability_weekly = -0.003
+				war_support_weekly = -0.01
+				opposition_party_drift = 0.03
+			}
+		}
+		FRA_general_strike_1 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = general_strikes_fire
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				stability_weekly = -0.001
+				opposition_party_drift = 0.02
+			}
+		}
+		FRA_stagnant_econ_5 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_stagnant_econ_5_icon
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_weekly = -0.006
+				opposition_party_drift = 0.05
+				political_power_cost = 0.25
+			}
+		}
+		FRA_stagnant_econ_4 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_stagnant_econ_4_icon
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_weekly = -0.004
+				opposition_party_drift = 0.04
+				political_power_cost = 0.2
+			}
+		}
+		FRA_stagnant_econ_3 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_stagnant_econ_3_icon
+			
+			modifier = {
+				consumer_goods_factor = 0.06
+				stability_weekly = -0.002
+				opposition_party_drift = 0.03
+				political_power_cost = 0.15
+			}
+		}
+		FRA_stagnant_econ_2 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_stagnant_econ_2_icon
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				opposition_party_drift = 0.02
+				political_power_cost = 0.10
+			}
+		}
+		FRA_stagnant_econ_1 = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_stagnant_econ_1_icon
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				opposition_party_drift = 0.01
+				political_power_cost = 0.05
+			}
+		}
+		FRA_increase_military_funding = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		FRA_stable = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = tdlra_pillarized_society
+			
+			modifier = {
+				stability_weekly = 0.003
+			}
+		}
+		FRA_renewed_economy = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = rom_carol_ii_hedonist
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		FRA_attack_westwall_idea = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_war_preparation
+			
+			modifier = {
+				army_attack_factor = 0.10
+				experience_loss_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		FRA_final_push_idea = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_wargaming_division
+			
+			modifier = {
+				army_attack_factor = 0.10
+				experience_loss_factor = 0.25
+				consumer_goods_factor = 0.15
+			}
+		}
+		FRA_phony_war_idea = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ast_naval_auxiliary_patrol
+			
+			modifier = {
+				production_speed_dummy_factor = -0.10
+				mobilization_speed = 0.25
+				research_speed_factor = 0.05
+			}
+		}
+		FRA_hold_out = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = fra_undividable
+			
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		FRA_strat_bombing = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = tdlra_aerial_interest
+			
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.02
+			}
+		}
+		FRA_abandon_navy = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_navy
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = -0.25
 			}
 		}
 		FRA_matignon_agreements1 = {
@@ -1782,6 +2147,104 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.01
 			}
 		}
+		FRA_victors_of_wwi_4 = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_victors_of_wwi_4_icon
+
+			research_bonus = {
+				land_doctrine = -0.70
+			}
+			modifier = {
+				conscription_factor = -0.15
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_speed_factor = -0.15
+				training_time_army_factor = 0.33
+			}
+		}
+		FRA_victors_of_wwi_3 = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_victors_of_wwi_3_icon
+
+			research_bonus = {
+				land_doctrine = -0.50
+			}
+			modifier = {
+				conscription_factor = -0.12
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				army_speed_factor = -0.12
+				training_time_army_factor = 0.25
+			}
+		}
+		FRA_victors_of_wwi_2 = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_victors_of_wwi_2_icon
+
+			research_bonus = {
+				land_doctrine = -0.30
+			}
+			modifier = {
+				conscription_factor = -0.10
+				army_attack_factor = -0.04
+				army_defence_factor = -0.04
+				army_speed_factor = -0.10
+				training_time_army_factor = 0.15
+			}
+		}
+		FRA_victors_of_wwi_1 = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_victors_of_wwi_1_icon
+
+			research_bonus = {
+				land_doctrine = -0.10
+			}
+			modifier = {
+				conscription_factor = -0.05
+				army_speed_factor = -0.05
+				training_time_army_factor = 0.10
+			}
+		}
 		#### MOD END ####
 		FRA_victors_of_wwi = {
 			allowed = {
@@ -1795,7 +2258,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_victors_of_ww1
+			picture = FRA_victors_of_wwi_4_icon
 
 			research_bonus = {
 				land_doctrine = -0.70
@@ -1827,8 +2290,8 @@ ideas = {
 			picture = generic_disjointed_gov
 
 			modifier = {
-				political_power_cost = 0.25
-				stability_weekly = -0.006
+				political_power_cost = 0.5
+				stability_weekly = -0.008
 				war_support_weekly = -0.001
 				opposition_party_drift = 0.10
 			}
@@ -1876,10 +2339,77 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_dummy_factor = -0.10
-				production_speed_dummy_1_factor = -0.10
+				production_speed_dummy_factor = -0.1
+				production_speed_dummy_1_factor = -0.1
 				max_planning_factor = 0.25
 				planning_speed = -0.5
+			}
+			
+			cancel = { 
+				OR = {
+					has_capitulated = yes
+					AND = {
+						NOT = {	controls_state = 28}
+						if = {
+							limit = {
+								FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+							}
+							NOT = {
+								controls_state = 18
+								controls_state = 29
+							}
+						}
+					}
+				}
+			}
+		}
+		FRA_defensive_doc = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						AND = {
+							OR = {
+								has_government = liberalism
+								has_government = socialism
+								has_government = conservatism
+							}
+							GER = {
+								OR = {
+									has_government = liberalism
+									has_government = socialism
+									has_government = conservatism
+								}
+							}
+						}
+						AND = {
+							has_government = communism
+							GER = {
+								has_government = communism
+							}
+						}
+						AND = {
+							has_government = fascism
+							GER = {
+								has_government = fascism
+							}
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_dummy_factor = -0.20
+				army_defence_factor = 0.1
+				max_planning_factor = 0.25
+				planning_speed = -0.33
 			}
 			
 			cancel = {
@@ -1898,6 +2428,169 @@ ideas = {
 						}
 					}
 				}
+			}
+		}
+		FRA_offensive_doc = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						AND = {
+							OR = {
+								has_government = liberalism
+								has_government = socialism
+								has_government = conservatism
+							}
+							GER = {
+								OR = {
+									has_government = liberalism
+									has_government = socialism
+									has_government = conservatism
+								}
+							}
+						}
+						AND = {
+							has_government = communism
+							GER = {
+								has_government = communism
+							}
+						}
+						AND = {
+							has_government = fascism
+							GER = {
+								has_government = fascism
+							}
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				max_planning_factor = 0.10
+				planning_speed = -0.10
+			}
+			
+			cancel = {
+				OR = {
+					has_capitulated = yes
+					AND = {
+						NOT = {	controls_state = 28 }
+						if = {
+							limit = {
+								FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+							}
+							NOT = {
+								controls_state = 18
+								controls_state = 29
+							}
+						}
+					}
+				}
+			}
+		}
+		FRA_cut_maginot = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = can_send_in_the_zombies
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		FRA_maginot_fund_army = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		FRA_maginot_fund_navy = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_sea_focused_navy
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		FRA_maginot_fund_air = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = tdlra_aerial_interest
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				fighter_alt_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				interceptor_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mr_fighter_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				twin_cas_equipment  = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			
+			modifier = {
 			}
 		}
 		FRA_fortification_focus = {
@@ -2134,6 +2827,237 @@ ideas = {
 				stability_weekly = -0.001
 			}
 		}
+		FRA_defeatism_1 = {
+			picture = hol_caved_to_the_germans
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.5
+				resistance_growth_on_our_occupied_states  = -0.25
+				legitimacy_gain_factor = -0.5
+			}
+		}
+		FRA_defeatism_2 = {
+			picture = hol_caved_to_the_germans
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.35
+				resistance_growth_on_our_occupied_states  = -0.15
+				legitimacy_gain_factor = -0.35
+			}
+		}
+		FRA_defeatism_3 = {
+			picture = hol_caved_to_the_germans
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+				legitimacy_gain_factor = -0.1
+			}
+		}
+		FRA_freedom_resistance_1 = {
+			picture = idea_chi_war_of_resistance
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.1 
+			}
+		}
+		FRA_freedom_resistance_2 = {
+			picture = idea_chi_war_of_resistance
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.2
+			}
+		}
+		FRA_freedom_resistance_3 = {
+			picture = idea_chi_war_of_resistance2
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.3
+			}
+		}
+		FRA_freedom_resistance_4 = {
+			picture = idea_chi_war_of_resistance3
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.4
+			}
+		}
+		FRA_commie_resistance_1 = {
+			picture = generic_communism_drift_bonus
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.1
+				communism_drift = 0.03
+			}
+		}
+		FRA_commie_resistance_2 = {
+			picture = generic_communism_drift_bonus
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states  = 0.2
+				communism_drift = 0.06
+			}
+		}
+		FRA_free_fra_airforce_1 = {
+			picture = generic_air_payment
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_fuel_consumption_factor = -0.25
+			}
+		}
+		FRA_allied_fuel_imports = {
+			picture = generic_refining_concern_1
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+			
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fuel_gain = 50
+			}
+		}
+		FRA_repair_roads = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				repair_speed_infrastructure_factor = 0.25
+				repair_speed_naval_base_factor = 0.25
+				repair_speed_air_base_factor = 0.25
+			}
+		}
+		FRA_repair_factories = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				repair_speed_industrial_complex_factor = 0.25
+				repair_speed_arms_factory_factor = 0.25
+			}
+		}
 	}
 	##################
 	####Politicians
@@ -2330,6 +3254,7 @@ ideas = {
 				OR = {
 					has_government = liberalism
 					has_government = socialism
+					has_government = conservatism
 				}
 			}
 			traits = { socialist compassionate_gentleman foreign_minister_trait }
@@ -3461,7 +4386,7 @@ ideas = {
 			}
 			
 			available ={
-			#	has_completed_focus = FRA_empower_far_right
+				#has_completed_focus = FRA_front_liberte
 				NOT = {
 					has_government = fascism
 				}
@@ -3490,7 +4415,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = FRA_empower_commise
+				#has_completed_focus = FRA_radicalize_front
 				NOT = {
 					has_government = communism
 				}
@@ -3793,9 +4718,18 @@ ideas = {
 			traits = { army_cavalry_2  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:rene_prioux }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = rene_prioux }
+                #high_command_army_on_remove = yes
+			
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}	
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -3810,12 +4744,20 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}		
 			cancel_if_invalid = no		
 			traits = { army_logistics_1  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:charles_huntziger }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = charles_huntziger }
+                #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 20
@@ -3829,12 +4771,20 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}			
 			cancel_if_invalid = no	
 			traits = { army_commando_2  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:philippe_leclerc }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = philippe_leclerc }
+                #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 0
@@ -3846,12 +4796,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_high_command_air = yes
+				has_country_flag = hc_air
 			}				
 			cancel_if_invalid = no
 			traits = { air_air_combat_training_2  high_command_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:alfred_heurtaux }
+                high_command_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = alfred_heurtaux }
+                #high_command_air_on_remove = yes 
 
 			ai_will_do = {
 				factor = 0
@@ -3863,12 +4821,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_high_command_air = yes
+				has_country_flag = hc_air
 			}				
 			cancel_if_invalid = no
 			traits = { air_air_superiority_2  high_command_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:martial_valin }
+                high_command_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = martial_valin }
+                #high_command_air_on_remove = yes 
 
 			ai_will_do = {
 				factor = 0
@@ -3880,12 +4846,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_high_command_air = yes
+				has_country_flag = hc_air
 			}				
 			cancel_if_invalid = no
 			traits = { air_tactical_bombing_2  high_command_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:jean_francois_jannekeyn }
+                high_command_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = jean_francois_jannekeyn }
+                #high_command_air_on_remove = yes 
 
 			ai_will_do = {
 				factor = 20
@@ -3897,12 +4871,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}				
 			cancel_if_invalid = no
 			traits = { fra_navy_high_command_grand_battlefleet_commander_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:marcel_gensoul }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = marcel_gensoul }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 20
@@ -3914,12 +4896,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}				
 			cancel_if_invalid = no
 			traits = { fra_navy_high_command_convoy_defense_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:jean_marie_abrial }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = jean_marie_abrial }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 20
@@ -3931,12 +4921,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}				
 			cancel_if_invalid = no
 			traits = { fra_navy_high_command_carrier_naval_aviation_2  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:jean_de_laborde }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = jean_de_laborde }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -4663,7 +5661,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = FRA_national_oil_co
+				has_completed_focus = FRA_military_complex_nationalisation
 			}
 			ai_will_do = { 
 				factor = 0 
@@ -4689,7 +5687,7 @@ ideas = {
 				construction_tech = 0.07
 			}			
 			available = {
-				has_completed_focus = FRA_national_oil_co
+				has_completed_focus = FRA_military_complex_nationalisation
 			}
 			ai_will_do = { 
 				factor = 0 
@@ -4831,12 +5829,20 @@ ideas = {
 			}
 			available = {
 				has_completed_focus = FRA_defense_national_funds
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}
 			cancel_if_invalid = no
 			traits = { grand_battle_plan_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:charles_de_gaulle }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = charles_de_gaulle }
+                #theorist_army_on_remove = yes 
 
 			ai_will_do = {
 				factor = 20
@@ -4870,7 +5876,7 @@ ideas = {
 					not = { has_global_flag = fall_of_france }
 				}
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}
 			cancel_if_invalid = no
 			cancel = {
@@ -4879,6 +5885,14 @@ ideas = {
 			traits = { depth_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:FRA_philippe_petain }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = FRA_philippe_petain }
+                #theorist_army_on_remove = yes 
 
 			ai_will_do = {
 				factor = 20
@@ -4899,7 +5913,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4911,6 +5925,14 @@ ideas = {
 			traits = { operational_support_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:FRA_martin }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = FRA_martin }
+                #theorist_army_on_remove = yes 
 
 		}
 		FRA_boissieu = {
@@ -4920,7 +5942,7 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}	
 			cancel_if_invalid = no
 			cost = 150
@@ -4934,6 +5956,14 @@ ideas = {
 			traits = { brigade_doctrine_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:FRA_boissieu }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = FRA_boissieu }
+                #theorist_army_on_remove = yes 
 
 		}
 		henri_giraud = {
@@ -4942,7 +5972,7 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4962,6 +5992,15 @@ ideas = {
 			traits = { military_theorist  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:henri_giraud }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = henri_giraud }
+                #theorist_army_on_remove = yes 
+			
 		}
 		louis_kahn = {
 			allowed = {
@@ -4971,7 +6010,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_theorist_navy = yes
+				has_country_flag = th_navy
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4984,6 +6023,15 @@ ideas = {
 			traits = { grand_fleet_proponent  theorist_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:louis_kahn }
+                theorist_navy_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = louis_kahn }
+                #theorist_navy_on_remove = yes 
+			
 		}
 		jean_decoux = {
 			allowed = {
@@ -4993,7 +6041,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_theorist_navy = yes
+				has_country_flag = th_navy
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -5005,6 +6053,15 @@ ideas = {
 			traits = { naval_theorist  theorist_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:jean_decoux }
+                theorist_navy_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = jean_decoux }
+                #theorist_navy_on_remove = yes 
+			
 		}
 		victor_denain = {
 			allowed = {
@@ -5012,7 +6069,7 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_theorist_air = yes
+				has_country_flag = th_air
 			}	
 			cancel_if_invalid = no
 			cost = 150
@@ -5026,6 +6083,15 @@ ideas = {
 			traits = { assault_avaition  theorist_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:victor_denain }
+                theorist_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = victor_denain }
+                #theorist_air_on_remove = yes 
+			
 		}
 		jean_marie_bergeret = {
 			allowed = {
@@ -5039,12 +6105,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_theorist_air = yes
+				has_country_flag = th_air
 			}	
 			cancel_if_invalid = no
 			traits = { air_warfare_theorist  theorist_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:jean_marie_bergeret }
+                theorist_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = jean_marie_bergeret }
+                #theorist_air_on_remove = yes 
 		}
 	}
 }

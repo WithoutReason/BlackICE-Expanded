@@ -40,12 +40,13 @@ focus_tree = {
 		icon = GFX_goal_fra_crisis_election
 		x = 2
 		y = 0
-		cost = 0.2
+		cost = 1 #
 		search_filters = { FOCUS_FILTER_ARMY }
 
 		available_if_capitulated = yes
 		allow_branch  = {
 			has_country_flag = FRA_election_crisis
+			NOT = { has_global_flag = fall_of_france }
 		}
 
 		bypass = {
@@ -66,7 +67,7 @@ focus_tree = {
 		relative_position_id = FRA_1936_election_crisis
 		x = 1
 		y = 1
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -88,7 +89,7 @@ focus_tree = {
 		relative_position_id = FRA_democratic_gov
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 50 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -117,7 +118,7 @@ focus_tree = {
 		relative_position_id = FRA_democratic_gov
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 50 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -147,7 +148,7 @@ focus_tree = {
 		relative_position_id = FRA_democratic_gov
 		x = 0
 		y = 2
-		cost = 7.2
+		cost = 50 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -168,7 +169,7 @@ focus_tree = {
 		relative_position_id = FRA_crush_strikers
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -187,7 +188,7 @@ focus_tree = {
 		relative_position_id = FRA_deregulate_arms_industry
 		x = 1
 		y = 1
-		cost = 14.4
+		cost = 100 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -227,7 +228,7 @@ focus_tree = {
 		relative_position_id = FRA_1936_election_crisis
 		x = -5
 		y = 1
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -254,7 +255,7 @@ focus_tree = {
 		relative_position_id = FRA_democratic_gov
 		x = -3
 		y = 3
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -281,7 +282,7 @@ focus_tree = {
 		relative_position_id = FRA_popular_front
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -301,7 +302,7 @@ focus_tree = {
 		relative_position_id = FRA_rush_worker_reforms
 		x = -1
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -319,7 +320,7 @@ focus_tree = {
 		relative_position_id = FRA_rush_worker_reforms
 		x = 1
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -337,7 +338,7 @@ focus_tree = {
 		relative_position_id = FRA_40hr_week
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -355,7 +356,7 @@ focus_tree = {
 		relative_position_id = FRA_right_to_union
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -374,7 +375,7 @@ focus_tree = {
 		relative_position_id = FRA_minimum_wage
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -434,7 +435,7 @@ focus_tree = {
 		relative_position_id = FRA_1936_election_crisis
 		x = 5
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -458,7 +459,7 @@ focus_tree = {
 		relative_position_id = FRA_parliment_riots
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -476,7 +477,7 @@ focus_tree = {
 		relative_position_id = FRA_parliment_riots
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -493,12 +494,13 @@ focus_tree = {
 		icon = GFX_goal_fra_crisis_spain
 		x = 2
 		y = 0
-		cost = 0.2
+		cost = 1 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
 		allow_branch = {
 			has_country_flag = FRA_spanish_crisis
+			NOT = { has_global_flag = fall_of_france }
 		}
 		
 		bypass = {
@@ -520,7 +522,7 @@ focus_tree = {
 		relative_position_id = FRA_spain_crisis
 		x = 4
 		y = 1
-		cost = 10
+		cost = 70 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -595,7 +597,7 @@ focus_tree = {
 		relative_position_id = FRA_intervene_in_spain
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -613,7 +615,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_uk_help_spain }
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -634,7 +636,7 @@ focus_tree = {
 		relative_position_id = FRA_spa_give_commies_more_power
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -660,7 +662,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_spa_give_commies_more_power }
 		x = 3
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -691,7 +693,7 @@ focus_tree = {
 		relative_position_id = FRA_uk_help_spain
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -787,7 +789,7 @@ focus_tree = {
 		relative_position_id = FRA_spain_crisis
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -807,7 +809,7 @@ focus_tree = {
 		relative_position_id = FRA_secret_support
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -827,7 +829,7 @@ focus_tree = {
 		relative_position_id = FRA_supply_fighters
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -847,7 +849,7 @@ focus_tree = {
 		relative_position_id = FRA_supply_arty
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -867,7 +869,7 @@ focus_tree = {
 		relative_position_id = FRA_supply_arty
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -887,7 +889,7 @@ focus_tree = {
 		relative_position_id = FRA_secret_support
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -911,7 +913,7 @@ focus_tree = {
 		relative_position_id = FRA_support_blum
 		x = 1
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -946,7 +948,7 @@ focus_tree = {
 		relative_position_id = FRA_spain_crisis
 		x = -4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -969,7 +971,7 @@ focus_tree = {
 		relative_position_id = FRA_non_intervention_agreement
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -1058,7 +1060,7 @@ focus_tree = {
 		relative_position_id = FRA_blockade_spain
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
@@ -1122,7 +1124,7 @@ focus_tree = {
 		relative_position_id = FRA_non_intervention_agreement
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
@@ -1145,7 +1147,7 @@ focus_tree = {
 		relative_position_id = FRA_accept_spanish_refugees
 		x = 0
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -1204,7 +1206,7 @@ focus_tree = {
 		relative_position_id = FRA_supply_bombers
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -1237,7 +1239,7 @@ focus_tree = {
 		relative_position_id = FRA_popular_front_united
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -1277,12 +1279,13 @@ focus_tree = {
 		icon = GFX_goal_fra_crisis_budget
 		x = 5
 		y = 0
-		cost = 0.2
+		cost = 1 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available_if_capitulated = yes
 		allow_branch = {
 			has_country_flag = FRA_budget_crisis_flag
+			NOT = { has_global_flag = fall_of_france }
 		}
 
 		bypass = {
@@ -1302,7 +1305,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_crisis
 		x = 2
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1399,7 +1402,7 @@ focus_tree = {
 		relative_position_id = FRA_matignon_agreements_amendement
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1483,7 +1486,7 @@ focus_tree = {
 		relative_position_id = FRA_abandon_social_reforms
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 
 		available = {
@@ -1568,7 +1571,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_crisis
 		x = -2
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1649,7 +1652,7 @@ focus_tree = {
 		relative_position_id = FRA_no_compromises
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1765,7 +1768,7 @@ focus_tree = {
 		relative_position_id = FRA_raise_taxes
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1881,7 +1884,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_crisis
 		x = 0
 		y = 4
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1903,7 +1906,7 @@ focus_tree = {
 		relative_position_id = FRA_stop_the_inflation
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -1925,7 +1928,7 @@ focus_tree = {
 		relative_position_id = FRA_devaluation2
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -1947,7 +1950,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_deficit_law2
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -2000,7 +2003,7 @@ focus_tree = {
 				has_country_flag = FRA_in_crisis
 			}
 		}
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -2019,6 +2022,9 @@ focus_tree = {
 		}
 		
 		available_if_capitulated = yes
+		allow_branch = {
+			NOT = { has_global_flag = fall_of_france }
+		}
 		
 		completion_reward = {
 			add_timed_idea = {
@@ -2035,7 +2041,7 @@ focus_tree = {
 		relative_position_id = FRA_promise_econ_renewal
 		x = -3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -2113,7 +2119,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = 3
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		available = {
@@ -2192,7 +2198,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
@@ -2307,7 +2313,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -2379,7 +2385,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = -3
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -2470,7 +2476,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = -1
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -2545,7 +2551,7 @@ focus_tree = {
 		relative_position_id = FRA_fund_synthetics
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -2613,7 +2619,7 @@ focus_tree = {
 		relative_position_id = FRA_national_oil_co
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -2671,7 +2677,7 @@ focus_tree = {
 		relative_position_id = FRA_address_stagnant_econ
 		x = 1
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -2755,7 +2761,7 @@ focus_tree = {
 		relative_position_id = FRA_industrial_effort
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -2841,8 +2847,7 @@ focus_tree = {
 		relative_position_id = FRA_industrial_effort_2
 		x = 0
 		y = 1
-		cost = 4
-		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
+		cost = 28 #
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -2931,7 +2936,7 @@ focus_tree = {
 		relative_position_id = FRA_expand_fuel_storage
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = {
@@ -2966,7 +2971,7 @@ focus_tree = {
 		relative_position_id = FRA_promise_econ_renewal
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3068,7 +3073,7 @@ focus_tree = {
 		relative_position_id = FRA_economic_reforms
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3170,7 +3175,7 @@ focus_tree = {
 		relative_position_id = FRA_devaluation
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3263,7 +3268,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_deficit_law
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 
@@ -3316,7 +3321,7 @@ focus_tree = {
 		relative_position_id = FRA_exchange_rate_stabilisation
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3364,7 +3369,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_exchange_rate_stabilisation }
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3410,7 +3415,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_economic_centralization }
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3447,7 +3452,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_liberal_economy }
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3486,7 +3491,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_economic_fasc }
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3524,7 +3529,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_economic_mona }
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -3561,10 +3566,11 @@ focus_tree = {
 		relative_position_id = FRA_promise_econ_renewal
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = {
+			date > 1938.1.1
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
 				NOT = {
@@ -3604,7 +3610,7 @@ focus_tree = {
 		relative_position_id = FRA_promise_econ_renewal
 		x = 4
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -3646,7 +3652,7 @@ focus_tree = {
 		relative_position_id = FRA_defense_national_funds
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3695,7 +3701,7 @@ focus_tree = {
 		relative_position_id = FRA_war_material_licence
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3745,7 +3751,7 @@ focus_tree = {
 		relative_position_id = FRA_promise_econ_renewal
 		x = 11
 		y = 0
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -3769,7 +3775,11 @@ focus_tree = {
 				has_country_flag = FRA_in_crisis
 			}
 		}
+		
 		available_if_capitulated = yes
+		allow_branch = {
+			NOT = { has_global_flag = fall_of_france }
+		}
 
 		complete_tooltip = {
 			every_state = {
@@ -3815,7 +3825,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -3917,7 +3927,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = -4
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -3969,50 +3979,57 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					not = {
-						has_idea = FRA_stagnant_econ_1
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_5
+					NOT = {
+						has_completed_focus = FRA_budget_balanced
 					}
 				}
-				add_ideas = FRA_stagnant_econ_1
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
+				if = {
+					limit = {
+						not = {
+							has_idea = FRA_stagnant_econ_1
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_5
+						}
+					}
+					add_ideas = FRA_stagnant_econ_1
 				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_5
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_4
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_4
+						add_idea = FRA_stagnant_econ_5
+					}
 				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_3
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_3
+						add_idea = FRA_stagnant_econ_4
+					}
 				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_4
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_2
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_2
+						add_idea = FRA_stagnant_econ_3
+					}
 				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_1
-					add_idea = FRA_stagnant_econ_2
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_1
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_1
+						add_idea = FRA_stagnant_econ_2
+					}
 				}
 			}
 			random_owned_controlled_state = {
@@ -4042,7 +4059,7 @@ focus_tree = {
 		relative_position_id = FRA_reckless_rearmament
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -4090,52 +4107,60 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					not = {
-						has_idea = FRA_stagnant_econ_1
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_5
+					NOT = {
+						has_completed_focus = FRA_budget_balanced
 					}
 				}
-				add_ideas = FRA_stagnant_econ_1
+				if = {
+					limit = {
+						not = {
+							has_idea = FRA_stagnant_econ_1
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_5
+						}
+					}
+					add_ideas = FRA_stagnant_econ_1
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_4
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_4
+						add_idea = FRA_stagnant_econ_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_3
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_3
+						add_idea = FRA_stagnant_econ_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_2
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_2
+						add_idea = FRA_stagnant_econ_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_1
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_1
+						add_idea = FRA_stagnant_econ_2
+					}
+				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_1
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
+			
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4153,7 +4178,6 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_RR1
 			}
-
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4171,6 +4195,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_RR2
 			}
+
 			if = {
 				limit = {
 					is_ai = yes
@@ -4205,7 +4230,7 @@ focus_tree = {
 		relative_position_id = FRA_military_complex_nationalisation
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -4253,52 +4278,60 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					not = {
-						has_idea = FRA_stagnant_econ_1
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_5
+					NOT = {
+						has_completed_focus = FRA_budget_balanced
 					}
 				}
-				add_ideas = FRA_stagnant_econ_1
+				if = {
+					limit = {
+						not = {
+							has_idea = FRA_stagnant_econ_1
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_5
+						}
+					}
+					add_ideas = FRA_stagnant_econ_1
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_4
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_4
+						add_idea = FRA_stagnant_econ_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_3
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_3
+						add_idea = FRA_stagnant_econ_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_2
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_2
+						add_idea = FRA_stagnant_econ_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_1
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_1
+						add_idea = FRA_stagnant_econ_2
+					}
+				}
 			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_1
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
+			
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4316,7 +4349,6 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_2MF
 			}
-
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4334,6 +4366,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_1MF
 			}
+			
 			if = {
 				limit = {
 					is_ai = yes
@@ -4370,7 +4403,7 @@ focus_tree = {
 		relative_position_id = FRA_military_complex_nationalisation_2
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
@@ -4418,52 +4451,60 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = FRA_stagnant_econ_1
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_1
-					add_idea = FRA_stagnant_econ_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_2
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_2
-					add_idea = FRA_stagnant_econ_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_3
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_3
-					add_idea = FRA_stagnant_econ_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FRA_stagnant_econ_4
-				}
-				swap_ideas = {
-					remove_idea = FRA_stagnant_econ_4
-					add_idea = FRA_stagnant_econ_5
-				}
-			}
-			if = {
-				limit = {
-					not = {
-						has_idea = FRA_stagnant_econ_1
-						has_idea = FRA_stagnant_econ_2
-						has_idea = FRA_stagnant_econ_3
-						has_idea = FRA_stagnant_econ_4
-						has_idea = FRA_stagnant_econ_5
+					NOT = {
+						has_completed_focus = FRA_budget_balanced
 					}
 				}
-				add_ideas = FRA_stagnant_econ_1
+				if = {
+					limit = {
+						not = {
+							has_idea = FRA_stagnant_econ_1
+							has_idea = FRA_stagnant_econ_2
+							has_idea = FRA_stagnant_econ_3
+							has_idea = FRA_stagnant_econ_4
+							has_idea = FRA_stagnant_econ_5
+						}
+					}
+					add_ideas = FRA_stagnant_econ_1
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_4
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_4
+						add_idea = FRA_stagnant_econ_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_3
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_3
+						add_idea = FRA_stagnant_econ_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_2
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_2
+						add_idea = FRA_stagnant_econ_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = FRA_stagnant_econ_1
+					}
+					swap_ideas = {
+						remove_idea = FRA_stagnant_econ_1
+						add_idea = FRA_stagnant_econ_2
+					}
+				}
 			}
+			
 			air_experience = 15
 			random_owned_controlled_state = {
 				limit = {
@@ -4515,6 +4556,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_military_factories_1MF
 			}
+			
 			if = {
 				limit = {
 					is_ai = yes
@@ -4549,7 +4591,7 @@ focus_tree = {
 		relative_position_id = FRA_balanced_rearmament
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -4637,7 +4679,7 @@ focus_tree = {
 		relative_position_id = FRA_military_factories_1
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		available = {
@@ -4725,7 +4767,7 @@ focus_tree = {
 		relative_position_id = FRA_military_factories_2
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -4813,7 +4855,7 @@ focus_tree = {
 		relative_position_id = FRA_balanced_rearmament
 		x = -2
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -4872,7 +4914,7 @@ focus_tree = {
 		relative_position_id = FRA_army_improvements
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ICCOST_REDUCTION }
 
 		available = {
@@ -4903,7 +4945,7 @@ focus_tree = {
 		relative_position_id = FRA_motorized_focus
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -4941,7 +4983,7 @@ focus_tree = {
 		relative_position_id = FRA_tank_modernisation
 		x = 0
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters =  { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -5074,7 +5116,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -5149,7 +5191,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 5
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -5185,7 +5227,7 @@ focus_tree = {
 		relative_position_id = FRA_naval_contruction_program
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -5238,7 +5280,7 @@ focus_tree = {
 		relative_position_id = FRA_naval_contruction_program
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -5277,7 +5319,7 @@ focus_tree = {
 		relative_position_id = FRA_altlantic_domination
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5314,7 +5356,7 @@ focus_tree = {
 		relative_position_id = FRA_darlan_doctrine
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5367,7 +5409,7 @@ focus_tree = {
 		relative_position_id = FRA_naval_contruction_program
 		x = 2
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5417,7 +5459,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 8
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_AIRFORCE }
 
 		available = {
@@ -5501,7 +5543,7 @@ focus_tree = {
 		relative_position_id = FRA_air_bases
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = {FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5543,7 +5585,7 @@ focus_tree = {
 		relative_position_id = FRA_modernisation_program
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5561,8 +5603,9 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-
+		
 		completion_reward = {
+			#add_equipment_to_stockpile = { type = tac_bomber amount = 100 producer = USA }
 			add_tech_bonus = {
 				name = FRA_bomber_focus
 				bonus = 0.35
@@ -5585,7 +5628,7 @@ focus_tree = {
 		relative_position_id = FRA_modernisation_program
 		x = 1
 		y = 3
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5622,7 +5665,7 @@ focus_tree = {
 		relative_position_id = FRA_barrage_david
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -5658,49 +5701,7 @@ focus_tree = {
 		relative_position_id = FRA_air_bases
 		x = 1
 		y = 1
-		cost = 4
-		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_not_in_crisis_tooltip
-				NOT = {
-					has_country_flag = FRA_in_crisis
-				}
-			}
-		}
-		cancel = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_in_crisis_tooltip
-				has_country_flag = FRA_in_crisis
-			}
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_air_doctrine
-				bonus = 0.2
-				uses = 2
-				category = air_doctrine
-			}
-			add_tech_bonus = {
-				name = FRA_cas_focus
-				bonus = 0.3
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_reorganize_air_army
-		icon = GFX_goal_generic_air_doctrine
-	 	prerequisite = { focus = FRA_interwar_experience }
-		relative_position_id = FRA_interwar_experience
-		x = 0
-		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5723,9 +5724,100 @@ focus_tree = {
 			air_experience = 50
 			add_tech_bonus = {
 				name = FRA_air_doctrine
-				bonus = 0.25
+				bonus = 0.3
 				uses = 2
 				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = FRA_cas_focus
+				bonus = 0.3
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_reorganize_air_army
+		icon = GFX_goal_generic_air_doctrine
+	 	prerequisite = { focus = FRA_interwar_experience }
+		relative_position_id = FRA_interwar_experience
+		x = 0
+		y = 1
+		cost = 28 #
+		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_not_in_crisis_tooltip
+				NOT = {
+					has_country_flag = FRA_in_crisis
+				}
+			}
+		}
+		cancel = {
+			custom_trigger_tooltip = {
+				tooltip = FRA_in_crisis_tooltip
+				has_country_flag = FRA_in_crisis
+			}
+		}
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = FRA_airfactories_L1 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = Ltaircraft_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = { has_state_flag = FRA_airfactories_H1 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = Hvaircraft_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_on_continent = europe				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = Ltaircraft_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_airfactories_L1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_on_continent = europe					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = Hvaircraft_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_airfactories_H1
 			}
 		}
 	}
@@ -5737,7 +5829,7 @@ focus_tree = {
 		relative_position_id = FRA_buy_americain
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5777,7 +5869,7 @@ focus_tree = {
 		relative_position_id = FRA_partial_mobilization
 		x = -8
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_AIRFORCE FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -5901,7 +5993,7 @@ focus_tree = {
 		relative_position_id = FRA_renewed_economy
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -5977,7 +6069,7 @@ focus_tree = {
 		relative_position_id = FRA_massive_industrial_effort
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6053,7 +6145,7 @@ focus_tree = {
 		relative_position_id = FRA_renewed_economy
 		x = -2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -6104,7 +6196,7 @@ focus_tree = {
 		relative_position_id = FRA_renewed_economy
 		x = -4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -6141,7 +6233,7 @@ focus_tree = {
 		relative_position_id = FRA_buy_heavy_water
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -6229,13 +6321,18 @@ focus_tree = {
 		relative_position_id = FRA_partial_mobilization
 		x = -4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ICCOST_REDUCTION }
 
 		available_if_capitulated = yes
 		
 		available = {
-			has_completed_focus  = FRA_defense_national_funds
+			if = {
+				limit = {
+					has_completed_focus = FRA_support_daladier
+				}
+				has_completed_focus  = FRA_defense_national_funds
+			}
 			has_completed_focus  = FRA_army_reform
 			custom_trigger_tooltip = {
 				tooltip = FRA_not_in_crisis_tooltip
@@ -6269,7 +6366,7 @@ focus_tree = {
 		relative_position_id = FRA_further_armament_program
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -6378,7 +6475,7 @@ focus_tree = {
 		relative_position_id = FRA_rapid_military_factories_1
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -6487,7 +6584,7 @@ focus_tree = {
 		relative_position_id = FRA_further_armament_program
 		x = 4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -6519,7 +6616,7 @@ focus_tree = {
 		relative_position_id = FRA_further_armament_program
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -6557,7 +6654,7 @@ focus_tree = {
 		relative_position_id = FRA_artillery_focus
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -6642,7 +6739,7 @@ focus_tree = {
 		relative_position_id = FRA_renewed_economy
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -6673,7 +6770,7 @@ focus_tree = {
 		relative_position_id = FRA_rearmament
 		x = 20
 		y = 0
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6697,7 +6794,11 @@ focus_tree = {
 				has_country_flag = FRA_in_crisis
 			}
 		}
+		
 		available_if_capitulated = yes
+		allow_branch = {
+			NOT = { has_global_flag = fall_of_france }
+		}
 
 		completion_reward = {
 			country_event = { id = franceBiceE.04 }
@@ -6715,7 +6816,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = 3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6749,7 +6850,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = -3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6782,7 +6883,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = 1
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6821,7 +6922,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = -1
 		y = 2
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6856,7 +6957,7 @@ focus_tree = {
 		relative_position_id = FRA_cut_maginot_fund
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6892,7 +6993,7 @@ focus_tree = {
 		relative_position_id = FRA_cut_maginot_fund
 		x = -2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6928,7 +7029,7 @@ focus_tree = {
 		relative_position_id = FRA_cut_maginot_fund
 		x = -4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -6963,7 +7064,7 @@ focus_tree = {
 		relative_position_id = FRA_fund_navy
 		x = -3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7002,7 +7103,7 @@ focus_tree = {
 		relative_position_id = FRA_offensive_doctrine
 		x = -2
 		y = 1
-		cost = 10
+		cost = 70 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7037,7 +7138,7 @@ focus_tree = {
 		relative_position_id = FRA_offensive_doctrine
 		x = 0
 		y = 1
-		cost = 10
+		cost = 70 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7073,7 +7174,7 @@ focus_tree = {
 		relative_position_id = FRA_offensive_doctrine
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7115,7 +7216,7 @@ focus_tree = {
 		relative_position_id = FRA_finish_maginot
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_FORTIFICATION }
 		
 		available = {
@@ -7146,7 +7247,7 @@ focus_tree = {
 		relative_position_id = FRA_finish_maginot
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_FORTIFICATION }
 		
 		available = {
@@ -7199,7 +7300,7 @@ focus_tree = {
 		relative_position_id = FRA_alpine_forts
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_FORTIFICATION FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -7254,7 +7355,7 @@ focus_tree = {
 		relative_position_id = FRA_giraud_plan
 		x = 3
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7288,7 +7389,7 @@ focus_tree = {
 		relative_position_id = FRA_defensive_doctrine
 		x = 1
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7327,7 +7428,7 @@ focus_tree = {
 		relative_position_id = FRA_defensive_doctrine
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -7347,7 +7448,50 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ROOT = { country_event = { id = france.3 } }
+			735 = {
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 778
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 9745
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 764
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 3764
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 6975
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 3959
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = pillbox
+					level = 1
+					province = 9909
+					instant_build = yes
+				}
+			}
 			458 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -7367,12 +7511,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			ITA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = FRA_alpine_forts
-				}
-			}
 		}
 	}
 
@@ -7383,7 +7521,7 @@ focus_tree = {
 		relative_position_id = FRA_de_gaulle_strategy
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -7428,7 +7566,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = 0
 		y = 4
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -7507,7 +7645,7 @@ focus_tree = {
 		relative_position_id = FRA_army_reform
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -7586,7 +7724,7 @@ focus_tree = {
 		relative_position_id = FRA_shakeup_senior_staff
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_RESEARCH }
 
 		available = {
@@ -7666,7 +7804,7 @@ focus_tree = {
 		relative_position_id = FRA_new_strategy_textbooks
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = {
@@ -7715,7 +7853,7 @@ focus_tree = {
 		relative_position_id = FRA_military_review
 		x = 14
 		y = 0
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -7739,7 +7877,11 @@ focus_tree = {
 				has_country_flag = FRA_in_crisis
 			}
 		}
+		
 		available_if_capitulated = yes
+		allow_branch = {
+			NOT = { has_global_flag = fall_of_france }
+		}
 
 		completion_reward = {
 			add_political_power = 75
@@ -7753,7 +7895,7 @@ focus_tree = {
 		relative_position_id = FRA_foreign_diplo
 		x = -3
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -7785,7 +7927,7 @@ focus_tree = {
 	 	mutually_exclusive = { focus = FRA_go_with_britain }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -7827,7 +7969,7 @@ focus_tree = {
 		relative_position_id = FRA_little_entente
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		bypass = {
@@ -7853,7 +7995,7 @@ focus_tree = {
 		relative_position_id = FRA_invite_yugoslavia
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = { is_puppet = no }
@@ -7881,7 +8023,7 @@ focus_tree = {
 		relative_position_id = FRA_invite_romania
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = { is_puppet = no }
@@ -7910,7 +8052,7 @@ focus_tree = {
 	 	mutually_exclusive = { focus = FRA_little_entente }
 		x = -1
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		
 		available = {
@@ -7924,17 +8066,11 @@ focus_tree = {
 		}
 		
 		bypass = {
-			OR = {
-				AND = {
-					is_in_faction_with = ENG
-					NOT = {
-						has_completed_focus = FRA_little_entente
-					}
+			AND = {
+				is_in_faction_with = ENG
+				NOT = {
+					has_completed_focus = FRA_little_entente
 				}
-				#AND = {
-				#	is_in_faction_with = SPR			
-				#	SPR = { has_completed_focus = SPR_dem6 }
-				#}
 			}
 		}
 		
@@ -7966,7 +8102,7 @@ focus_tree = {
 		relative_position_id = FRA_go_with_britain
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -7988,7 +8124,7 @@ focus_tree = {
 		relative_position_id = FRA_economic_cooperation_agreement
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = { is_puppet = no }
@@ -8024,7 +8160,7 @@ focus_tree = {
 		relative_position_id = FRA_go_with_britain
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
 		
 		available = { 
@@ -8084,7 +8220,7 @@ focus_tree = {
 		relative_position_id = FRA_foreign_diplo
 		x = 3
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
@@ -8115,7 +8251,7 @@ focus_tree = {
 		relative_position_id = FRA_colonial_investments
 		x = 0
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
@@ -8211,7 +8347,7 @@ focus_tree = {
 		relative_position_id = FRA_vienot_agreement
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
@@ -8280,7 +8416,7 @@ focus_tree = {
 		relative_position_id = FRA_vienot_agreement
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -8354,7 +8490,7 @@ focus_tree = {
 		relative_position_id = FRA_colonial_investments
 		x = -2
 		y = 1
-		cost = 5
+		cost = 35 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -8476,7 +8612,7 @@ focus_tree = {
 		relative_position_id = FRA_colonial_investments
 		x = 2
 		y = 1
-		cost = 6
+		cost = 42
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -8577,7 +8713,7 @@ focus_tree = {
 		relative_position_id = FRA_colonial_investments
 		x = 0
 		y = 3
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -8713,7 +8849,7 @@ focus_tree = {
 		relative_position_id = FRA_technology_sharing
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 		
 		available = {
@@ -8751,7 +8887,7 @@ focus_tree = {
 		relative_position_id = FRA_blum_viollette_project
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -8801,7 +8937,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -8854,7 +8990,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
@@ -8890,7 +9026,7 @@ focus_tree = {
 		relative_position_id = FRA_foreign_diplo
 		x = 15
 		y = 0
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 		
 		available = {
@@ -8949,7 +9085,7 @@ focus_tree = {
 		relative_position_id = FRA_another_great_war
 		x = 0
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY }
 		
 		available = {
@@ -8973,7 +9109,7 @@ focus_tree = {
 		relative_position_id = FRA_another_great_war
 		x = 2
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 		
 		available = {
@@ -9002,7 +9138,7 @@ focus_tree = {
 		relative_position_id = FRA_general_mobilisation_order
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		available = {
@@ -9032,7 +9168,7 @@ focus_tree = {
 		relative_position_id = FRA_general_mobilisation_order
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
@@ -9051,7 +9187,7 @@ focus_tree = {
 		relative_position_id = FRA_general_mobilisation_order
 		x = 3
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9070,7 +9206,7 @@ focus_tree = {
 		relative_position_id = FRA_another_great_war
 		x = -4
 		y = 1
-		cost = 3
+		cost = 21 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9117,7 +9253,7 @@ focus_tree = {
 		relative_position_id = FRA_coordinate_with_allies
 		x = -2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9158,7 +9294,7 @@ focus_tree = {
 		relative_position_id = FRA_attack_westwall
 		x = 1
 		y = 1
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9189,7 +9325,7 @@ focus_tree = {
 		relative_position_id = FRA_hold_out_czech
 		x = 0
 		y = 1
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9220,7 +9356,7 @@ focus_tree = {
 		relative_position_id = FRA_hold_out_poland
 		x = 0
 		y = 1
-		cost = 1
+		cost = 7 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9251,7 +9387,7 @@ focus_tree = {
 		relative_position_id = FRA_attack_westwall
 		x = -1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9275,7 +9411,7 @@ focus_tree = {
 		relative_position_id = FRA_deal_with_ger_tanks
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9297,7 +9433,7 @@ focus_tree = {
 		relative_position_id = FRA_coordinate_with_allies
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9338,7 +9474,7 @@ focus_tree = {
 		relative_position_id = FRA_the_phony_war
 		x = -1
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9362,7 +9498,7 @@ focus_tree = {
 		relative_position_id = FRA_propaganda_leaflets
 		x = 0
 		y = 1
-		cost = 2
+		cost = 14 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9393,10 +9529,11 @@ focus_tree = {
 		relative_position_id = FRA_the_phony_war
 		x = 1
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
+			has_war_with = GER
 			custom_trigger_tooltip = {
 				tooltip = FRA_econ_warfare_focus_prereq
 				OR = {
@@ -9559,7 +9696,7 @@ focus_tree = {
 		relative_position_id = FRA_economic_warfare
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9601,7 +9738,7 @@ focus_tree = {
 		relative_position_id = FRA_attack_norway
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9643,7 +9780,7 @@ focus_tree = {
 		relative_position_id = FRA_economic_warfare
 		x = 2
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9685,7 +9822,7 @@ focus_tree = {
 		relative_position_id = FRA_attack_yugoslavia
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9727,7 +9864,7 @@ focus_tree = {
 		relative_position_id = FRA_economic_warfare
 		x = 4
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {
@@ -9769,7 +9906,7 @@ focus_tree = {
 		relative_position_id = FRA_attack_turkey
 		x = 0
 		y = 1
-		cost = 4
+		cost = 28 #
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		available = {

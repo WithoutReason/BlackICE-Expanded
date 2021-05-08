@@ -14,6 +14,23 @@ ideas = {
 		}
 	}
 	country = {
+		ENG_ship_upgrades = {
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			removal_cost = -1
+			
+			picture = generic_coastal_defense_ships2
+			
+			modifier = {
+				navy_refit_speed = 0.20
+			}
+		}
 		ENG_commonwealth_wealth = {
 			allowed = {
 				original_tag = ENG
@@ -25,10 +42,10 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				political_power_factor = 0.10
 				stability_weekly = 0.001
 			}
@@ -45,12 +62,12 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_1
 			
 			modifier = {
-				consumer_goods_factor = -0.02
-				political_power_factor = 0.04
-				#stability_weekly = 0.001
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.06
+				stability_weekly = 0.001
 			}
 		}
 		ENG_commonwealth_wealth3 = {
@@ -65,11 +82,11 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_2
 			
 			modifier = {
 				consumer_goods_factor = -0.01
-				political_power_factor = -0.02
+				political_power_factor = 0.03
 			}
 		}
 		ENG_commonwealth_wealth4 = {
@@ -84,11 +101,10 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_3
 			
 			modifier = {
-				#consumer_goods_factor = -0.0
-				political_power_factor = -0.05
+				political_power_factor = 0.01
 				opposition_party_drift = 0.01
 			}
 		}
@@ -104,11 +120,11 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_4
 			
 			modifier = {
 				consumer_goods_factor = 0.01
-				political_power_factor = -0.08
+				political_power_factor = -0.02
 				opposition_party_drift = 0.02
 			}
 		}
@@ -124,11 +140,11 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_5
 			
 			modifier = {
-				consumer_goods_factor = -0.01
-				political_power_factor = -0.08
+				consumer_goods_factor = 0.01
+				political_power_factor = -0.05
 				opposition_party_drift = 0.03
 			}
 		}
@@ -144,10 +160,11 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_6
 			
 			modifier = {
-				political_power_factor = -0.14
+				consumer_goods_factor = 0.01
+				political_power_factor = -0.1
 				opposition_party_drift = 0.03
 			}
 		}
@@ -163,11 +180,11 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_7
 			
 			modifier = {
 				consumer_goods_factor = 0.01
-				political_power_factor = -0.2
+				political_power_factor = -0.15
 				stability_weekly = -0.001
 				opposition_party_drift = 0.04
 			}
@@ -184,13 +201,13 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = eng_cw_wealth_8
 			
 			modifier = {
 				consumer_goods_factor = 0.02
-				political_power_factor = -0.26
+				political_power_factor = -0.2
 				stability_weekly = -0.001
-				opposition_party_drift = 0.04
+				opposition_party_drift = 0.05
 			}
 		}
 		ENG_commonwealth_officers = {
@@ -312,6 +329,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
+		
 		ENG_the_war_to_end_all_wars = {
 			allowed = {
 				always = no
@@ -327,20 +345,29 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.15
-				#conscription = -0.006
-				#if = {
-				#	limit = {
-				#		OR = {
-				#			has_war = no
-				#			threat < 0.1
-				#		}
-				#	}
-					mobilization_laws_cost_factor = 5
-					conscription_cost_factor = 5
-					age_laws_cost_factor = 5
-				#}
+				conscription_cost_factor = 2
+				mobilization_laws_cost_factor = 2
 			}
 		}
+		
+		ENG_the_war_to_end_all_wars_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.15
+			}
+		}
+		
 		stiff_upper_lip = {
 			allowed = {
 				always = no
@@ -801,7 +828,7 @@ ideas = {
 			}
 		
 			equipment_bonus = {
-				quad_engine_bomber_equipment = { air_bombing = 0.03 }
+				quad_engine_bomber_equipment = { air_bombing = 0.02 }
 			}
 		} 
 
@@ -1814,6 +1841,136 @@ ideas = {
 				repair_speed_factor = 0.1
 			}
 		}
+		ENG_raf_ace_program_idea = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ace_pilot_program
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+		
+		ENG_focus_raf_1936_idea = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_raf
+			
+			modifier = {
+				production_speed_air_base_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+			}
+		}
+		
+		ENG_focus_army_1936_idea = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_army
+			
+			modifier = {
+				production_speed_smallarms_factory_factor = 0.2
+				production_speed_uniform_factory_factor = 0.2
+			}
+		}
+		
+		ENG_focus_navy_1936_idea = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_navy
+			
+			modifier = {
+				production_speed_naval_base_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		
+		ENG_focus_raf_1938_idea = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_raf
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				fighter_alt_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				interceptor_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				mr_fighter_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				twin_cas_equipment  = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.03 instant = yes
+				}
+			}
+		}
+		
+		ENG_blockade_idea_1 = {
+		
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_focus_navy
+			
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.25
+			}
+		}
 		
 	}
 	##################
@@ -2224,7 +2381,7 @@ ideas = {
 			}
 		}
 		ENG_leslie_hore_belisha = {
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_9
 
 			allowed = {
 				original_tag = ENG
@@ -2244,7 +2401,7 @@ ideas = {
 			}
 		}
 		ENG_ernest_bevin = {
-			picture = generic_political_advisor_europe_3
+			picture = generic_political_advisor_europe_12
 
 			allowed = {
 				original_tag = ENG
@@ -2380,7 +2537,7 @@ ideas = {
 	#Domestic
 	domestic_minister = {
 		ENG_george_hall = { 
-			picture = generic_political_advisor_europe_3
+			picture = generic_political_advisor_europe_13
 			allowed = { 
 				original_tag = ENG
 			}
@@ -2393,7 +2550,7 @@ ideas = {
 			ai_will_do = { factor = 0 }
 		}
 		ENG_euan_wallace = { 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_11
 			allowed = { 
 				original_tag = ENG
 			}
@@ -2471,7 +2628,7 @@ ideas = {
 			ai_will_do = { factor = 0 }
 		}
 		ENG_herbrand_sackville = { 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_12
 			allowed = { 
 				original_tag = ENG
 			}
@@ -2526,10 +2683,8 @@ ideas = {
 		}
 		ENG_george_orwell = {
 			
-			#picture = generic_communist_revolutionary_western_european_2d
 
 			available = {
-				#has_government = communism
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -2550,7 +2705,7 @@ ideas = {
 			}
 			available ={
 			}
-			traits = { fascist editor influence_minister_trait }
+			traits = { fascist editor political_advisor_trait }
 
 
 			ai_will_do = { factor = 0 }
@@ -2877,12 +3032,20 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}	
 			cancel_if_invalid = no
 			traits = { army_regrouping_2  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:archibald_wavell }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = archibald_wavell }
+                #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 0
@@ -2894,12 +3057,20 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}	
 			cancel_if_invalid = no
 			traits = { army_logistics_2  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:claude_auchinleck }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = claude_auchinleck }
+                #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 0
@@ -2912,12 +3083,20 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 			}	
 			cancel_if_invalid = no
 			traits = { army_infantry_2  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:kenneth_anderson }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = kenneth_anderson }
+                #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 20
@@ -2929,12 +3108,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_high_command_air = yes
+				has_country_flag = hc_air
 			}	
 			cancel_if_invalid = no
 			traits = { air_air_superiority_2  high_command_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:sholto_douglas }
+                high_command_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = sholto_douglas }
+                #high_command_air_on_remove = yes
 
 			ai_will_do = {
 				factor = 20
@@ -2946,12 +3133,20 @@ ideas = {
 			}
 			available = {
 				has_air_chief = yes
-				has_2_or_less_high_command_air = yes
+				has_country_flag = hc_air
 			}	
 			cancel_if_invalid = no
 			traits = { air_close_air_support_2  high_command_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:trafford_leigh_mallory }
+                high_command_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = trafford_leigh_mallory }
+                #high_command_air_on_remove = yes
 
 			ai_will_do = {
 				factor = 0
@@ -2963,12 +3158,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_land_based_naval_air_support_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:frederick_bowhill }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = frederick_bowhill }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -2980,12 +3183,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_amphibious_landing_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:louis_mountbatten }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = louis_mountbatten }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -2997,12 +3208,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_convoy_defense_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:henry_harwood }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = henry_harwood }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -3019,12 +3238,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_carrier_naval_aviation_2  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:james_sommerville }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = james_sommerville }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -3037,12 +3264,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_grand_battlefleet_commander_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:bruce_fraser }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = bruce_fraser }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -3059,12 +3294,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}	
 			cancel_if_invalid = no
 			traits = { uk_navy_high_command_fleet_admiral_1  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:john_tovey }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = john_tovey }
+                #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
 				factor = 0
@@ -3076,12 +3319,20 @@ ideas = {
 			}
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_high_command_navy = yes
+				has_country_flag = hc_navy
 			}				
 			cancel_if_invalid = no
 			traits = { navy_submarine_2  high_command_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:max_horton }
+                high_command_navy_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = max_horton }
+                #high_command_navy_on_remove = yes	
 			
 			ai_will_do = {
 				factor = 0
@@ -3094,13 +3345,21 @@ ideas = {
 			}
 			available = {
 				#has_army_chief = yes
-				has_2_or_less_high_command_army = yes
+				has_country_flag = hc_army
 				has_completed_focus = ENG_special_air_service
 			}			
 			cancel_if_invalid = no	
 			traits = { army_commando_3  high_command_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_david_stirling }
+                high_command_army_on_add = yes 
+            }
+            
+            #on_remove = {  = { idea = ENG_david_stirling }
+                #high_command_army_on_remove = yes
 			
 			ai_will_do = {
 				factor = 0
@@ -3934,13 +4193,13 @@ ideas = {
 					reliability = 0.05 soft_attack = 0.05  instant = yes
 				}
 				tankette_equipment= {
-					maximum_speed = 0.05 reliability = 0.1  instant = yes
+					maximum_speed = 0.05 reliability = 0.05  instant = yes
 				}
 				light_tank_equipment = {
 					soft_attack = 0.05  instant = yes
 				}
 				british_light_tank_equipment = {
-					maximum_speed = 0.05 reliability = 0.1   instant = yes
+					maximum_speed = 0.05 reliability = 0.05   instant = yes
 				}
 			}
 			#traits = { vickers_tank_manufacturer  tank_manufacturer_trait }
@@ -3980,7 +4239,7 @@ ideas = {
 			
 			equipment_bonus = {
 				cruiser_tank_equipment = {
-						armor_value = 0.05 hard_attack = 0.05  instant = yes
+						armor_value = 0.05 soft_attack = 0.05  instant = yes
 				}
 			}
 			#traits = { leyland_tank_manufacturer  tank_manufacturer_trait }
@@ -4040,7 +4299,7 @@ ideas = {
 			
 			equipment_bonus = {
 				cruiser_tank_equipment = {
-					reliability = 0.05  instant = yes
+					reliability = 0.05 maximum_speed = 0.05 breakthrough = 0.05  instant = yes
 				}
 			}
 			#traits = { RollsRoyce_tank_manufacturer  tank_manufacturer_trait }
@@ -4060,7 +4319,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}		
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4070,6 +4329,15 @@ ideas = {
 			traits = { assault_operations_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:bernard_montgomery }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = bernard_montgomery }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 		harold_alexander = {
@@ -4080,7 +4348,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}			
 			cancel_if_invalid = no	
 			research_bonus = {
@@ -4090,6 +4358,15 @@ ideas = {
 			traits = { military_theorist  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:harold_alexander }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = harold_alexander }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 20 }
 		}
 		ENG_harding = {
@@ -4101,7 +4378,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}			
 			cancel_if_invalid = no	
 			research_bonus = {
@@ -4111,6 +4388,15 @@ ideas = {
 			traits = { depth_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_harding }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = ENG_harding }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 		ENG_slim = {
@@ -4122,7 +4408,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}			
 			cancel_if_invalid = no	
 			research_bonus = {
@@ -4133,6 +4419,15 @@ ideas = {
 			traits = { operational_support_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_slim }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = ENG_slim }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 		ENG_browning = {
@@ -4142,7 +4437,7 @@ ideas = {
 			}
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}		
 			cancel_if_invalid = no		
 			cost = 150
@@ -4154,6 +4449,15 @@ ideas = {
 			traits = { command_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_browning }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = ENG_browning }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 
@@ -4165,7 +4469,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_theorist_navy = yes
+				has_country_flag = th_navy
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4176,6 +4480,15 @@ ideas = {
 			traits = { grand_fleet_proponent  theorist_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:james_somerville }
+                theorist_navy_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = james_somerville }
+                #theorist_navy_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 		tom_phillips = {
@@ -4186,7 +4499,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_navy_chief = yes
-				has_2_or_less_theorist_navy = yes
+				has_country_flag = th_navy
 			}			
 			cancel_if_invalid = no	
 			research_bonus = {
@@ -4196,6 +4509,15 @@ ideas = {
 			traits = { naval_theorist  theorist_trait_navy }
 			
 			ledger = navy
+			
+			on_add = { 
+                set_temp_variable = { idea = token:tom_phillips }
+                theorist_navy_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = tom_phillips }
+                #theorist_navy_on_remove = yes 
+			
 			ai_will_do = { factor = 20 }
 		}
 		hugh_dowding = {
@@ -4205,7 +4527,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_air_chief = yes
-				has_2_or_less_theorist_air = yes
+				has_country_flag = th_air
 			}		
 			cancel_if_invalid = no		
 			research_bonus = {
@@ -4215,6 +4537,15 @@ ideas = {
 			traits = { air_warfare_theorist  theorist_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:hugh_dowding }
+                theorist_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = hugh_dowding }
+                #theorist_air_on_remove = yes 
+			
 			ai_will_do = { factor = 20 }
 		}
 		arthur_harris = {
@@ -4225,7 +4556,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_air_chief = yes
-				has_2_or_less_theorist_air = yes
+				has_country_flag = th_air
 			}	
 			cancel_if_invalid = no
 			research_bonus = {
@@ -4235,6 +4566,15 @@ ideas = {
 			traits = { victory_through_airpower  theorist_trait_air }
 			
 			ledger = air
+			
+			on_add = { 
+                set_temp_variable = { idea = token:arthur_harris }
+                theorist_air_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = arthur_harris }
+                #theorist_air_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}
 		james_chadwick = {
@@ -4248,6 +4588,14 @@ ideas = {
 			research_bonus = {
 				nuclear = 0.10
 			}
+			
+			on_add = { 
+                set_temp_variable = { idea = token:james_chadwick }
+                theorist_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = james_chadwick }
+                #theorist_on_remove = yes
 
 			traits = { nuclear_scientist  theorist_trait }
 			ai_will_do = { factor = 0 }
@@ -4263,6 +4611,14 @@ ideas = {
 			research_bonus = {
 				rocketry = 0.10
 			}
+			
+			on_add = { 
+                set_temp_variable = { idea = token:frank_whittle }
+                theorist_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = frank_whittle }
+                #theorist_on_remove = yes
 
 			traits = { rocket_scientist  theorist_trait }
 			ai_will_do = { factor = 0 }
@@ -4275,7 +4631,7 @@ ideas = {
 			cost = 150
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}			
 			cancel_if_invalid = no	
 			research_bonus = {
@@ -4285,6 +4641,15 @@ ideas = {
 			traits = { brigade_doctrine_expert  theorist_trait_army }
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_claude_auchinleck }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = ENG_claude_auchinleck }
+                #theorist_army_on_remove = yes 
+			
 			ai_will_do = { factor = 0 }
 		}			
 		ENG_jfc_fuller = {
@@ -4293,7 +4658,7 @@ ideas = {
 
 			available = {
 				has_army_chief = yes
-				has_2_or_less_theorist_army = yes
+				has_country_flag = th_army
 			}	
 			cancel_if_invalid = no
 			
@@ -4316,6 +4681,14 @@ ideas = {
 			}
 			
 			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:ENG_jfc_fuller }
+                theorist_army_on_add = yes
+            }
+            
+            #on_remove = {  = { idea = ENG_jfc_fuller }
+                #theorist_army_on_remove = yes 
 
 			ai_will_do = { factor = 0 }
 		}
