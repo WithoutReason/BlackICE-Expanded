@@ -3211,7 +3211,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_turkey_focus
-		icon = GFX_goal_tur_crest
+		icon = GFX_cooperation_turkey
 		prerequisite = { focus = uk_protect_suez }
 		mutually_exclusive = { focus = uk_greece_focus }
 		relative_position_id = uk_protect_suez
@@ -3252,7 +3252,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_greece_focus
-		icon = GFX_goal_gre_crest
+		icon = GFX_cooperation_greece
 		prerequisite = { focus = uk_protect_suez }
 		mutually_exclusive = { focus = uk_turkey_focus }
 		relative_position_id = uk_protect_suez
