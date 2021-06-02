@@ -1,0 +1,15 @@
+### Battleship Yamato ###
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "1st Battleship Fleet"
+		naval_base = 9998 # Tokyo
+		task_force = {
+			name = "Yamato Battle Group"
+			location =  9998
+			ship = { name = "Yamato" definition = battleship start_experience_factor = 0.6 equipment = { nrm_ship_hull_capital_4 = { amount = 1 owner = JAP version_name = "Yamato Class"} } }
+		}
+	}
+}
+### EOF ###

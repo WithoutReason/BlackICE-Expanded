@@ -1,0 +1,15 @@
+### Shinano BB Player Construction ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_capital_4
+			creator = "JAP"
+			version_name = "Shinano Class"
+		}
+		name = "Shinano"
+		requested_factories = 1
+		progress = 0.17
+		amount = 1
+	}
+}
+### EOF ###

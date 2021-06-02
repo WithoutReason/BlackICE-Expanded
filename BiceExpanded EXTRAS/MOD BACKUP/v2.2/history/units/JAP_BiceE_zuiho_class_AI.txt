@@ -1,0 +1,26 @@
+### Zuiho Class ###
+units = {
+	##### NAVAL UNITS #####
+	#### PACIFIC FLEET ####
+	fleet = {
+		name = "Light Carrier Fleet"
+		naval_base = 9998 # Tokyo
+		task_force = {
+			name = "Zuiho Carrier Group"
+			location =  9998
+			ship = { name = "Zuiho" definition = light_carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_light_3 = { amount = 1 owner = JAP version_name = "Zuiho Class"} } 
+				air_wings = {
+					nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 15 }
+					mitsubishi_b2m_equipment_1 =  { owner = "JAP" amount = 15 }
+				}
+			}
+			ship = { name = "Shoho" definition = light_carrier start_experience_factor = 0.3 equipment = { nrm_ship_hull_carrier_light_3 = { amount = 1 owner = JAP version_name = "Zuiho Class"} } 
+				air_wings = {
+					nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 15 }
+					mitsubishi_b2m_equipment_1 =  { owner = "JAP" amount = 15 }
+				}
+			}
+		}
+	}
+}
+### EOF ###

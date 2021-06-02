@@ -1,0 +1,123 @@
+spriteTypes = {
+
+##### FRA #####
+
+	spriteType = {
+		name = "GFX_idea_FRA_stagnant_econ_5_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stagnant_econ_5_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_stagnant_econ_4_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stagnant_econ_4_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_stagnant_econ_3_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stagnant_econ_3_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_stagnant_econ_2_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stagnant_econ_2_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_stagnant_econ_1_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stagnant_econ_1_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victors_of_wwi_1_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victors_of_wwi_1_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victors_of_wwi_2_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victors_of_wwi_2_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victors_of_wwi_3_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victors_of_wwi_3_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victors_of_wwi_4_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victors_of_wwi_4_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victors_of_wwi_5_icon"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victors_of_wwi_5_icon.dds"
+	}
+
+##### Commonwealth Wealth #####
+
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_1"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_2"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_3"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_4"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_5"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_6"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_7"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_8"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_cw_wealth_9"
+		texturefile = "gfx/interface/ideas/commonwealth_wealth/eng_cw_wealth_9.dds"
+	}
+
+##### Main Direcotry #####
+
+	spriteType = {
+		name = "GFX_idea_anti_soviet_pact_white"
+		texturefile = "gfx/interface/ideas/anti_soviet_pact_white.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anti_soviet_pact_red"
+		texturefile = "gfx/interface/ideas/anti_soviet_pact_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_italian_leadership"
+		texturefile = "gfx/interface/ideas/italian_general_staff.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_west_wall_lite"
+		texturefile = "gfx/interface/ideas/idea_west_wall_lite.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_west_wall_med"
+		texturefile = "gfx/interface/ideas/idea_west_wall_medium.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_west_wall_Hv"
+		texturefile = "gfx/interface/ideas/idea_west_wall_heavy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_winter"
+		texturefile = "gfx/interface/ideas/winter_heat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_gomb"
+		texturefile = "gfx/interface/ideas/ministers/HUN_idea_Gombos_Gyula.dds"
+	}	
+}

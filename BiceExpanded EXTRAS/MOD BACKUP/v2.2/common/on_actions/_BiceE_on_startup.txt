@@ -1,0 +1,45 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				ENG = {
+					if = {
+						limit = { is_ai = no }
+						load_oob = "ENG_BiceE_construction_player"
+					}
+					else = {
+						set_country_flag = BiceE_naval_limit_4
+					}
+				}
+				USA = {
+					if = {
+						limit = { is_ai = no }
+						load_oob = "USA_BiceE_construction_player"
+					}
+					else = {
+						set_country_flag = BiceE_naval_limit_4
+					}
+				}
+				JAP = {
+					if = {
+						limit = { is_ai = no }
+						load_oob = "JAP_BiceE_construction_player"
+					}
+					else = {
+						set_country_flag = BiceE_naval_limit_4
+					}
+				}
+				#ITA = {
+				#	if = {
+				#		limit = { is_ai = no }
+				#		load_oob = ""
+				#	}
+				#}
+			}
+		}
+	}
+}

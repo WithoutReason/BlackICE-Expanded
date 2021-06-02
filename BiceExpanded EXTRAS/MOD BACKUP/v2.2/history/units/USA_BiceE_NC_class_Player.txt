@@ -1,0 +1,26 @@
+### North Carolina Class Player Construction ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_capital_3
+			creator = "USA"
+			version_name = "North Carolina Class"
+		}
+		name = "USS North Carolina"
+		requested_factories = 1
+		progress = 0.05
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_capital_3
+			creator = "USA"
+			version_name = "North Carolina Class"
+		}
+		name = "USS Washington"
+		requested_factories = 1
+		progress = 0.05
+		amount = 1
+	}
+}
+### EOF ###

@@ -1,0 +1,35 @@
+### Yorktown Class and USS Wasp ###
+units = {
+	##### NAVAL UNITS #####
+	### ATLANTIC FLEET ###
+	fleet = {
+		name = "Carrier Fleet 1"
+		naval_base = 3878 # New York
+		task_force = {
+			name = "Carrier Task Force 1"
+			location =  3878
+			ship = { name = "USS Wasp" definition = carrier equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Wasp Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 =  { owner = "USA" amount = 32 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 30 }
+					martin_bm_equipment_1 =  { owner = "USA" amount = 20 }
+				}
+			}
+			ship = { name = "USS Yorktown" definition = carrier equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Yorktown Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 =  { owner = "USA" amount = 35 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 =  { owner = "USA" amount = 26 }
+				}
+			}
+			ship = { name = "USS Enterprise" definition = carrier equipment = { nrm_ship_hull_carrier_3 = { amount = 1 owner = USA version_name = "Yorktown Class"} } 
+				air_wings = {
+					grumman_f2f_equipment_1 =  { owner = "USA" amount = 35 }
+					vought_sbu_equipment_1 = { owner = "USA" amount = 35 }
+					martin_bm_equipment_1 =  { owner = "USA" amount = 26 }
+				}
+			}
+		}
+	}
+}
+### EOF ###

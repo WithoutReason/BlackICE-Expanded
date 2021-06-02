@@ -1,0 +1,24 @@
+### Unryu CV Player Construction - one OOB to rule them all! ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "JAP"
+			version_name = "Unryu Class"
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nrm_ship_hull_carrier_4
+			creator = "JAP"
+			version_name = "Unryu Class"
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+}
+### EOF ###
