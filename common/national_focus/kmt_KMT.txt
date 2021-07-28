@@ -12,12 +12,15 @@ focus_tree = {
 	
 	default = no
 	
-	
 	focus = {
 		id = KMT_internal_stability
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = KMT_external_defense }
+		x = 2
+		y = 0
+		cost = 35
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		
 		available = {
 			AND = {
 				NOT = { has_war_with = JAP }
@@ -36,6 +39,7 @@ focus_tree = {
 				}
 			}
 		}
+		
 		bypass = {
 			NOT = {
 				country_exists = SHX
@@ -56,10 +60,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = 2
-		y = 0
-		cost = 35 # Previously was: 35.0 
-
+		
 		completion_reward = {
 			add_political_power = 150
 			add_stability = -0.05
@@ -68,12 +69,16 @@ focus_tree = {
 			custom_effect_tooltip = KMT_no_united_front_unless_xian_incident_agreed_tt
 		}
 	}
-
+	
 	focus = {
 		id = KMT_SHX_offer
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = KMT_internal_stability }
+		x = 2
+		y = 1
+		cost = 70
 		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
 		available = {
 			AND = {
 				NOT = { has_war_with = SHX }
@@ -87,6 +92,7 @@ focus_tree = {
 				}
 			}
 		}
+		
 		bypass = {
 			OR = {
 				NOT = { country_exists = SHX }
@@ -97,15 +103,13 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = 2
-		y = 1
-		cost = 70 # Previously was: 70.0 
+		
 		completion_reward = {
 			SHX = { country_event = { id = kmt.1  hours = 8 }}
 		}
 	}
 	
-	focus = { 
+	focus = {
 		id = KMT_preparation
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = KMT_internal_stability}
@@ -7710,36 +7714,22 @@ focus_tree = {
 			}
 		}	
 	}
+	
 	focus = {
-		#anti-POR
 		id = KMT_anti_POR
 		icon = GFX_focus_generic_attack_portugal
 		mutually_exclusive = { focus = KMT_por_friend }
-		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
-		prerequisite = {
-			#focus = KMT_invite_foreign_investors
-		}		
-		x = -2
-		y = 0 
+		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_por_friend
-		cost = 21 # Previously was: 21.0 
-
-
-
-		available = {
-
-		}
+		x = -2
+		y = 0
+		cost = 20
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
 		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			reverse_add_opinion_modifier = {
 				target = POR
@@ -7748,6 +7738,7 @@ focus_tree = {
 			set_country_flag = nine_por
 		}
 	}
+	
 	focus = {
 		id = KMT_HOL_friend
 		icon = GFX_focus_hol_continue_the_war_in_batavia
