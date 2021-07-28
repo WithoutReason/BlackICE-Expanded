@@ -1,0 +1,355 @@
+FRA_historical = {
+	name = "France historical plan"
+	desc = "Essentially historical behaviour for France"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+	}
+	abort = {
+		has_global_flag = fall_of_france
+	}
+
+	ai_national_focuses = {
+
+### 1936 ###												length	mm/dd/yy
+		FRA_promise_econ_renewal							# 20	01/21/36
+		FRA_address_stagnant_econ							# 30	02/20/36
+		FRA_tools_modernisation								# 50	04/10/36
+		FRA_sncf											# 12	04/22/36
+		# ELECTION CRISIS									# 145	09/14/36
+		FRA_sncf											# 50	11/03/36
+		FRA_rearmament										# 30	12/03/36
+### 1937 ###												length	mm/dd/yy
+		FRA_reckless_rearmament								# 30	01/02/37
+		FRA_military_complex_nationalisation				# 30	02/01/37
+		FRA_military_review									# 10	02/11/37
+		# SPAIN CRISIS										# 150	07/11/37
+		FRA_military_complex_nationalisation_2				# 30	08/10/37
+		FRA_agriculture_national_office						# 50	09/29/37
+		FRA_foreign_diplo									# 10	10/09/37
+		FRA_giraud_plan										# 20	10/29/37
+		FRA_finish_maginot									# 40	12/08/37
+### 1938 ###												length	mm/dd/yy
+		FRA_aircraft_manufacturer_nationalisation			# 30	01/07/38
+		FRA_industrial_effort								# 50	02/26/38
+		FRA_defense_national_funds							# 30	03/28/38
+		# BUDGET CRISIS										# 135	08/10/38
+		FRA_the_german_threat								# 30	09/09/38
+		FRA_go_with_britain									# 30	10/09/38
+		FRA_research_treaty									# 30	11/08/38
+		FRA_alpine_forts									# 30	12/08/38
+### 1939 ###												length	mm/dd/yy
+		FRA_army_improvements								# 30	01/07/39
+		FRA_motorized_focus									# 30	02/06/39
+		FRA_tank_modernisation								# 30	03/08/39
+		FRA_partial_mobilization							# 30	04/07/39
+		FRA_cnrs											# 30	05/07/39
+		FRA_defensive_doctrine								# 20	05/27/39
+		FRA_defend_bel										# 10	06/06/39
+		FRA_further_armament_program						# 30	07/06/39
+		FRA_army_reform										# 40	08/15/39
+		FRA_colonial_investments							# 20	09/04/39
+	######### WAR BEGINS : CONTROL HANDED OVER TO FRA_wartime_plan #########
+		FRA_industrial_effort_2								# 50	10/24/39
+		FRA_develop_algeria									# 50	12/13/39
+### 1940 ###												length	mm/dd/yy
+		FRA_air_bases										# 30	01/12/40
+		FRA_sahara_oil										# 50	03/02/40
+		FRA_shakeup_senior_staff							# 40	04/11/40
+		FRA_infantry_focus									# 30	05/11/40
+		FRA_infrastructure_effort							# 50	06/30/40
+		FRA_research_grants									# 30	07/30/40
+		FRA_interwar_experience								# 30	08/29/40
+		FRA_build_more_tanks								# 30	09/28/40
+		FRA_new_strategy_textbooks							# 40	11/07/40
+		FRA_army_research									# 50	12/27/40
+### 1941 ###												length	mm/dd/yy
+		FRA_renewed_economy									# 50	02/15/41
+		FRA_reorganize_air_army								# 30	03/17/41
+		FRA_construct_refineries							# 50	05/06/41
+		FRA_buy_heavy_water									# 50	06/25/41
+		FRA_rapid_military_factories_1						# 30	07/25/41
+		FRA_massive_industrial_effort						# 50	09/13/41
+		FRA_rapid_military_factories_2						# 30	10/13/41
+		FRA_massive_industrial_effort_2						# 50	12/02/41
+### 1942 ###												length	mm/dd/yy
+		FRA_watch_ita										# 30	01/01/42
+		FRA_vienot_agreement								# 50	02/20/42
+		FRA_develop_morocco									# 40	04/01/42
+		FRA_develop_tunisia									# 40	05/11/42
+
+
+		FRA_war_effort_law									# 21	10/04/39
+		FRA_general_mobilisation_order						# 21	10/25/39
+		FRA_wartime_organisation_act						# 21	11/15/39
+		FRA_coordinate_with_allies							# 21	12/06/39
+### 1940 ###												length	mm/dd/yy
+		FRA_the_phony_war									# 28	01/03/40
+		FRA_rapid_military_factories_1						# 28	01/31/40
+		FRA_rapid_military_factories_2						# 28	02/28/40
+		FRA_economic_warfare								# 28	03/27/40
+		FRA_naval_contruction_program						# 21	04/17/40
+		FRA_propaganda_leaflets								# 14	05/01/40
+		FRA_begin_strategic_bombing							# 14	05/15/40
+		FRA_economic_cooperation_agreement					# 28	06/12/40
+		FRA_shakeup_senior_staff							# 28	07/10/40
+		FRA_new_strategy_textbooks							# 28	08/07/40
+		FRA_army_research									# 28	09/04/40
+		FRA_fund_synthetics									# 28	10/02/40
+		FRA_artillery_focus									# 28	10/30/40
+		FRA_infantry_focus									# 28	11/27/40
+		FRA_build_more_tanks								# 28	12/25/40
+### 1941 ###												length	mm/dd/yy
+		FRA_modernisation_program							# 28	01/22/41
+		FRA_buy_americain									# 28	02/19/41
+		FRA_barrage_david									# 28	03/19/41
+		FRA_parachute_battalions							# 28	04/16/41
+		FRA_national_oil_co									# 28	05/14/41
+		FRA_attack_westwall									# 28	06/11/41
+		FRA_deal_with_ger_tanks								# 28	07/09/41
+		FRA_final_push										# 28	08/06/41
+		FRA_vienot_agreement								# 28	09/03/41
+		FRA_develop_morocco									# 28	10/01/41
+		FRA_develop_tunisia									# 28	10/29/41
+		FRA_technology_sharing								# 35	12/03/41
+		FRA_blum_viollette_project							# 28	12/31/41
+### 1942 ###												length	mm/dd/yy
+		FRA_foreign_legion									# 28	01/28/42
+		FRA_develop_indochine								# 42	03/11/42
+		FRA_africa_army										# 28	04/08/42
+		FRA_colonial_troops									# 28	05/06/42
+		FRA_commandos_marine								# 28	06/03/42
+
+	}
+	
+	weight = {
+		factor = 1.0
+	}
+}
+
+FRA_election_crisis_historical = {
+	name = "France election historical plan"
+	desc = "Essentially historical behaviour for French election"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_completed_focus = FRA_1936_election_crisis
+	}
+	abort = {
+		has_completed_focus = FRA_matignon_agreement_focus
+		has_global_flag = fall_of_france
+	}
+	
+	ai_national_focuses = {
+		
+		# 145 days in total for historical plan
+		FRA_1936_election_crisis				# 0
+		FRA_popular_front						# 10
+		FRA_rush_worker_reforms					# 15
+		FRA_40hr_week							# 15
+		FRA_right_to_union						# 15
+		FRA_minimum_wage						# 15
+		FRA_vacation_time						# 15
+		FRA_nationalisation_acts				# 30
+		FRA_matignon_agreement_focus			# 30
+	
+	}
+	
+	weight = {
+		factor = 2.0
+	}
+	
+}
+
+FRA_spain_crisis_historical = {
+	name = "France Spanish Civil War historical plan"
+	desc = "Essentially historical behaviour for France in Spanish Civil War"
+	allowed = { tag = FRA }
+	
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_completed_focus = FRA_spain_crisis
+	}
+	abort = {
+		has_completed_focus = FRA_recognize_spainish_state
+		has_global_flag = fall_of_france
+	}
+	
+	ai_national_focuses = {
+		
+		# 140 days in total for historical plan
+		FRA_spain_crisis							# 0
+		FRA_non_intervention_agreement				# 30
+		FRA_blockade_spain							# 30
+		FRA_accept_spanish_refugees					# 30
+		FRA_support_daladier						# 30
+		FRA_recognize_spainish_state				# 30
+	
+	}
+	
+	weight = {
+		factor = 2.1
+	}
+	
+}
+
+FRA_budget_crisis_historical = {
+	name = "France Budget Crisis Plan"
+	desc = "Essentially historical behaviour for France in the Budget Crisis"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_completed_focus = FRA_budget_crisis
+	}
+	abort = {
+		has_completed_focus = FRA_budget_balanced
+		has_global_flag = fall_of_france
+	}
+	
+	ai_national_focuses = {
+		
+		# 135 days in total for historical plan
+		FRA_budget_crisis							# 0
+		FRA_matignon_agreements_amendement			# 15
+		FRA_abandon_social_reforms					# 15
+		FRA_cut_worker_pay							# 15
+		FRA_stop_the_inflation						# 20
+		FRA_devaluation2							# 20
+		FRA_budget_deficit_law2						# 20
+		FRA_budget_balanced							# 30
+	
+	}
+	
+	weight = {
+		factor = 2.2
+	}
+	
+}
+
+FRA_wartime_plan = {
+	name = "France at war plan"
+	desc = "France goes to war"
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = ITA
+			has_war_with = SOV
+			has_war_with = ENG
+			has_war_with = USA
+		}
+	}
+	abort = {
+		has_global_flag = fall_of_france
+	}
+	
+	ai_national_focuses = {
+
+		FRA_another_great_war
+		FRA_war_effort_law
+		FRA_general_mobilisation_order
+		FRA_further_armament_program
+		FRA_wartime_organisation_act
+		FRA_coordinate_with_allies
+		FRA_the_phony_war
+		FRA_rapid_military_factories_1
+		FRA_rapid_military_factories_2
+		FRA_economic_warfare
+		FRA_army_reform
+		FRA_propaganda_leaflets
+		FRA_begin_strategic_bombing
+		FRA_economic_cooperation_agreement
+		FRA_shakeup_senior_staff
+		FRA_new_strategy_textbooks
+		FRA_army_research
+
+	}
+	
+	weight = {
+		factor = 5.0
+	}
+	
+}
+
+FRA_free_france_plan = {
+	name = "Free France Historical Plan"
+	desc = "Essentially historical behaviour for Free France."
+	allowed = { tag = FRA }
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+		has_global_flag = fall_of_france
+	}
+	
+	ai_national_focuses = {
+		
+		### Priority Pverride for When GER declares war on SOV ###
+		FRA_the_regiment_normandie
+		
+		### Priority Override for When USA joins Allies ###
+		FRA_american_recognition
+		FRA_american_equipment
+		FRA_american_tanks
+		
+		FRA_appeal_to_the_french_nation
+		FRA_appeal_to_overseas_territories
+		FRA_british_recognition
+		FRA_empire_defense_coucil
+		FRA_empower_de_gualle
+		FRA_recruit_leclerc
+		FRA_recruit_muselier
+		FRA_form_the_national_committee
+		FRA_refus_absurde
+		FRA_the_maquis
+		FRA_seek_help_from_allies
+		FRA_reach_out_to_trade_unions
+		FRA_connections_to_industrialists
+		FRA_british_destroyers
+		FRA_the_civil_and_military_organization
+		FRA_british_fighters
+		FRA_recruit_valin
+		FRA_continue_the_fight
+		FRA_the_free_french_navy
+		FRA_symbols_of_resistance
+		FRA_the_free_french_airforce
+		FRA_cooperation_with_the_communists
+		FRA_colonial_recruitment
+		FRA_recruit_moulin
+		FRA_national_council_of_the_resistance
+		FRA_tunisian_division
+		FRA_morrocan_division
+		FRA_algerian_division
+		FRA_french_forces_of_the_interior
+		FRA_encourage_commie_resistance
+		FRA_strike_out
+		FRA_recapture_west_africa
+		FRA_recapture_syria
+		FRA_recapture_algeria
+		FRA_national_uprising
+		FRA_operation_dragoon
+		
+		FRA_form_the_provisional_government_of_the_republic
+		FRA_regain_colonial_control
+		FRA_liberate_syria
+		FRA_control_vietnam
+		
+	}
+	
+	weight = {
+		factor = 1.0
+	}
+	
+}
+
+### EOF ###
