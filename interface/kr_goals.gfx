@@ -1,0 +1,94 @@
+SpriteTypes = {
+	###WHENEVER YOU EDIT THIS FILE, YOU WOULD WANT TO REGENERATE goals_BI_shine.gfx USING SHINEMAKER: https://gitlab.com/coop-mods/Shared-Resources/tree/master/Scripts%20and%20Code/Shinemaker
+
+	### CHI ###
+
+	SpriteType = {
+		name = "GFX_goal_chi_academia_sinica"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_academia_sinica.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_airforce"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_airforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_army"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_defeat_warloards"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_defeat_warloards.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_internal_stab"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_internal_stab.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_navy"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_retake_man"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_retake_man.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_seal_flags"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_seal_flags.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_seal_kmt"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_seal_kmt.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_seal_politics"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_seal_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_shield_kmt"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_shield_kmt.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_shield_silver"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_shield_silver.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_sinkiang"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_sinkiang.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_three_principes"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_three_principes.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_waking_the_tiger"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_waking_the_tiger.dds"
+	}
+
+	### Flags ###
+
+	
+
+	### Planes ###
+
+	
+
+	### Main Directory ###
+
+	
+
+	#new goals based on idea icons end here
+	###WHENEVER YOU EDIT THIS FILE, YOU WOULD WANT TO REGENERATE goals_BI_shine.gfx USING SHINEMAKER: https://gitlab.com/coop-mods/Shared-Resources/tree/master/Scripts%20and%20Code/Shinemaker
+}
+
+
+
+
+
+
+
+
+
+
+
+
+### EOF ###
