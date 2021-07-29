@@ -14,9 +14,11 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 50 y = 1100 }
 	
+	########## WARLORD / UNIFY CHINA BRANCH ##########
+	
 	focus = {
 		id = KMT_internal_stability
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_chi_internal_stab
 		mutually_exclusive = { focus = KMT_external_defense }
 		x = 2
 		y = 0
@@ -225,7 +227,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_warlord
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_chi_defeat_warloards
 		prerequisite = { focus = KMT_strike_PRC }
 		prerequisite = { focus = KMT_SHX_offer }
 		relative_position_id = KMT_SHX_offer
@@ -438,7 +440,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_external_defense
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_japan_faction
 		mutually_exclusive = { focus = KMT_internal_stability }
 		relative_position_id = KMT_internal_stability
 		x = 2
@@ -949,7 +951,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_deal_with_SIK
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_goal_chi_sinkiang
 		prerequisite = { focus = KMT_warlord focus = KMT_national_def_propaganda }
 		relative_position_id = KMT_warlord
 		x = 1
@@ -1153,13 +1155,13 @@ focus_tree = {
 		}
 	}
 	
-	######### INDUSTRY & RESOURCE BRANCH ##########
+	######### INDUSTRY BRANCH & RESOURCE BRANCH ##########
 	
 	focus = {
 		id = KMT_industrial_effort 
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = KMT_internal_stability
-		x = 9
+		x = 11
 		y = 0
 		cost = 70
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1720,9 +1722,9 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_national_defense_council
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_chi_shield_kmt
 		relative_position_id = KMT_industrial_effort
-		x = 6
+		x = 10
 		y = 0
 		cost = 70
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1742,10 +1744,10 @@ focus_tree = {
 	focus = {
 		id = KMT_the_big_rear_concept
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = KMT_national_defense_council }
-		relative_position_id = KMT_national_defense_council
+		# prerequisite = { focus = KMT_national_defense_council }
+		relative_position_id = KMT_lure_them_in_strategy
 		x = 0
-		y = 1
+		y = 2
 		cost = 30
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1784,7 +1786,7 @@ focus_tree = {
 		prerequisite = { focus = KMT_national_defense_council }
 		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_national_defense_council
-		x = -2
+		x = -4
 		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1819,9 +1821,25 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = KMT_armament_effort }
 		relative_position_id = KMT_armament_effort
+		x = 3
+		y = 1
+		cost = 30
+		search_filters = { FOCUS_FILTER_NAVY }
+		
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = jiangnan_shipyard_group
+		}
+	}
+	
+	focus = {
+		id = KMT_revive_naval_industry
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = KMT_revive_jiangnan_shipyard }
+		relative_position_id = KMT_revive_jiangnan_shipyard
 		x = 0
-		y = 2
-		cost = 70
+		y = 1
+		cost = 30
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		completion_reward = {
@@ -1883,8 +1901,6 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = jiangnan_shipyard_group
 		}
 	}
 	
@@ -1893,8 +1909,8 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = KMT_armament_effort }
 		relative_position_id = KMT_armament_effort
-		x = 2
-		y = 2
+		x = -1
+		y = 1
 		cost = 30
 		search_filters = { FOCUS_FILTER_ARMY }
 		
@@ -2071,10 +2087,10 @@ focus_tree = {
 	focus = {
 		id = KMT_lure_them_in_strategy
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = KMT_national_defense_council }
-		relative_position_id = KMT_national_defense_council
-		x = 2
-		y = 1
+		# prerequisite = { focus = KMT_national_defense_council }
+		relative_position_id = CHI_war_of_resistance
+		x = -3
+		y = 0
 		cost = 70
 		search_filters = { FOCUS_FILTER_ARMY }
 		
@@ -2153,18 +2169,76 @@ focus_tree = {
 	########## LOCAL NAVAL BRANCH ##########
 	
 	focus = {
+		id = KMT_refound_the_navy
+		icon = GFX_goal_chi_navy
+		prerequisite = { focus = KMT_national_defense_council }
+		relative_position_id = KMT_national_defense_council
+		x = 0
+		y = 1
+		cost = 70
+		search_filters = { FOCUS_FILTER_NAVY }
+		
+		complete_tooltip = {
+			navy_experience = 25
+			every_state = {
+				limit = { has_state_flag = CHI_navy_focus_2dockyards }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = CHI_navy_focus_2dockyards
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = CHI_navy_focus_2dockyards
+			}
+		}
+	}
+	
+	focus = {
 		id = KMT_gain_control_of_the_sea 
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = KMT_fortify_coast }
+		# prerequisite = { focus = KMT_fortify_coast }
 		# relative_position_id = ????????????
 		x = 8
 		y = 4
-		cost = 70 # Previously was: 70.0
+		cost = 70
 		search_filters = { FOCUS_FILTER_NAVY }
-		
-		available = {
-			has_completed_focus = KMT_revive_jiangnan_shipyard
-		}
 		
 		complete_tooltip = {
 			navy_experience = 25
@@ -2551,9 +2625,9 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_science_effort
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_goal_chi_academia_sinica
 		relative_position_id = KMT_national_defense_council
-		x = 4
+		x = 10
 		y = 0
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2565,7 +2639,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_extra_research_slot
-		icon = GFX_focus_research
+		icon = GFX_goal_industrial_research_projects
 		prerequisite = { focus = KMT_science_effort }
 		relative_position_id = KMT_science_effort
 		x = 1
@@ -2697,7 +2771,7 @@ focus_tree = {
 		id = KMT_military_science 
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = KMT_national_institute }
-		prerequisite = { focus = KMT_modernize_army }
+		# prerequisite = { focus = KMT_modernize_army }
 		relative_position_id = KMT_national_institute
 		x = -1
 		y = 2
@@ -2767,7 +2841,7 @@ focus_tree = {
 	focus = {
 		id = KMT_air_base_expansion
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = KMT_revive_hanyang_armory }
+		# prerequisite = { focus = KMT_revive_hanyang_armory }
 		# relative_position_id = ???????
 		x = 13
 		y = 6
@@ -2925,10 +2999,10 @@ focus_tree = {
 	focus = {
 		id = KMT_jet
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = KMT_military_science }
+		# prerequisite = { focus = KMT_military_science }
 		prerequisite = { focus = KMT_air_base_expansion }
 		relative_position_id = KMT_air_base_expansion
-		x = 4
+		x = 3
 		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_AIRFORCE }
@@ -3831,7 +3905,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KMT_anti_POR }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
-		x = -15
+		x = -17
 		y = 1
 		cost = 35
 		search_filters = { FOCUS_FILTER_POLITICAL}
@@ -3885,11 +3959,10 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_POR
-		icon = GFX_focus_generic_attack_portugal
+		icon = GFX_goal_chi_expell_por
 		mutually_exclusive = { focus = KMT_por_friend }
-		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_por_friend
-		x = -2
+		x = 2
 		y = 0
 		cost = 20
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
@@ -4059,13 +4132,12 @@ focus_tree = {
 	focus = {
 		id = KMT_war_gaming_division
 		icon = GFX_goal_generic_position_armies
-		search_filters = { FOCUS_FILTER_ARMY}
-		available = {
-		}
 		prerequisite = { focus = KMT_chinese_general_staff }
-		x = 26
-		y = 5
-		cost = 70 # Previously was: 70.0 
+		relative_position_id = KMT_chinese_general_staff
+		x = 0
+		y = 1
+		cost = 70
+		search_filters = { FOCUS_FILTER_ARMY}
 		
 		completion_reward = {
 			swap_ideas = {
@@ -4279,7 +4351,7 @@ focus_tree = {
 	
 	focus = {
 		id = CHI_claim_soviet
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_chi_expell_sov
 		mutually_exclusive = { focus = KMT_sino_soviet_non_agression_pact }
 		relative_position_id = KMT_invite_foreign_investors
 		x = -11
@@ -4324,7 +4396,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_sino_soviet_non_agression_pact
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_goal_sov_arms_deal
 		mutually_exclusive = { focus = CHI_claim_soviet }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -4674,7 +4746,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_HOL
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_chi_expell_hol
 		mutually_exclusive = { focus = KMT_HOL_friend }
 		relative_position_id = KMT_HOL_friend
 		x = 2
@@ -4700,9 +4772,10 @@ focus_tree = {
 	focus = {
 		id = KMT_closer_tie_with_fra
 		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = KMT_invite_foreign_investors }
 		mutually_exclusive = { focus = KMT_anti_FRA }
-		x = 39
+		prerequisite = { focus = KMT_invite_foreign_investors }
+		relative_position_id = KMT_invite_foreign_investors
+		x = -1
 		y = 1
 		cost = 30
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4776,7 +4849,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_FRA
-		icon = GFX_attack_FRA
+		icon = GFX_goal_chi_expell_fra
 		mutually_exclusive = { focus = KMT_closer_tie_with_fra }
 		relative_position_id = KMT_closer_tie_with_fra
 		x = -2
@@ -4971,7 +5044,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 70
-		search_filters = { FOCUS_FILTER_ARMY}
+		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
 			NOT = {
@@ -5015,13 +5088,13 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_french_military_mission
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_fra_soldiers_fire
 		prerequisite = { focus = KMT_purchase_french_equipments }
 		relative_position_id = KMT_purchase_french_equipments
 		x = 0
 		y = 1
 		cost = 70
-		search_filters = { FOCUS_FILTER_ARMY}
+		search_filters = { FOCUS_FILTER_ARMY }
 		
 		available = {
 			NOT = {
@@ -5050,7 +5123,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_french_drill
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_officer_salute
 		prerequisite = { focus = KMT_french_military_mission }
 		relative_position_id = KMT_french_military_mission
 		x = 1
@@ -5089,7 +5162,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_static_defense
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_fra_forts
 		prerequisite = { focus = KMT_french_military_mission }
 		relative_position_id = KMT_french_military_mission
 		x = -1
@@ -5137,7 +5210,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_ITA
-		icon = GFX_focus_ger_assassinate_mussolini
+		icon = GFX_goal_chi_expell_ita
 		mutually_exclusive = { focus = KMT_ITA_friend }
 		relative_position_id = KMT_ITA_friend
 		x = 2
@@ -5162,7 +5235,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_closer_tie_with_usa
-		icon = GFX_focus_chi_mission_to_the_us
+		icon = GFX_goal_usa_flag_deal
 		mutually_exclusive = { focus = KMT_anti_USA }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -5239,7 +5312,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_USA
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_goal_chi_expell_usa
 		mutually_exclusive = { focus = KMT_closer_tie_with_usa }
 		relative_position_id = KMT_closer_tie_with_usa
 		x = -2
@@ -6166,7 +6239,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_joint_tank_dev
-		icon = GFX_focus_generic_army_tanks2
+		icon = GFX_goal_generic_draw_up_plans
 		prerequisite = { focus = KMT_soviet_tanks focus = KMT_german_tanks focus = KMT_purchase_french_equipments }
 		relative_position_id = KMT_soviet_tanks
 		x = 1
@@ -6646,8 +6719,8 @@ focus_tree = {
 	focus = {
 		id = KMT_strengthen_the_republic
 		icon = GFX_goal_generic_alliance
-		# relative_position_id = KMT_invite_foreign_investors
-		x = 62
+		relative_position_id = KMT_invite_foreign_investors
+		x = 19
 		y = 0
 		offset = {
 			x = -5
@@ -7491,7 +7564,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_military_first
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_organize_military_research_branch
 		prerequisite = { focus = KMT_war_propaganda }
 		relative_position_id = KMT_militarism_focus
 		x = 0
@@ -8061,7 +8134,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_ENG
-		icon = GFX_focus_AST_never_gallipoli	
+		icon = GFX_goal_chi_expell_eng
 		mutually_exclusive = { focus = KMT_closer_tie_with_eng }
 		relative_position_id = KMT_closer_tie_with_eng
 		x = 2
@@ -8436,10 +8509,10 @@ focus_tree = {
 	focus = {
 		id = KMT_army_reform
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = KMT_FOCUS_ON_CENTRAL_ARMY focus = KMT_INTEGRATE_WARLORD_FORCES }
-		# relative_position_id = ????
-		x = 17
-		y = 6
+		# prerequisite = { focus = KMT_FOCUS_ON_CENTRAL_ARMY focus = KMT_INTEGRATE_WARLORD_FORCES }
+		relative_position_id = CHI_military_affairs_commission
+		x = 3
+		y = 0
 		cost = 70
 		search_filters = { FOCUS_FILTER_ARMY}
 		
@@ -8453,29 +8526,24 @@ focus_tree = {
 	focus = {
 		id = CHI_war_of_resistance
 		icon = GFX_goal_generic_military_sphere
-		search_filters = { FOCUS_FILTER_ARMY}
-		x = 17
-		y = 8
-		#relative_position_id = CHI_pick_a_fight_with_japan
-		cost = 49 # Previously was: 49.0 
-
-
-
+		relative_position_id = KMT_national_defense_council
+		x = 0
+		y = 10
+		cost = 50
+		search_filters = { FOCUS_FILTER_ARMY }
+		
 		available = {
 			has_war_with_major = yes
 			has_offensive_war = no		
 		}
-
-		bypass = {
-			has_offensive_war_with = JAP
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
+		bypass = {
+			has_offensive_war_with = JAP
+		}
+		
 		completion_reward = {
 			add_ideas = CHI_war_of_resistance
 			add_tech_bonus = {
@@ -8491,29 +8559,19 @@ focus_tree = {
 		id = CHI_new_warfare
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = CHI_war_of_resistance }
-		search_filters = { FOCUS_FILTER_ARMY}
+		relative_position_id = CHI_war_of_resistance
 		x = -1
 		y = 1
-		relative_position_id = CHI_war_of_resistance
-
-		cost = 49 # Previously was: 49.0 
-
-
-
+		cost = 50
+		search_filters = { FOCUS_FILTER_ARMY }
+		
 		available = {
 			has_war = yes
 		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -8528,29 +8586,19 @@ focus_tree = {
 		id = CHI_dirty_tricks
 		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = CHI_new_warfare }
-		search_filters = { FOCUS_FILTER_ARMY}
+		relative_position_id = CHI_new_warfare
 		x = 0
 		y = 1
-		relative_position_id = CHI_new_warfare
-
-		cost = 49 # Previously was: 49.0 
-
-
-
+		cost = 50
+		search_filters = { FOCUS_FILTER_ARMY }
+		
 		available = {
 			has_war = yes
 		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -8565,29 +8613,19 @@ focus_tree = {
 		id = CHI_scorched_earth_tactics
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = CHI_war_of_resistance }
-		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
+		relative_position_id = CHI_war_of_resistance
 		x = 1
 		y = 1
-		relative_position_id = CHI_war_of_resistance
-
-		cost = 49 # Previously was: 49.0 
-
-
-
+		cost = 50
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
+		
 		available = {
 			has_war = yes
 		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_scorched_earth_tactics			
 		}
@@ -8597,29 +8635,19 @@ focus_tree = {
 		id = CHI_dams
 		icon = GFX_focus_hol_prepare_the_inundation_lines
 		prerequisite = { focus = CHI_scorched_earth_tactics }
-		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
+		relative_position_id = CHI_scorched_earth_tactics
 		x = 0
 		y = 1
-		relative_position_id = CHI_scorched_earth_tactics
-
-		cost = 49 # Previously was: 49.0 
-
-
-
+		cost = 50
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
+		
 		available = {
 			has_war = yes
 		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_flood_dams
 		}
@@ -8628,31 +8656,20 @@ focus_tree = {
 	focus = {
 		id = CHI_military_affairs_commission
 		icon = GFX_focus_secret_rearmament
+		relative_position_id = CHI_war_of_resistance
+		x = 5
+		y = 0
+		cost = 70
 		search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_CP}
-		x = 28
-		y = 5
-		#relative_position_id = CHI_three_principles_of_the_people
-
-		cost = 70 # Previously was: 70.0 
-
-
+		
 		allow_branch = {
 			has_dlc = "Waking the Tiger"
 		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			add_ideas = CHI_military_affairs_commission
 		}
@@ -8665,8 +8682,8 @@ focus_tree = {
 		relative_position_id = CHI_military_affairs_commission
 		x = -2
 		y = 1
-		cost = 70 # Previously was: 70.0
-		search_filters = { FOCUS_FILTER_FORTIFICATION}
+		cost = 70
+		search_filters = { FOCUS_FILTER_FORTIFICATION }
 		
 		available = {
 			NOT = {
@@ -8675,7 +8692,6 @@ focus_tree = {
 				}
 			}
 		}
-		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -8758,15 +8774,12 @@ focus_tree = {
 		id = CHI_the_chinese_hindenburg_line
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = CHI_fortify_shanghai }
-		search_filters = { FOCUS_FILTER_FORTIFICATION}
+		relative_position_id = CHI_military_affairs_commission
 		x = -2
 		y = 2
-		relative_position_id = CHI_military_affairs_commission
-
-		cost = 70 # Previously was: 70.0 
-
-
-
+		cost = 70
+		search_filters = { FOCUS_FILTER_FORTIFICATION}
+		
 		available = {
 			NOT = {
 				any_enemy_country = {
@@ -8779,17 +8792,10 @@ focus_tree = {
 				}
 			}
 		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			if = {
 				limit = { has_full_control_of_state = 613 }
@@ -8913,66 +8919,40 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = CHI_army_reform
 		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = CHI_military_affairs_commission }
-		search_filters = { FOCUS_FILTER_ARMY}
+		relative_position_id = CHI_military_affairs_commission
 		x = 0
 		y = 1
-		relative_position_id = CHI_military_affairs_commission
-
-		cost = 70 # Previously was: 70.0 
-
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		cost = 70
+		search_filters = { FOCUS_FILTER_ARMY}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			unlock_decision_category_tooltip = CHI_army_reform
 		}
 	}
-
+	
 	focus = {
 		id = CHI_bureau_of_investigation_and_statistics
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = CHI_military_affairs_commission }
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		relative_position_id = CHI_military_affairs_commission
 		x = 2
 		y = 1
-		relative_position_id = CHI_military_affairs_commission
-
-		cost = 70 # Previously was: 70.0 
-
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		cost = 70
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = available_political_advisor
@@ -8993,66 +8973,40 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = CHI_60_divisions_plan
 		icon = GFX_goal_generic_axis_build_infantry
-		search_filters = { FOCUS_FILTER_ARMY}
 		prerequisite = { focus = CHI_army_reform }
+		relative_position_id = CHI_military_affairs_commission
 		x = 0
 		y = 2
-		relative_position_id = CHI_military_affairs_commission
-
-		cost = 70 # Previously was: 70.0 
-
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		cost = 70
+		search_filters = { FOCUS_FILTER_ARMY }
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			unlock_decision_tooltip = CHI_60_divisions_plan
 		}
 	}
-
+	
 	focus = {
 		id = CHI_whampoa_military_academy
 		icon = GFX_focus_chi_whampoa_military_academy
-		search_filters = { FOCUS_FILTER_ARMY}
 		prerequisite = { focus = CHI_bureau_of_investigation_and_statistics }
+		relative_position_id = CHI_military_affairs_commission
 		x = 2
 		y = 2
-		relative_position_id = CHI_military_affairs_commission
-
-		cost = 70 # Previously was: 70.0 
-
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		cost = 70
+		search_filters = { FOCUS_FILTER_ARMY }
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		
-
 		completion_reward = {
 			every_army_leader = {
 				add_planning = 1

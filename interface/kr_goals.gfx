@@ -20,6 +20,34 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_defeat_warloards.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_expell_eng"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_eng.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_fra"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_fra.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_hol"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_hol.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_ita"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_ita.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_por"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_por.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_sov"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_sov.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_expell_usa"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_usa.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_internal_stab"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_internal_stab.dds"
 	}
