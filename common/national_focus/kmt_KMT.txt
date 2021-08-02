@@ -3845,7 +3845,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_invite_foreign_investors
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_chi_attract_investors
 		relative_position_id = KMT_science_effort
 		x = 19
 		y = 0
@@ -3901,7 +3901,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_por_friend
-		icon = GFX_focus_generic_befriend_portugal
+		icon = GFX_goal_chi_investor_por
 		mutually_exclusive = { focus = KMT_anti_POR }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -3984,7 +3984,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_increase_sino_german_cooperation
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_chi_investor_ger
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
 		x = -13
@@ -4396,7 +4396,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_sino_soviet_non_agression_pact
-		icon = GFX_goal_sov_arms_deal
+		icon = GFX_goal_chi_investor_sov
 		mutually_exclusive = { focus = CHI_claim_soviet }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -4721,7 +4721,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_HOL_friend
-		icon = GFX_focus_hol_continue_the_war_in_batavia
+		icon = GFX_goal_chi_investor_hol
 		mutually_exclusive = { focus = KMT_anti_HOL }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -4771,7 +4771,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_closer_tie_with_fra
-		icon = GFX_focus_chi_reach_out_to_france
+		icon = GFX_goal_chi_investor_fra
 		mutually_exclusive = { focus = KMT_anti_FRA }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -5179,7 +5179,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_ITA_friend
-		icon = GFX_secret_police
+		icon = GFX_goal_chi_investor_ita
 		mutually_exclusive = { focus = KMT_anti_ITA }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_anti_ENG
@@ -5235,7 +5235,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_closer_tie_with_usa
-		icon = GFX_goal_usa_flag_deal
+		icon = GFX_goal_chi_investor_usa
 		mutually_exclusive = { focus = KMT_anti_USA }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
@@ -6691,7 +6691,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_anti_JAP
-		icon = GFX_focus_generic_japanese_imperial_glory
+		icon = GFX_goal_chi_expell_jap
 		relative_position_id = KMT_invite_foreign_investors
 		x = 8
 		y = 0
@@ -8056,7 +8056,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_closer_tie_with_eng
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_chi_investor_eng
 		mutually_exclusive = { focus = KMT_anti_ENG }
 		prerequisite = { focus = KMT_invite_foreign_investors }
 		relative_position_id = KMT_invite_foreign_investors
