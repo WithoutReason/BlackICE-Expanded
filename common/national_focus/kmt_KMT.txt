@@ -6744,7 +6744,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_democratic_republic
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_chi_democracy
 		mutually_exclusive = { focus = KMT_military_dictatorship }
 		prerequisite = { focus = KMT_strengthen_the_republic }
 		relative_position_id = KMT_strengthen_the_republic
@@ -7346,7 +7346,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_military_dictatorship
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_goal_chi_fascism
 		mutually_exclusive = { focus = KMT_democratic_republic }
 		prerequisite = { focus = KMT_strengthen_the_republic }
 		relative_position_id = KMT_strengthen_the_republic

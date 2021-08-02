@@ -20,6 +20,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_defeat_warloards.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_democracy"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_democracy.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_expell_eng"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_eng.dds"
 	}
@@ -48,8 +52,16 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_expell_usa.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_fascism"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_fascism.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_internal_stab"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_internal_stab.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_judicial_yuan"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_judicial_yuan.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_chi_navy"
@@ -90,6 +102,10 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_chi_waking_the_tiger"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_waking_the_tiger.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_war_of_resistance"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_war_of_resistance.dds"
 	}
 
 	### Flags ###
