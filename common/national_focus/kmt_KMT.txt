@@ -1159,7 +1159,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_industrial_effort 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_chi_construction
 		relative_position_id = KMT_internal_stability
 		x = 11
 		y = 0
@@ -1955,9 +1955,10 @@ focus_tree = {
 	focus = {
 		id = KMT_increase_funding_of_german_weaponary
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = KMT_modernize_army }
-		relative_position_id = KMT_modernize_army
-		x = -1
+		prerequisite = { focus = KMT_revive_hanyang_armory }
+		prerequisite = { focus = KMT_armament_effort }
+		relative_position_id = KMT_armament_effort
+		x = 0
 		y = 1
 		cost = 30
 		search_filters = { FOCUS_FILTER_ARMY }
@@ -1979,8 +1980,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		mutually_exclusive = { focus = KMT_INTEGRATE_WARLORD_FORCES }
 		prerequisite = { focus = KMT_modernize_army focus = KMT_increase_funding_of_german_weaponary }
-		relative_position_id = KMT_increase_funding_of_german_weaponary
-		x = 1
+		relative_position_id = KMT_modernize_army
+		x = 0
 		y = 1
 		dynamic = yes
 		cost = 70
@@ -2011,7 +2012,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KMT_FOCUS_ON_CENTRAL_ARMY }
 		prerequisite = { focus = KMT_modernize_army focus = KMT_increase_funding_of_german_weaponary }
 		relative_position_id = KMT_increase_funding_of_german_weaponary
-		x = -1
+		x = 0
 		y = 1
 		dynamic = yes
 		cost = 70
@@ -2751,7 +2752,7 @@ focus_tree = {
 		prerequisite = { focus = KMT_science_effort }
 		relative_position_id = KMT_science_effort
 		x = 1
-		y = 2
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
@@ -2777,10 +2778,9 @@ focus_tree = {
 		id = KMT_electronics_research
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = KMT_extra_research_slot }
-		prerequisite = { focus = KMT_science_effort }
 		relative_position_id = KMT_science_effort
 		x = 0
-		y = 3
+		y = 2
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2800,7 +2800,7 @@ focus_tree = {
 		prerequisite = { focus = KMT_electronics_research }
 		relative_position_id = KMT_electronics_research
 		x = 0
-		y = 3
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2821,7 +2821,7 @@ focus_tree = {
 		prerequisite = { focus = KMT_extra_research_slot }
 		relative_position_id = KMT_extra_research_slot
 		x = 0
-		y = 5
+		y = 3
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		search_filters = { FOCUS_FILTER_RESEARCHCENTER }
@@ -2857,8 +2857,8 @@ focus_tree = {
 		prerequisite = { focus = KMT_science_effort }
 		# prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_science_effort
-		x = -1
-		y = 4
+		x = -2
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2879,10 +2879,9 @@ focus_tree = {
 		id = KMT_military_science 
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = KMT_national_institute }
-		# prerequisite = { focus = KMT_modernize_army }
 		relative_position_id = KMT_national_institute
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_ARMY }
 		search_filters = { FOCUS_FILTER_NAVY }
@@ -2910,7 +2909,7 @@ focus_tree = {
 		prerequisite = { focus = KMT_bold_hypothesis }
 		relative_position_id = KMT_military_science
 		x = 1
-		y = 1
+		y = 2
 		cost = 50
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -3128,8 +3127,8 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_jet
-		icon = GFX_focus_rocketry
-		# prerequisite = { focus = KMT_military_science }
+		icon = GFX_goal_design_jet
+		prerequisite = { focus = KMT_military_science }
 		prerequisite = { focus = KMT_air_base_expansion }
 		relative_position_id = KMT_air_base_expansion
 		x = 3
@@ -3144,52 +3143,6 @@ focus_tree = {
 				uses = 2
 				category = jet_technology
 				category = rocketry
-			}
-		}
-	}
-	
-	focus = {
-		id = KMT_monetary_reform
-		icon = GFX_goal_generic_consumer_goods
-		# relative_position_id = ????????
-		x = 75
-		y = 0
-		offset = {
-			x = -23
-			y = 0
-			trigger = {
-				is_historical_focus_on = yes
-			}
-		}
-		cost = 245
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		available = {
-			has_war = no
-			#has_idea = KMT_jinyuanquan_inflation
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = KMT_jinyuanquan_inflation
-				}			
-				remove_ideas = KMT_jinyuanquan_inflation
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = KMT_corrupted_government
-						has_idea = KMT_corrupted_government_lesser
-					}
-				}
-				add_ideas = civilian_economy
-			}
-			if = {
-				limit = {
-					has_idea = KMT_corrupted_government_wartime
-				}
-				add_ideas = partial_economic_mobilisation
 			}
 		}
 	}
@@ -4102,6 +4055,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 25
 			reverse_add_opinion_modifier = {
 				target = POR
 				modifier = minor_sanctions_relations
@@ -4497,6 +4451,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_political_power = 50
 			564 = {
 				add_core_of = ROOT
 			}
@@ -4889,6 +4844,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 25
 			reverse_add_opinion_modifier = {
 				target = HOL
 				modifier = minor_sanctions_relations
@@ -4994,6 +4950,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_political_power = 50
 			reverse_add_opinion_modifier = {
 				target = FRA
 				modifier = minor_sanctions_relations
@@ -5353,6 +5310,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 25
 			reverse_add_opinion_modifier = {
 				target = ITA
 				modifier = minor_sanctions_relations
@@ -5455,6 +5413,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 50
 			reverse_add_opinion_modifier = {
 				target = USA
 				modifier = minor_sanctions_relations
@@ -5465,7 +5424,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_introduce_shipbuilding_technology
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_blueprint_navy
 		prerequisite = { focus = KMT_closer_tie_with_usa }
 		relative_position_id = KMT_closer_tie_with_usa
 		x = 1
@@ -6897,7 +6856,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_voting_rights
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_chi_lawbook
 		prerequisite = { focus = KMT_military_dictatorship focus = KMT_democratic_republic }
 		relative_position_id = KMT_democratic_republic
 		x = -2
@@ -8277,6 +8236,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 50
 			reverse_add_opinion_modifier = {
 				target = ENG
 				modifier = minor_sanctions_relations
@@ -8559,7 +8519,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_setup_camco_assembly_plants
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_eng_air_rearm
 		prerequisite = { focus = KMT_the_burma_road }
 		relative_position_id = KMT_the_burma_road
 		x = 1
@@ -9142,6 +9102,52 @@ focus_tree = {
 				add_planning = 1
 			}
 			add_ideas = CHI_whampoa_military_academy
+		}
+	}
+	
+	focus = {
+		id = KMT_monetary_reform
+		icon = GFX_goal_generic_consumer_goods
+		# relative_position_id = ????????
+		x = 75
+		y = 0
+		offset = {
+			x = -23
+			y = 0
+			trigger = {
+				is_historical_focus_on = yes
+			}
+		}
+		cost = 245
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available = {
+			has_war = no
+			#has_idea = KMT_jinyuanquan_inflation
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = KMT_jinyuanquan_inflation
+				}			
+				remove_ideas = KMT_jinyuanquan_inflation
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = KMT_corrupted_government
+						has_idea = KMT_corrupted_government_lesser
+					}
+				}
+				add_ideas = civilian_economy
+			}
+			if = {
+				limit = {
+					has_idea = KMT_corrupted_government_wartime
+				}
+				add_ideas = partial_economic_mobilisation
+			}
 		}
 	}
 

@@ -108,6 +108,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_judicial_yuan.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_lawbook"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_lawbook.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_navy"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_navy.dds"
 	}
@@ -144,6 +148,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_sinkiang.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_sov_deal"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_sov_deal.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_three_principes"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_three_principes.dds"
 	}
@@ -166,7 +174,10 @@ SpriteTypes = {
 
 	### Main Directory ###
 
-	
+	SpriteType = {
+		name = "GFX_goal_blueprint_navy"
+		texturefile = "gfx/interface/goals/goal_blueprint_navy.dds"
+	}
 
 	#new goals based on idea icons end here
 	###WHENEVER YOU EDIT THIS FILE, YOU WOULD WANT TO REGENERATE goals_BI_shine.gfx USING SHINEMAKER: https://gitlab.com/coop-mods/Shared-Resources/tree/master/Scripts%20and%20Code/Shinemaker
