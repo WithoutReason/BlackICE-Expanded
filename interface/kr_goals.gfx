@@ -20,6 +20,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_attract_investors.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_construction"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_construction.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_defeat_warloards"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_defeat_warloards.dds"
 	}
@@ -110,6 +114,10 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_chi_retake_man"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_retake_man.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_rice_farm"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_rice_farm.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_chi_seal_flags"

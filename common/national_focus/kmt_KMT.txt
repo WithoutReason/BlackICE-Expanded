@@ -1726,7 +1726,7 @@ focus_tree = {
 		relative_position_id = KMT_industrial_effort
 		x = 10
 		y = 0
-		cost = 70
+		cost = 50
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		search_filters = { FOCUS_FILTER_ARMY }
 		
@@ -1780,15 +1780,48 @@ focus_tree = {
 		}
 	}
 	
+	##### LOCAL ARMY BRANCH #####
+	
 	focus = {
-		id = KMT_armament_effort
-		icon = GFX_goal_generic_construct_mil_factory
+		id = KMT_expand_national_army
+		icon = GFX_goal_chi_army
 		prerequisite = { focus = KMT_national_defense_council }
 		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_national_defense_council
-		x = -4
+		x = 0
 		y = 1
-		cost = 70
+		cost = 30
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			army_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = KMT_armament_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = KMT_expand_national_army }
+		relative_position_id = KMT_expand_national_army
+		x = 1
+		y = 1
+		cost = 30
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
@@ -1803,102 +1836,14 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = smallarms_factory
 					level = 1
 					instant_build = yes
 				}
-			}
-		}
-	}
-	
-	focus = {
-		id = KMT_revive_jiangnan_shipyard
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = KMT_armament_effort }
-		relative_position_id = KMT_armament_effort
-		x = 3
-		y = 1
-		cost = 30
-		search_filters = { FOCUS_FILTER_NAVY }
-		
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = jiangnan_shipyard_group
-		}
-	}
-	
-	focus = {
-		id = KMT_revive_naval_industry
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = KMT_revive_jiangnan_shipyard }
-		relative_position_id = KMT_revive_jiangnan_shipyard
-		x = 0
-		y = 1
-		cost = 30
-		search_filters = { FOCUS_FILTER_NAVY }
-		
-		completion_reward = {
-			if = {
-				limit = {
-					613 = {
-						OR = {
-							OR = { 
-								NOT = {
-									is_owned_by = ROOT
-								}
-								NOT = {
-									is_controlled_by = ROOT
-								}
-							}
-							AND = {
-								is_owned_by = ROOT
-								free_building_slots = {
-									building = dockyard
-									size < 1
-									include_locked = yes
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { 
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}							
-				}
-			}
-			613 = {
-				if = {
-					limit = { 
-						is_owned_by = ROOT
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = uniform_factory
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -1907,8 +1852,8 @@ focus_tree = {
 	focus = {
 		id = KMT_revive_hanyang_armory
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = KMT_armament_effort }
-		relative_position_id = KMT_armament_effort
+		prerequisite = { focus = KMT_expand_national_army }
+		relative_position_id = KMT_expand_national_army
 		x = -1
 		y = 1
 		cost = 30
@@ -1987,8 +1932,9 @@ focus_tree = {
 		id = KMT_modernize_army
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = KMT_revive_hanyang_armory }
+		prerequisite = { focus = KMT_armament_effort }
 		relative_position_id = KMT_revive_hanyang_armory
-		x = 1
+		x = 0
 		y = 1
 		cost = 30
 		search_filters = { FOCUS_FILTER_ARMY}
@@ -2009,8 +1955,8 @@ focus_tree = {
 	focus = {
 		id = KMT_increase_funding_of_german_weaponary
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = KMT_revive_hanyang_armory }
-		relative_position_id = KMT_revive_hanyang_armory
+		prerequisite = { focus = KMT_modernize_army }
+		relative_position_id = KMT_modernize_army
 		x = -1
 		y = 1
 		cost = 30
@@ -2034,7 +1980,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KMT_INTEGRATE_WARLORD_FORCES }
 		prerequisite = { focus = KMT_modernize_army focus = KMT_increase_funding_of_german_weaponary }
 		relative_position_id = KMT_increase_funding_of_german_weaponary
-		x = 0
+		x = 1
 		y = 1
 		dynamic = yes
 		cost = 70
@@ -2064,8 +2010,8 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		mutually_exclusive = { focus = KMT_FOCUS_ON_CENTRAL_ARMY }
 		prerequisite = { focus = KMT_modernize_army focus = KMT_increase_funding_of_german_weaponary }
-		relative_position_id = KMT_modernize_army
-		x = 0
+		relative_position_id = KMT_increase_funding_of_german_weaponary
+		x = -1
 		y = 1
 		dynamic = yes
 		cost = 70
@@ -2172,10 +2118,11 @@ focus_tree = {
 		id = KMT_refound_the_navy
 		icon = GFX_goal_chi_navy
 		prerequisite = { focus = KMT_national_defense_council }
+		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_national_defense_council
-		x = 0
+		x = -5
 		y = 1
-		cost = 70
+		cost = 50
 		search_filters = { FOCUS_FILTER_NAVY }
 		
 		complete_tooltip = {
@@ -2231,12 +2178,173 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = KMT_revive_jiangnan_shipyard
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = KMT_refound_the_navy }
+		relative_position_id = KMT_refound_the_navy
+		x = 0
+		y = 1
+		cost = 30
+		search_filters = { FOCUS_FILTER_NAVY }
+		
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = jiangnan_shipyard_group
+		}
+	}
+	
+	focus = {
+		id = KMT_revive_naval_industry_south
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = KMT_revive_jiangnan_shipyard }
+		relative_position_id = KMT_revive_jiangnan_shipyard
+		x = -1
+		y = 1
+		cost = 30
+		search_filters = { FOCUS_FILTER_NAVY }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					613 = {
+						OR = {
+							OR = { 
+								NOT = {
+									is_owned_by = ROOT
+								}
+								NOT = {
+									is_controlled_by = ROOT
+								}
+							}
+							AND = {
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = dockyard
+									size < 1
+									include_locked = yes
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { 
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}							
+				}
+			}
+			613 = {
+				if = {
+					limit = { 
+						is_owned_by = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = KMT_revive_naval_industry_north
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = KMT_revive_jiangnan_shipyard }
+		relative_position_id = KMT_revive_jiangnan_shipyard
+		x = 1
+		y = 1
+		cost = 30
+		search_filters = { FOCUS_FILTER_NAVY }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					613 = {
+						OR = {
+							OR = { 
+								NOT = {
+									is_owned_by = ROOT
+								}
+								NOT = {
+									is_controlled_by = ROOT
+								}
+							}
+							AND = {
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = dockyard
+									size < 1
+									include_locked = yes
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { 
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}							
+				}
+			}
+			613 = {
+				if = {
+					limit = { 
+						is_owned_by = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = KMT_gain_control_of_the_sea 
 		icon = GFX_goal_generic_navy_battleship
-		# prerequisite = { focus = KMT_fortify_coast }
-		# relative_position_id = ????????????
-		x = 8
-		y = 4
+		prerequisite = { focus = KMT_revive_naval_industry_north }
+		prerequisite = { focus = KMT_revive_naval_industry_south }
+		relative_position_id = KMT_revive_naval_industry_north
+		x = -1
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_NAVY }
 		
@@ -2839,12 +2947,34 @@ focus_tree = {
 	########## LOCAL AIR REARMAMENT & AIRFORCE BRANCH ##########
 	
 	focus = {
+		id = KMT_republic_of_china_airforce
+		icon = GFX_goal_chi_airforce
+		prerequisite = { focus = KMT_national_defense_council }
+		prerequisite = { focus = KMT_science_effort }
+		relative_position_id = KMT_national_defense_council
+		x = 5
+		y = 1
+		cost = 30
+		search_filters = { FOCUS_FILTER_AIRFORCE }
+		
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = KMT_fighter_focus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
 		id = KMT_air_base_expansion
 		icon = GFX_goal_generic_air_production
-		# prerequisite = { focus = KMT_revive_hanyang_armory }
-		# relative_position_id = ???????
-		x = 13
-		y = 6
+		prerequisite = { focus = KMT_republic_of_china_airforce }
+		relative_position_id = KMT_republic_of_china_airforce
+		x = 0
+		y = 1
 		cost = 70
 		search_filters = { FOCUS_FILTER_AIRFORCE }
 		
