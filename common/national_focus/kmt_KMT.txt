@@ -1205,24 +1205,30 @@ focus_tree = {
 		
 		available = {
 			has_war = no
-			283 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			616 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			604 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			756 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			755 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			754 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
+			controls_state = 283
+			controls_state = 616
+			controls_state = 805
+			controls_state = 793
+			controls_state = 806
+			controls_state = 808
+			#	283 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
+			#	616 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
+			#	805 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
+			#	793 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
+			#	806 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
+			#	808 = {
+			#		is_controlled_by_ROOT_or_ally = yes
+			#	}
 		}
 		
 		completion_reward = {

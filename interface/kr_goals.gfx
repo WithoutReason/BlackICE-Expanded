@@ -20,6 +20,10 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_attract_investors.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_constitution"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_constitution.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_construction"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_construction.dds"
 	}
@@ -68,6 +72,30 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/CHI/goal_chi_fascism.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_chi_infra_highways"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infra_highways.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_infra_ne"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infra_ne.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_infra_nw"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infra_nw.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_infra_sik"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infra_sik.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_infra_south"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infra_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_chi_infrastructure"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_infrastructure.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_chi_internal_stab"
 		texturefile = "gfx/interface/goals/CHI/goal_chi_internal_stab.dds"
 	}
@@ -109,7 +137,7 @@ SpriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_chi_lawbook"
-		texturefile = "gfx/interface/goals/CHI/goal_chi_lawbook.dds"
+		texturefile = "gfx/interface/goals/CHI/goal_chi_lawbook.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_chi_navy"
@@ -177,6 +205,10 @@ SpriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_blueprint_navy"
 		texturefile = "gfx/interface/goals/goal_blueprint_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_higher_education"
+		texturefile = "gfx/interface/goals/goal_higher_education.dds"
 	}
 
 	#new goals based on idea icons end here
