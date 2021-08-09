@@ -1195,7 +1195,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_industrialization_NW
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_chi_infra_nw
 		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_industrial_effort
 		x = -2
@@ -1204,31 +1204,60 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
-			has_war = no
-			controls_state = 283
-			controls_state = 616
-			controls_state = 805
-			controls_state = 793
-			controls_state = 806
-			controls_state = 808
-			#	283 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
-			#	616 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
-			#	805 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
-			#	793 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
-			#	806 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
-			#	808 = {
-			#		is_controlled_by_ROOT_or_ally = yes
-			#	}
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_peace_tt
+				NOT = {
+					has_war_with = JAP
+					has_war_with = SOV
+					has_war_with = FRA
+					has_war_with = ENG
+					has_war_with = ITA
+					has_war_with = USA
+					has_war_with = GER
+					has_war_with = PRC
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_nw_tt		# Shaangan Region
+				AND = {
+					622 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					802 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					616 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					808 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -1241,33 +1270,7 @@ focus_tree = {
 					set_country_flag = KMT_finished_two_industrial_focus
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					OR = {
-						region = 145
-						AND = {
-							region = 200
-							NOT = { 
-								state = 601 
-								state = 751 
-								state = 752 
-							}
-						}
-						state = 283
-						state = 616
-						state = 756
-					}
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
+			622 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
@@ -1280,43 +1283,49 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
+			if = {
 				limit = {
-					OR = {
-						region = 145
-						AND = {
-							region = 200
-							NOT = { 
-								state = 601 
-								state = 751 
-								state = 752 
-							}
+					283 = {
+						NOT = { is_owned_and_controlled_by = PRC }
+					}
+				}
+				283 = {
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = chi_nw_industry_factories_flag_1
+				}
+			}
+			else_if = {
+				limit = {
+					808 = {
+						NOT = {
+							is_owned_and_controlled_by = PRC
+							has_state_flag = chi_nw_industry_factories_flag_1
 						}
-						state = 283
-						state = 616
-						state = 756
-					}
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+				808 = {
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = chi_nw_industry_factories_flag
 				}
 			}
 			custom_effect_tooltip = kmt_nw_infra_tt
@@ -1350,7 +1359,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_industrialization_S
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_chi_infra_south
 		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_industrial_effort
 		x = 0
@@ -1359,23 +1368,126 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available = {
-			has_war = no
-			591 = {
-				is_controlled_by_ROOT_or_ally = yes
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_peace_tt
+				NOT = {
+					has_war_with = JAP
+					has_war_with = SOV
+					has_war_with = FRA
+					has_war_with = ENG
+					has_war_with = ITA
+					has_war_with = USA
+					has_war_with = GER
+					has_war_with = PRC
+				}
 			}
-			594 = {
-				is_controlled_by_ROOT_or_ally = yes
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_s_tt_1		# Suwan Region
+				AND = {
+					824 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					613 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					823 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
 			}
-			592 = {
-				is_controlled_by_ROOT_or_ally = yes
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_s_tt_2		# Minzhe Region
+				AND = {
+					596 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					595 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					826 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
 			}
-			593 = {
-				is_controlled_by_ROOT_or_ally = yes
-			}
-			599 = {
-				is_controlled_by_ROOT_or_ally = yes
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_s_tt_3		# Liangguang Region
+				AND = {
+					592 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					591 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					777 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					594 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
 			}
 		}
+		
 		completion_reward = {
 			if = {
 				limit = {
@@ -1498,7 +1610,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_pioneering_the_north_east
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_chi_infra_ne
 		prerequisite = { focus = KMT_industrial_effort }
 		relative_position_id = KMT_industrial_effort
 		x = 2
@@ -1508,16 +1620,124 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INFRASTRUCTURE }
 		
 		available = {
-			has_war = no
-			609 = { is_controlled_by_ROOT_or_ally = yes }
-			610 = { is_controlled_by_ROOT_or_ally = yes }
-			716 = { is_controlled_by_ROOT_or_ally = yes }
-			715 = { is_controlled_by_ROOT_or_ally = yes }
-			328 = { is_controlled_by_ROOT_or_ally = yes }
-			717 = { is_controlled_by_ROOT_or_ally = yes }
-			714 = { is_controlled_by_ROOT_or_ally = yes }
-			761 = { is_controlled_by_ROOT_or_ally = yes }
-			767 = { is_controlled_by_ROOT_or_ally = yes }
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_peace_tt
+				NOT = {
+					has_war_with = JAP
+					has_war_with = SOV
+					has_war_with = FRA
+					has_war_with = ENG
+					has_war_with = ITA
+					has_war_with = USA
+					has_war_with = GER
+					has_war_with = PRC
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_ne_tt_1		# Central China Region
+				AND = {
+					788 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					743 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					859 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_ne_tt_2		# Northern China Region
+				AND = {
+					615 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					608 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					609 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = kmt_infrastructure_ne_tt_2		# Southern Manchuria Region
+				AND = {
+					756 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					328 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					745 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+					610 = {
+						CONTROLLER = {
+							OR = {
+								tag = CHI
+								is_subject_of = CHI
+								is_in_faction_with = CHI
+							}
+						}
+					}
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -6862,7 +7082,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_voting_rights
-		icon = GFX_goal_chi_lawbook
+		icon = GFX_goal_chi_constitution
 		prerequisite = { focus = KMT_military_dictatorship focus = KMT_democratic_republic }
 		relative_position_id = KMT_democratic_republic
 		x = -2
@@ -7079,7 +7299,7 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_allow_commie
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_chi_sov_deal
 		mutually_exclusive = { focus = KMT_ban_communism }
 		prerequisite = { focus = KMT_implement_parliamentary_system }
 		relative_position_id = KMT_implement_parliamentary_system
