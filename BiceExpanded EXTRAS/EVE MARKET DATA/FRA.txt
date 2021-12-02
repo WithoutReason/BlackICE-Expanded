@@ -1,0 +1,2119 @@
+characters={
+	FRA_paul_reynaud={
+		name="Paul Reynaud"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Paul_Reynaud.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Paul_Reynaud_DESC"
+			ideology=social_liberalism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = economic_minister
+			idea_token = FRA_paul_reynaud
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = liberalism
+				}
+			}
+			
+			traits = { liberal   head_of_state_trait }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 20
+					EAI_prioritize_military_buildup = yes
+				}
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/economic_minister
+				}
+			}
+		}
+	}
+	FRA_charles_de_gaulle={
+		name="Charles de Gaulle"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_DE_GAULLE_DESC"
+			ideology=nationalistic
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = supreme_commander
+			idea_token = de_gaulle_sc
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_global_flag = fall_of_france
+					has_completed_focus = FRA_de_gaulle_strategy
+					has_completed_focus = FRA_shakeup_senior_staff
+				}
+			}
+			
+			traits = { supreme_com_aggressive  supreme_commander_trait }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 20
+					OR = {
+						has_global_flag = fall_of_france
+						has_completed_focus = FRA_de_gaulle_strategy
+						has_completed_focus = FRA_shakeup_senior_staff
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = charles_de_gaulle
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_defense_national_funds
+				has_country_flag = th_army
+			}
+			
+			cost = 150
+			research_bonus = {
+				cat_grand_battle_plan = 0.10
+			}
+			traits = { supreme_com_aggressive  supreme_commander_trait }
+			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:charles_de_gaulle }
+                theorist_army_on_add = yes
+            }
+			
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 0
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/theorist
+				}
+			}
+		}
+	}
+	FRA_louis_marin={
+		name="Louis Marin"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_louis_marin.dds"
+			}
+		}
+		country_leader={
+			desc="Leader of the FR"
+			ideology=moderate
+			traits={ silent_workhorse }
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+	FRA_pierre_laval={
+		name="Pierre Laval"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/FRA_portrait_pierre_laval.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PIERRE_LAVAL_DESC"
+			ideology=nationalistic
+			traits={ conservative propaganda_expert }
+			expire="1936.1.24.1"
+			id=-1
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = pierre_laval
+			
+			allowed = {
+				OR = {
+					original_tag = "FRA"
+					original_tag = "VIC"
+				}
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+			}
+			
+			traits = { fascist elder_statesman  head_of_state_trait }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	FRA_Édouard_daladier={
+		name="Édouard Daladier"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EDOUARD_DALADIER_DESC"
+			ideology=social_liberalism
+			traits={ stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRA_camille_chautemps={
+		name="Camille Chautemps"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Camille_Chautemps.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CAMILLE_CHAUTEMPS_DESC"
+			ideology=social_liberalism
+			traits={ liberal }
+			expire="1950.1.24.1"
+			id=-1
+		}
+	}
+	FRA_albert_sarraut={
+		name="Albert Sarraut"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Albert_Sarraut.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ALBERT_SARRAUT_DESC"
+			ideology=social_liberalism
+			traits={ liberal }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = albert_sarraut_interior
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			available = {
+				democratic_govt = yes
+			}
+			
+			traits = { liberal crime_fighter  interior_minister_trait }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 20 
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/interior_minister
+				}
+			}
+		}
+	}
+	FRA_léon_blum={
+		name="Léon Blum"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_fra_leon_blum.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEON_BLUM_DESC"
+			ideology=social_democracy
+			traits={ socialist stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = influence_minister
+			idea_token = leon_blum
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			available = {
+				NOT = {
+					has_government = socialism
+				}
+			}
+			
+			traits = { socialist_reformer  influence_minister_trait }
+			on_add = {
+				country_event = political.13
+			}
+			do_effect = {
+				NOT = {
+					has_government = socialism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	FRA_maurice_thorez={
+		name="Maurice Thorez"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Maurice_Thorez.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAURICE_THOREZ_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = influence_minister
+			idea_token = maurice_thorez
+			
+			allowed = {
+				original_tag = "FRA"
+				NOT = { has_idea = thorez_hos }
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			traits = { communist_revolutionary  influence_minister_trait }
+			on_add = {
+				country_event = political.1
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	FRA_philippe_pétain={
+		name="Philippe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PHILIPPE_PÉTAIN_DESC"
+			ideology=vichy
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FRA_philippe_petain
+			
+			allowed = {
+				OR = {
+					original_tag = FRA
+					original_tag = VIC
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						original_tag = FRA
+					}
+					NOT = { has_global_flag = fall_of_france }
+				}
+				has_country_flag = has_army_chief_TT
+				has_country_flag = th_army
+			}
+			cancel = {
+				has_global_flag = fall_of_france
+			}
+			
+			cost = 150
+			research_bonus = {
+				cat_depth = 0.10
+			}
+			traits = { depth_expert  theorist_trait_army }
+			ledger = army
+			
+			on_add = { 
+                set_temp_variable = { idea = token:FRA_philippe_petain }
+                theorist_army_on_add = yes
+            }
+			
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 0
+					
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/theorist
+				}
+			}
+		}
+	}
+	FRA_charles_maurras={
+		name="Charles Maurras"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Charles_Maurras.tga"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_MAURRAS_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = maurice_thorez
+			
+			allowed = {
+				OR = {
+					original_tag = "FRA"
+					original_tag = "VIC"
+				}
+			}
+			available = {
+				OR = {
+					has_government = fascism	
+					has_government = monarchism
+				}
+			}
+			
+			traits = { monarchist demagogue head_of_state_trait }
+			ai_will_do = {
+				factor = 0 
+				modifier = {
+					add = 20 
+					has_government = monarchism 
+				}
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/head_of_state
+				}
+			}
+		}
+	}
+	FRA_jacques_doriot={
+		name="Jacques Doriot"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Jacques_Doriot.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JACQUES_DORIOT_DESC"
+			ideology=french_fascism
+			expire="1945.3.1.1"
+			id=-1
+		}
+	}
+	FRA_emperor_louis_napoleon={
+		name="Emperor Louis Napoleon"
+		portraits={
+			civilian={
+				small="_small"
+			}
+			civilian={
+				large=""
+			}
+		}
+		country_leader={
+			desc="Emperor of the French"
+			ideology=imperial
+			traits={ monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRA_weygand_maxime={
+		name="Weygand, Maxime"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_maxime_weygand.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard defensive_doctrine_FM }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1000
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = maxime_weygand
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_shakeup_senior_staff
+			}
+			
+			cost = 50
+			traits = { army_chief_defensive_2  army_chief_trait }
+			
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/army_chief
+				}
+			}
+		}
+	}
+	FRA_gamelin_maurice={
+		name="Gamelin, Maurice"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_maurice_gamelin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard career_officer defensive_doctrine_FM }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1001
+		}
+	}
+	FRA_georges_alphonse={
+		name="Georges, Alphonse"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_joseph_georges.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard trait_cautious defensive_doctrine_FM }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1002
+		}
+	}
+	FRA_audet_sylvestre={
+		name="Audet, Sylvestre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine_CC }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1008
+		}
+	}
+	FRA_aymé_georges={
+		name="Aymé, Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1009
+		}
+	}
+	FRA_bertinboussu_paul={
+		name="Bertin-Boussu, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer logistics_wizard_CC panzer_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1013
+		}
+	}
+	FRA_béthouart_antoine={
+		name="Béthouart, Antoine"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC commando_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1014
+		}
+	}
+	FRA_billotte_gaston={
+		name="Billotte, Gaston"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1015
+		}
+	}
+	FRA_blaizot_roger={
+		name="Blaizot, Roger"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1020
+		}
+	}
+	FRA_bondis_paul={
+		name="Bondis, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1021
+		}
+	}
+	FRA_callies_jean={
+		name="Callies, Jean"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1028
+		}
+	}
+	FRA_carpentier_marcel={
+		name="Carpentier, Marcel"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1031
+		}
+	}
+	FRA_catroux_georges={
+		name="Catroux, Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=1032
+		}
+	}
+	FRA_chevillon_andre={
+		name="Chevillon, Andre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard_CC }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1035
+		}
+	}
+	FRA_de_boissieu_alain={
+		name="de Boissieu, Alain"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1046
+		}
+	}
+	FRA_de_gaulle_charles={
+		name="De Gaulle, Charles"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_charles_de_gaulle.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1050
+		}
+	}
+	FRA_de_hesdin_rene={
+		name="de Hesdin, Rene"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1052
+		}
+	}
+	FRA_de_la_porte_du_theil_joseph={
+		name="de la Porte du Theil, Joseph"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine_CC }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1053
+		}
+	}
+	FRA_de_larminat_rene={
+		name="de Larminat, Rene"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ logistics_wizard_CC offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1054
+		}
+	}
+	FRA_delestraint_charles={
+		name="Delestraint, Charles"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=1061
+		}
+	}
+	FRA_doyen_paul={
+		name="Doyen, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=1066
+		}
+	}
+	FRA_dronne_raymond={
+		name="Dronne, Raymond"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1067
+		}
+	}
+	FRA_ely_paul={
+		name="Ely, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1072
+		}
+	}
+	FRA_garbay_pierre={
+		name="Garbay, Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1080
+		}
+	}
+	FRA_giraud_henri={
+		name="Giraud, Henri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1085
+		}
+	}
+	FRA_girot_de_langlade_paul={
+		name="Girot de Langlade, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1086
+		}
+	}
+	FRA_goislard_de_monsabert_joseph={
+		name="Goislard de Monsabert, Joseph"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC trait_engineer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1088
+		}
+	}
+	FRA_gonzalez_de_linares_françois={
+		name="Gonzalez de Linares, François"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1089
+		}
+	}
+	FRA_grandsard_pierre={
+		name="Grandsard, Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1091
+		}
+	}
+	FRA_guillaume_augustin={
+		name="Guillaume, Augustin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1092
+		}
+	}
+	FRA_jousse_moïse={
+		name="Jousse, Moïse"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1101
+		}
+	}
+	FRA_juin_alphonse={
+		name="Juin, Alphonse"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_juin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader offensive_doctrine_CC }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1102
+		}
+	}
+	FRA_koeltz_marie={
+		name="Koeltz, Marie"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1107
+		}
+	}
+	FRA_koenig_mariepierre={
+		name="Koenig, Marie-Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1108
+		}
+	}
+	FRA_legentilhomme_paul={
+		name="Legentilhomme, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1109
+		}
+	}
+	FRA_jean_de_lattre_de_tassigny={
+		name="Jean de Lattre de Tassigny"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean_de_lattre_de_tassigny.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster_CC }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=1116
+		}
+	}
+	FRA_leclerc_de_hauteclocque_philippe={
+		name="Leclerc de Hauteclocque, Philippe"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer logistics_wizard_CC panzer_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1117
+		}
+	}
+	FRA_magnan_joseph={
+		name="Magnan, Joseph"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine_CC }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1119
+		}
+	}
+	FRA_massu_jacques={
+		name="Massu, Jacques"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1126
+		}
+	}
+	FRA_revers_georges={
+		name="Revers, Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=1131
+		}
+	}
+	FRA_sevez_françois={
+		name="Sevez, François"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1135
+		}
+	}
+	FRA_touzet_du_vigier_jean={
+		name="Touzet du Vigier, Jean"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=1140
+		}
+	}
+	FRA_blochdassault_paul={
+		name="Bloch-Dassault, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1160
+		}
+	}
+	FRA_malaguti_michel={
+		name="Malaguti, Michel"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=1171
+		}
+	}
+	FRA_noiret_charles={
+		name="Noiret, Charles"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1174
+		}
+	}
+	FRA_challe_maurice={
+		name="Challe, Maurice"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1177
+		}
+	}
+	FRA_martin_henri={
+		name="Martin, Henri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1186
+		}
+	}
+	FRA_billotte_pierre={
+		name="Billotte, Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1211
+		}
+	}
+	FRA_schlesser_guy={
+		name="Schlesser, Guy"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1220
+		}
+	}
+	FRA_bougrain_gabriel={
+		name="Bougrain, Gabriel"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=1221
+		}
+	}
+	FRA_caldairou_louis={
+		name="Caldairou, Louis"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1231
+		}
+	}
+	FRA_navarre_henri={
+		name="Navarre, Henri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1253
+		}
+	}
+	FRA_olleris_pierre={
+		name="Olleris, Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1254
+		}
+	}
+	FRA_poydenot_marie={
+		name="Poydenot, Marie"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=1256
+		}
+	}
+	FRA_vernejoul_henri={
+		name="Vernejoul, Henri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=1261
+		}
+	}
+	FRA_zeller_henri={
+		name="Zeller, Henri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1263
+		}
+	}
+	FRA_françois_darlan={
+		name="François Darlan"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_francois_darlan.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Francois_Darlan.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1319
+		}
+	}
+	FRA_jeanmarie_charles_abrial={
+		name="Jean-Marie Charles Abrial"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean-marie_charles_abrial.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean-Marie_Charles_Abrial.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy fleet_protector superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1339
+		}
+	}
+	FRA_jeanpierre_esteva={
+		name="Jean-Pierre Esteva"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean-pierre_esteva.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast fleet_protector }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1327
+		}
+	}
+	FRA_renéÉmile_godfroy={
+		name="René-Émile Godfroy"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_rene-emile_godfroy.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy gentlemanly battleship_adherent spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1329
+		}
+	}
+	FRA_jean_de_laborde={
+		name="Jean de Laborde"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean_de_laborde.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast naval_lineage }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1323
+		}
+	}
+	FRA_decoux_jean={
+		name="Decoux, Jean"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1325
+		}
+	}
+	FRA_gensoul_marcel={
+		name="Gensoul, Marcel"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1328
+		}
+	}
+	FRA_le_luc_maurice={
+		name="Le Luc, Maurice"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1334
+		}
+	}
+	FRA_richard_alfred_louis={
+		name="Richard, Alfred Louis"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1335
+		}
+	}
+	FRA_thierry_dargenlieu_georges={
+		name="Thierry d'Argenlieu, Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1338
+		}
+	}
+	FRA_auboyneau_philippe={
+		name="Auboyneau, Philippe"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1340
+		}
+	}
+	FRA_larue_d.={
+		name="LaRue, D."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf superior_tactician }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1343
+		}
+	}
+	FRA_brosseau_t.={
+		name="Brosseau, T."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1346
+		}
+	}
+	FRA_bourque_c.={
+		name="Bourque, C."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf superior_tactician }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1353
+		}
+	}
+	FRA_vaillancourt_d.={
+		name="Vaillancourt, D."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter superior_tactician }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1354
+		}
+	}
+	FRA_rousseau_n.={
+		name="Rousseau, N."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner superior_tactician }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1355
+		}
+	}
+	FRA_cabanier_georges={
+		name="Cabanier, Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1358
+		}
+	}
+	FRA_ortoli_paul={
+		name="Ortoli, Paul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1359
+		}
+	}
+	FRA_castex_raoul={
+		name="Castex, Raoul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1360
+		}
+	}
+	FRA_le_bigot_jules={
+		name="Le Bigot, Jules"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1363
+		}
+	}
+	FRA_michelier_frix={
+		name="Michelier, Frix"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1385
+		}
+	}
+	FRA_barjot_pierre={
+		name="Barjot, Pierre"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1387
+		}
+	}
+	FRA_lacroix_Émile={
+		name="Lacroix, Émile"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1390
+		}
+	}
+	FRA_bourgeois_u.={
+		name="Bourgeois, U."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf spotter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1405
+		}
+	}
+	FRA_mauss_q.={
+		name="Mauss, Q."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1406
+		}
+	}
+	FRA_allaire_u.={
+		name="Allaire, U."
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter superior_tactician }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1408
+		}
+	}
+	FRA_nicolas_gouraud={
+		name="Nicolas Gouraud"
+		portraits={
+			civilian={
+				large="gfx/leaders/EUROPE/portrait_generic_euro_politician_bice_1.dds"
+			}
+		}
+		country_leader={
+			ideology=farmers_party
+			traits={ pet_projects financier }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+}
