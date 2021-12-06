@@ -2052,7 +2052,7 @@ ideas = {
 	##################
 	#HoS
 	head_of_state = {
-		bucard_hos = {
+		bucard_hos = {		###
 			allowed = {
 				OR = {
 					original_tag = "FRA"
@@ -2076,7 +2076,7 @@ ideas = {
 				}
 			}
 		}
-		albert_lebrun = {
+		albert_lebrun = {		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -2096,7 +2096,7 @@ ideas = {
 				}
 			}
 		}
-		benoit_frachon_hos = {
+		benoit_frachon_hos = {		###
 			allowed = { 
 				original_tag = FRA
 			}
@@ -2112,20 +2112,20 @@ ideas = {
 					has_government = communism
 					has_government = socialism
 				}
-			}			
+			}
 			traits = { communist union_leader  head_of_state_trait }
 			ai_will_do = { 
 				factor = 0 
 			}
 		}
-		duclos_hos = {
+		duclos_hos = {		###
 			allowed = { 
 				original_tag = FRA
 			}
 			
 			visible = {
 				has_government = communism
-			}			
+			}
 			traits = { communist effective_leader  head_of_state_trait }
 			ai_will_do = { 
 				factor = 0 
@@ -2139,7 +2139,7 @@ ideas = {
 				}
 			}
 		}
-		georges_valois = { 
+		georges_valois = {		###
 			allowed = { 
 				OR = {
 					original_tag = "FRA"
@@ -2155,7 +2155,7 @@ ideas = {
 			}			
 			traits = { fascist tough_guy  head_of_state_trait }
 		}
-		hubert_lagardelle = { 
+		hubert_lagardelle = {		###
 			allowed = { 
 				OR = {
 					original_tag = "FRA"
@@ -2217,7 +2217,7 @@ ideas = {
 	}
 	#Foreign
 	foreign_minister = {
-		paul_baudouin = {
+		paul_baudouin = {		###
 			allowed = {
 				OR = {
 					original_tag = "FRA"
@@ -2253,7 +2253,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		yvon_delbos = {
+		yvon_delbos = {		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -2283,7 +2283,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		georges_bonnet = {
+		georges_bonnet = {		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -2318,7 +2318,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		henri_queuille = { #MOD
+		henri_queuille = { #MOD		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -2332,7 +2332,7 @@ ideas = {
 			
 			traits = { ideological_crusader liberal foreign_minister_trait }
 			
-			ai_will_do = { 
+			ai_will_do = {
 				factor = 0 
 				modifier = {
 					add = 20 
@@ -2352,7 +2352,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		edouard_herriot = { #MOD
+		edouard_herriot = { #MOD		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -2376,7 +2376,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		jacques_duclos = {
+		jacques_duclos = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -2398,7 +2398,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		marcel_cachin = {
+		marcel_cachin = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3413,10 +3413,10 @@ ideas = {
 				}
 			}
 		}
-	}	
+	}
 	#Advisors
 	political_advisor = {
-		FRA_gaston_henry_haye = {
+		FRA_gaston_henry_haye = {		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -3439,7 +3439,7 @@ ideas = {
 				}
 			}
 		}
-		philippe_henriot = { 
+		philippe_henriot = {		###
 			allowed = { 
 				OR = {
 					original_tag = "FRA"
@@ -3482,7 +3482,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		marcel_bucard = {
+		marcel_bucard = {		###
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -3626,7 +3626,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		de_tassigny_sc = {
+		de_tassigny_sc = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3641,7 +3641,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		gamelin_sc = {
+		gamelin_sc = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3666,7 +3666,7 @@ ideas = {
 	}
 	
 	army_chief = {
-		maurice_gamelin = {
+		maurice_gamelin = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3711,7 +3711,7 @@ ideas = {
 				}
 			}
 		}
-		FRA_henri_marie_auguste_bineau = {
+		FRA_henri_marie_auguste_bineau = {		###
 			picture = gfx/interface/ideas/idea_generic_army_europe_3.dds
 
 			allowed = {
@@ -3731,7 +3731,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		FRA_pierre_alombert_goget = {
+		FRA_pierre_alombert_goget = {		###
 			picture = gfx/interface/ideas/idea_generic_army_europe_1.dds
 
 			allowed = {
@@ -3756,7 +3756,7 @@ ideas = {
 				}
 			}
 		}
-		alphonse_georges = {
+		alphonse_georges = {		###
 
 			allowed = {
 				original_tag = FRA
@@ -3775,18 +3775,18 @@ ideas = {
 	}
 	
 	navy_chief = {
-		francois_darlan = {
+		francois_darlan = {		###
 			allowed = {
 				original_tag = FRA
 			}
 			
 			traits = { navy_chief_defensive_naval_doctrine  navy_chief_trait }
 
-			ai_will_do = { 
-				factor = 0 
+			ai_will_do = {
+				factor = 0
 				modifier = {
-					add = 20 
-					EAI_prioritize_fleet_bonus = yes 
+					add = 20
+					EAI_prioritize_fleet_bonus = yes
 				}
 				modifier = {
 					factor = 3 #ai_next_minister_score
@@ -3794,7 +3794,7 @@ ideas = {
 				}
 			}
 		}
-		georges_durand_viel = {
+		georges_durand_viel = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3813,7 +3813,7 @@ ideas = {
 				}
 			}
 		}
-		gabriel_auphan = {
+		gabriel_auphan = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3824,7 +3824,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		andre_lemonier = {
+		andre_lemonier = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3838,7 +3838,7 @@ ideas = {
 	}
 	
 	air_chief = {
-		joseph_vuillemin = { #38-40
+		joseph_vuillemin = { #38-40		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3849,7 +3849,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		robert_odic = {
+		robert_odic = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3864,7 +3864,7 @@ ideas = {
 				}
 			}
 		}
-		philippe_fequant = { #36-38
+		philippe_fequant = { #36-38		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3878,7 +3878,7 @@ ideas = {
 	}
 
 	high_command = {
-		rene_prioux = {
+		rene_prioux = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3892,7 +3892,7 @@ ideas = {
                 high_command_army_on_add = yes 
             }
             
-            #on_remove = {  = { idea = rene_prioux }
+            #on_remove = { idea = rene_prioux }
                 #high_command_army_on_remove = yes
 			
 			available = {
@@ -3908,7 +3908,7 @@ ideas = {
 				}
 			}
 		}
-		charles_huntziger = {
+		charles_huntziger = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3924,11 +3924,11 @@ ideas = {
 			ledger = army
 			
 			on_add = { 
-                set_temp_variable = { idea = token:charles_huntziger }
-                high_command_army_on_add = yes 
+				set_temp_variable = { idea = token:charles_huntziger }
+				high_command_army_on_add = yes
             }
             
-            #on_remove = {  = { idea = charles_huntziger }
+            #on_remove = { idea = charles_huntziger }
                 #high_command_army_on_remove = yes
 
 			ai_will_do = {
@@ -3939,7 +3939,7 @@ ideas = {
 				}
 			}
 		}
-		philippe_leclerc = {
+		philippe_leclerc = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3948,25 +3948,25 @@ ideas = {
 			available = {
 				has_country_flag = has_army_chief_TT
 				has_country_flag = hc_army
-			}			
+			}
 			#cancel_if_invalid = no	
 			traits = { army_commando_2  high_command_trait_army }
 			
 			ledger = army
 			
-			on_add = { 
-                set_temp_variable = { idea = token:philippe_leclerc }
-                high_command_army_on_add = yes 
-            }
+			on_add = {
+				set_temp_variable = { idea = token:philippe_leclerc }
+				high_command_army_on_add = yes
+			}
             
-            #on_remove = {  = { idea = philippe_leclerc }
+            #on_remove = { idea = philippe_leclerc }
                 #high_command_army_on_remove = yes
 
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		alfred_heurtaux = {
+		alfred_heurtaux = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -3984,14 +3984,14 @@ ideas = {
                 high_command_air_on_add = yes
             }
             
-            #on_remove = {  = { idea = alfred_heurtaux }
+            #on_remove = { idea = alfred_heurtaux }
                 #high_command_air_on_remove = yes 
 
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		martial_valin = {
+		martial_valin = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -4004,19 +4004,19 @@ ideas = {
 			
 			ledger = air
 			
-			on_add = { 
-                set_temp_variable = { idea = token:martial_valin }
-                high_command_air_on_add = yes
-            }
+			on_add = {
+				set_temp_variable = { idea = token:martial_valin }
+				high_command_air_on_add = yes
+			}
             
-            #on_remove = {  = { idea = martial_valin }
+            #on_remove = { idea = martial_valin }
                 #high_command_air_on_remove = yes 
 
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		jean_francois_jannekeyn = {
+		jean_francois_jannekeyn = {			###
 			allowed = {
 				original_tag = FRA
 			}
@@ -4034,7 +4034,7 @@ ideas = {
                 high_command_air_on_add = yes
             }
             
-            #on_remove = {  = { idea = jean_francois_jannekeyn }
+            #on_remove = { idea = jean_francois_jannekeyn }
                 #high_command_air_on_remove = yes 
 
 			ai_will_do = {
@@ -4045,7 +4045,7 @@ ideas = {
 				}
 			}
 		}
-		marcel_gensoul = {
+		marcel_gensoul = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -4058,12 +4058,12 @@ ideas = {
 			
 			ledger = navy
 			
-			on_add = { 
-                set_temp_variable = { idea = token:marcel_gensoul }
-                high_command_navy_on_add = yes 
-            }
+			on_add = {
+				set_temp_variable = { idea = token:marcel_gensoul }
+				high_command_navy_on_add = yes
+			}
             
-            #on_remove = {  = { idea = marcel_gensoul }
+            #on_remove = { idea = marcel_gensoul }
                 #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
@@ -4074,7 +4074,7 @@ ideas = {
 				}
 			}
 		}
-		jean_marie_abrial = {
+		jean_marie_abrial = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -4087,12 +4087,12 @@ ideas = {
 			
 			ledger = navy
 			
-			on_add = { 
-                set_temp_variable = { idea = token:jean_marie_abrial }
-                high_command_navy_on_add = yes 
-            }
+			on_add = {
+				set_temp_variable = { idea = token:jean_marie_abrial }
+				high_command_navy_on_add = yes
+			}
             
-            #on_remove = {  = { idea = jean_marie_abrial }
+            #on_remove = { idea = jean_marie_abrial }
                 #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
@@ -4103,7 +4103,7 @@ ideas = {
 				}
 			}
 		}
-		jean_de_laborde = {
+		jean_de_laborde = {		###
 			allowed = {
 				original_tag = FRA
 			}
@@ -4116,12 +4116,12 @@ ideas = {
 			
 			ledger = navy
 			
-			on_add = { 
-                set_temp_variable = { idea = token:jean_de_laborde }
-                high_command_navy_on_add = yes 
-            }
+			on_add = {
+				set_temp_variable = { idea = token:jean_de_laborde }
+				high_command_navy_on_add = yes
+			}
             
-            #on_remove = {  = { idea = jean_de_laborde }
+            #on_remove = { idea = jean_de_laborde }
                 #high_command_navy_on_remove = yes	
 
 			ai_will_do = {
