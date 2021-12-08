@@ -2421,13 +2421,13 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		marcel_gitton = {
+		marcel_gitton = {		###
 			allowed = {
 				original_tag = FRA
 			}
 			visible = {
 				has_government = communism
-			}				
+			}
 			
 			traits = { communist smooth_talking_charmer  foreign_minister_trait }
 			
@@ -2443,7 +2443,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		pierre_laval_foreign = { 
+		pierre_laval_foreign = {		###
 			allowed = { 
 				OR = {
 					original_tag = "FRA"
@@ -2452,7 +2452,7 @@ ideas = {
 			}
 			visible = {
 				has_government = fascism
-			}				
+			}
 			ai_will_do = {
 				factor = 0
 			}			
@@ -2466,7 +2466,7 @@ ideas = {
 				NOT = { has_country_flag = foreign_in_progress }
 			}
 		}
-		pierre_etienne_flandin_foreign = {
+		pierre_etienne_flandin_foreign = {			###
 			allowed = {
 				original_tag = FRA
 			}

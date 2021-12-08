@@ -63,7 +63,7 @@ characters={
 			}
 		}
 		country_leader={
-			desc="Leader of the FR"
+			desc = FR_leader
 			ideology=moderate
 			traits={ silent_workhorse }
 			expire="1960.1.1.1"
@@ -101,6 +101,33 @@ characters={
 			}
 			
 			traits = { fascist elder_statesman  head_of_state_trait }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = pierre_laval_foreign
+			
+			allowed = {
+				OR = {
+					original_tag = "FRA"
+					original_tag = "VIC"
+				}
+			}
+			visible = {
+				has_government = fascism
+			}
+			on_add = {
+				BI_foreign_minister_on_add = yes
+			}
+			do_effect = {
+				NOT = { has_country_flag = no_foreign_missions }
+				NOT = { has_country_flag = foreign_in_progress }
+			}
+			
+			traits = { fascist elder_statesman  head_of_state_trait }
+			
 			ai_will_do = {
 				factor = 0
 			}
@@ -265,7 +292,7 @@ characters={
 			}
 		}
 		country_leader={
-			desc="POLITICS_PHILIPPE_PÉTAIN_DESC"
+			desc="POLITICS_PHILIPPE_PETAIN_DESC"
 			ideology=vichy
 			expire="1965.1.1.1"
 			id=-1
@@ -325,7 +352,7 @@ characters={
 		name="Charles Maurras"
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Charles_Maurras.tga"
+				large=GFX_portrait_fra_charles_maurras
 			}
 		}
 		country_leader={
@@ -369,7 +396,7 @@ characters={
 		name="Jacques Doriot"
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Jacques_Doriot.dds"
+				large=GFX_portrait_fra_jaques_doriot
 			}
 		}
 		country_leader={
@@ -383,14 +410,14 @@ characters={
 		name="Emperor Louis Napoleon"
 		portraits={
 			civilian={
-				small="_small"
+				
 			}
 			civilian={
-				large=""
+				
 			}
 		}
 		country_leader={
-			desc="Emperor of the French"
+			desc = Emperor_of_the_french
 			ideology=imperial
 			traits={ monarchist }
 			expire="1965.1.1.1"
@@ -2943,8 +2970,79 @@ characters={
 			}
 		}
 	}
+	FRA_marcel_gitton = {
+		name="Marcel Gitton"
+		#portraits={
+		#	army={
+		#		small="GFX_"
+		#	}
+		#}
+		advisor = {
+			slot = foreign_minister
+			idea_token = marcel_gitton
+			
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				has_government = communism
+			}
+			on_add = {
+				BI_foreign_minister_on_add = yes
+			}
+			do_effect = {
+				NOT = { has_country_flag = no_foreign_missions }
+				NOT = { has_country_flag = foreign_in_progress }
+			}
+			
+			traits = { communist smooth_talking_charmer  foreign_minister_trait }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	FRA_pierre_etienne_flandin_foreign = {
+		name="Pierre-Étienne Flandin"
+		#portraits={
+		#	army={
+		#		small="GFX_"
+		#	}
+		#}
+		advisor = {
+			slot = foreign_minister
+			idea_token = pierre_etienne_flandin_foreign
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_government = liberalism
+			}
+			visible = {
+				democratic_govt = yes
+			}
+			on_add = {
+				BI_foreign_minister_on_add = yes
+			}
+			do_effect = {
+				NOT = { has_country_flag = no_foreign_missions }
+				NOT = { has_country_flag = foreign_in_progress }
+			}
+			
+			traits = {  liberal  foreign_minister_trait  }
+			
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 3 #ai_next_minister_score
+					has_country_flag = ai_next_minister/foreign_minister
+				}
+			}
+		}
+	}
 	FRA_joseph_vuillemin = {
-		name="Vuillemin, Joseph"
+		name="Joseph Vuillemin"
 		#portraits={
 		#	army={
 		#		small="GFX_"
