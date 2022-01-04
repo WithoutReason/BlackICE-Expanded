@@ -2142,7 +2142,7 @@ stat_food				60, 300
 stat_cost				2, 830, 300, 125, 125, 830, 4, 100
 armour_ug_levels		2, 3, 4, 4, 4
 armour_ug_models		rohirrim_riders, rohirrim_riders, rohirrim_riders
-ownership				milan, slave, russia
+ownership				milan, ireland, slave, russia
 era 0					milan
 era 1					milan
 era 2					milan
@@ -2215,7 +2215,7 @@ stat_food				60, 300
 stat_cost				3, 1150, 420, 125, 125, 1150, 3, 126
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		eorlingas, eorlingas_upg
-ownership				milan, slave, turks
+ownership				milan, ireland, slave, turks
 era 0					milan
 era 1					milan
 era 2					milan
@@ -2251,7 +2251,7 @@ stat_food				60, 300
 stat_cost				3, 1250, 430, 125, 125, 1250, 3, 126
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		rohan_mounted_axe, rohan_mounted_axe_upg
-ownership				milan, slave
+ownership				milan, ireland, slave
 era 0					milan
 era 1					milan
 era 2					milan
@@ -3292,7 +3292,7 @@ stat_food				60, 300
 stat_cost				2, 850, 225, 125, 125, 850, 3, 88
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		Dunedain_Spearmen, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg
-ownership				turks, united, slave, normans, saxons
+ownership				turks, united, ireland, slave, normans, saxons
 era 0					turks, saxons, normans
 era 1					turks, saxons, normans
 era 2					turks, saxons, normans
@@ -3327,7 +3327,7 @@ stat_food				60, 300
 stat_cost				3, 1150, 320, 125, 125, 1150, 3, 118
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		br_dunedain, br_dunedain, arnor_knights_2hd, arnor_knights_2hd
-ownership				turks, normans, united, slave
+ownership				turks, normans, united, ireland, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3362,7 +3362,7 @@ stat_food				60, 300
 stat_cost				3, 930, 205, 125, 125, 930, 3, 80
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		dunedain_rangers2, dunedain_rangers2_upg, dunedain_rangers2_upg, dunedain_rangers2_upg
-ownership				turks, normans, united, slave
+ownership				turks, normans, united, ireland, slave
 era 0					turks, normans
 era 1					turks, normans
 era 2					turks, normans
@@ -4558,7 +4558,7 @@ stat_food				60, 300
 stat_cost				2, 415, 190, 75, 75, 415, 4, 37
 armour_ug_levels		1, 2, 3, 4, 4, 4
 armour_ug_models		rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0
-ownership				timurids, slave, turks
+ownership				timurids, ireland, slave, turks
 era 0					timurids
 era 1					timurids
 era 2					timurids
@@ -4702,7 +4702,7 @@ stat_food				60, 300
 stat_cost				3, 950, 380, 125, 125, 950, 3, 95
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		eotheod, eotheod
-ownership				timurids, slave
+ownership				timurids, ireland, slave
 era 0					timurids
 era 1					timurids
 era 2					timurids
@@ -4775,7 +4775,7 @@ stat_food				60, 300
 stat_cost				2, 715, 290, 125, 125, 705, 4, 70
 armour_ug_levels		2, 3, 4, 4, 4
 armour_ug_models		Woodmen_Spears, Woodmen_Spears, Woodmen_Spears
-ownership				timurids, slave
+ownership				timurids, ireland, slave
 era 0					timurids
 era 1					timurids
 era 2					timurids
@@ -4960,7 +4960,7 @@ stat_food				60, 300
 stat_cost				3, 1075, 400, 125, 125, 1075, 3, 107
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		Guards_Of_Carrock_upg1, Guards_Of_Carrock_upg1
-ownership				timurids, slave
+ownership				timurids, ireland, slave
 era 0					timurids
 era 1					timurids
 era 2					timurids
@@ -5139,7 +5139,7 @@ stat_food				60, 300
 stat_cost				1, 640, 300, 125, 125, 640, 4, 54
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		khazad_warriors, khazad_warriors_upg, khazad_warriors_upg, khazad_warriors_upg
-ownership				norway, slave
+ownership				norway, ireland, slave
 era 0					norway
 era 1					norway
 era 2					norway
@@ -5281,7 +5281,7 @@ stat_food				60, 300
 stat_cost				2, 1050, 420, 125, 125, 1050, 3, 90
 armour_ug_levels		3, 4, 5, 6
 armour_ug_models		khazad_heavy_spears, khazad_heavy_spears, khazad_heavy_spears_upg, khazad_heavy_spears_upg
-ownership				norway, slave, normans
+ownership				norway, ireland, slave, normans
 era 0					norway
 era 1					norway
 era 2					norway
@@ -5352,7 +5352,7 @@ stat_food				60, 300
 stat_cost				2, 1090, 430, 125, 125, 1090, 3, 91
 armour_ug_levels		3, 4, 5, 6
 armour_ug_models 		khazad_heavy_axe, khazad_heavy_axe, khazad_heavy_axe_upg, khazad_heavy_axe_upg
-ownership				norway, slave, normans
+ownership				norway, ireland, slave, normans
 era 0					norway
 era 1					norway
 era 2					norway
@@ -6910,7 +6910,7 @@ stat_food	 			60, 300
 stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_spearmen, sindar_spearmen_upg, sindar_spearmen_upg, sindar_spearmen_upg
-ownership				saxons, slave
+ownership				saxons, ireland, slave
 era 0					saxons
 era 1					saxons
 era 2					saxons
@@ -6947,7 +6947,7 @@ stat_food	 			60, 300
 stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_archers, sindar_archers_upg, sindar_archers_upg, sindar_archers_upg
-ownership				saxons, slave, normans
+ownership				saxons, ireland, slave, normans
 era 0					saxons
 era 1					saxons
 era 2					saxons
@@ -6984,7 +6984,7 @@ stat_food				60, 300
 stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_axemen, sindar_axemen_upg, sindar_axemen_upg, sindar_axemen_upg
-ownership				saxons, slave, normans
+ownership				saxons, ireland, slave, normans
 era 0					saxons
 era 1					saxons
 era 2					saxons
@@ -7566,7 +7566,7 @@ stat_food				60, 300
 stat_cost				4, 1300, 585, 200, 200, 1300, 2, 130
 armour_ug_levels		3, 4, 5, 5, 5
 armour_ug_models		mirkwood_arior_axemen, mirkwood_arior_axemen
-ownership				mongols, slave
+ownership				mongols, ireland, slave
 era 0					mongols
 era 1					mongols
 era 2					mongols
@@ -7673,7 +7673,7 @@ stat_food				60, 300
 stat_cost				4, 1450, 500, 200, 200, 1450, 2, 115
 armour_ug_levels		3, 4, 5, 5, 5
 armour_ug_models		Silvan_Marchwardens, Silvan_Marchwardens
-ownership				mongols, slave
+ownership				mongols, ireland, slave
 era 0					mongols
 era 1					mongols
 era 2					mongols
