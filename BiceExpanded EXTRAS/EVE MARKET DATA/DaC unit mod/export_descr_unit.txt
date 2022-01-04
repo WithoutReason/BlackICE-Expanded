@@ -2143,9 +2143,9 @@ stat_cost				2, 830, 300, 125, 125, 830, 4, 100
 armour_ug_levels		2, 3, 4, 4, 4
 armour_ug_models		rohirrim_riders, rohirrim_riders, rohirrim_riders
 ownership				milan, ireland, slave, russia
-era 0					milan
-era 1					milan
-era 2					milan
+era 0					milan, ireland
+era 1					milan, ireland
+era 2					milan, ireland
 recruit_priority_offset	70
 
 type					Shieldmaidens of Rohan
@@ -2216,9 +2216,9 @@ stat_cost				3, 1150, 420, 125, 125, 1150, 3, 126
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		eorlingas, eorlingas_upg
 ownership				milan, ireland, slave, turks
-era 0					milan
-era 1					milan
-era 2					milan
+era 0					milan, ireland
+era 1					milan, ireland
+era 2					milan, ireland
 recruit_priority_offset	80
 
 type					Riddermark Cavalry
@@ -2252,9 +2252,9 @@ stat_cost				3, 1250, 430, 125, 125, 1250, 3, 126
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		rohan_mounted_axe, rohan_mounted_axe_upg
 ownership				milan, ireland, slave
-era 0					milan
-era 1					milan
-era 2					milan
+era 0					milan, ireland
+era 1					milan, ireland
+era 2					milan, ireland
 recruit_priority_offset	80
 
 
@@ -3293,9 +3293,9 @@ stat_cost				2, 850, 225, 125, 125, 850, 3, 88
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		Dunedain_Spearmen, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg
 ownership				turks, united, ireland, slave, normans, saxons
-era 0					turks, saxons, normans
-era 1					turks, saxons, normans
-era 2					turks, saxons, normans
+era 0					turks, saxons, normans, ireland
+era 1					turks, saxons, normans, ireland
+era 2					turks, saxons, normans, ireland
 recruit_priority_offset	40
 
 type					Dunedain Blademasters
@@ -3363,9 +3363,9 @@ stat_cost				3, 930, 205, 125, 125, 930, 3, 80
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		dunedain_rangers2, dunedain_rangers2_upg, dunedain_rangers2_upg, dunedain_rangers2_upg
 ownership				turks, normans, united, ireland, slave
-era 0					turks, normans
-era 1					turks, normans
-era 2					turks, normans
+era 0					turks, normans, ireland
+era 1					turks, normans, ireland
+era 2					turks, normans, ireland
 recruit_priority_offset	50
 
 type					Dunedain Scouts
@@ -3540,10 +3540,10 @@ stat_food				60, 300
 stat_cost				3, 1150, 340, 125, 125, 1150, 2, 118
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		dunedain_swordsmen, dunedain_swordsmen, arnor_knights_dis, arnor_knights_dis
-ownership				turks, united, slave
-era 0					turks
-era 1					turks
-era 2					turks
+ownership				turks, united, slave, ireland
+era 0					turks, ireland
+era 1					turks, ireland
+era 2					turks, ireland
 recruit_priority_offset	50
 
 type					Arthedain Royal Guard
@@ -4558,12 +4558,11 @@ stat_food				60, 300
 stat_cost				2, 415, 190, 75, 75, 415, 4, 37
 armour_ug_levels		1, 2, 3, 4, 4, 4
 armour_ug_models		rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0, rus_ohotnik_sp_ug0
-ownership				timurids, ireland, slave, turks
-era 0					timurids
-era 1					timurids
-era 2					timurids
+ownership				timurids, slave, ireland, turks
+era 0					timurids, ireland
+era 1					timurids, ireland
+era 2					timurids, ireland
 recruit_priority_offset 30
-
 
 type					Eotheod Longbowmen
 dictionary				Eotheod_Longbowmen
@@ -4703,9 +4702,9 @@ stat_cost				3, 950, 380, 125, 125, 950, 3, 95
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		eotheod, eotheod
 ownership				timurids, ireland, slave
-era 0					timurids
-era 1					timurids
-era 2					timurids
+era 0					timurids, ireland
+era 1					timurids, ireland
+era 2					timurids, ireland
 recruit_priority_offset	60
 
 type					Eotheod Footmen
@@ -4776,9 +4775,9 @@ stat_cost				2, 715, 290, 125, 125, 705, 4, 70
 armour_ug_levels		2, 3, 4, 4, 4
 armour_ug_models		Woodmen_Spears, Woodmen_Spears, Woodmen_Spears
 ownership				timurids, ireland, slave
-era 0					timurids
-era 1					timurids
-era 2					timurids
+era 0					timurids, ireland
+era 1					timurids, ireland
+era 2					timurids, ireland
 recruit_priority_offset	50
 
 type					Vale Defenders
@@ -4961,9 +4960,9 @@ stat_cost				3, 1075, 400, 125, 125, 1075, 3, 107
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		Guards_Of_Carrock_upg1, Guards_Of_Carrock_upg1
 ownership				timurids, ireland, slave
-era 0					timurids
-era 1					timurids
-era 2					timurids
+era 0					timurids, ireland
+era 1					timurids, ireland
+era 2					timurids, ireland
 recruit_priority_offset	60
 
 ;type					Bears
@@ -5140,9 +5139,9 @@ stat_cost				1, 640, 300, 125, 125, 640, 4, 54
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		khazad_warriors, khazad_warriors_upg, khazad_warriors_upg, khazad_warriors_upg
 ownership				norway, ireland, slave
-era 0					norway
-era 1					norway
-era 2					norway
+era 0					norway, ireland
+era 1					norway, ireland
+era 2					norway, ireland
 recruit_priority_offset	30
 
 type					Khazad Sentries
@@ -5209,10 +5208,10 @@ stat_food				60, 300
 stat_cost				2, 660, 290, 125, 125, 660, 4, 50
 armour_ug_levels		2, 3, 4 ,5
 armour_ug_models		dwarven_archers, dwarven_archers, dwarven_archers, dwarven_archers
-ownership				hungary, moors, norway, normans, slave
-era 0					norway, normans
-era 1					norway, normans
-era 2					norway, normans
+ownership				hungary, moors, norway, normans, slave, ireland
+era 0					norway, normans, ireland
+era 1					norway, normans, ireland
+era 2					norway, normans, ireland
 recruit_priority_offset	30
 
 type					Hithaeglir Beast Hunters
@@ -5282,9 +5281,9 @@ stat_cost				2, 1050, 420, 125, 125, 1050, 3, 90
 armour_ug_levels		3, 4, 5, 6
 armour_ug_models		khazad_heavy_spears, khazad_heavy_spears, khazad_heavy_spears_upg, khazad_heavy_spears_upg
 ownership				norway, ireland, slave, normans
-era 0					norway
-era 1					norway
-era 2					norway
+era 0					norway, ireland
+era 1					norway, ireland
+era 2					norway, ireland
 recruit_priority_offset	40
 
 type					Legion Deeping Guard
@@ -5353,9 +5352,9 @@ stat_cost				2, 1090, 430, 125, 125, 1090, 3, 91
 armour_ug_levels		3, 4, 5, 6
 armour_ug_models 		khazad_heavy_axe, khazad_heavy_axe, khazad_heavy_axe_upg, khazad_heavy_axe_upg
 ownership				norway, ireland, slave, normans
-era 0					norway
-era 1					norway
-era 2					norway
+era 0					norway, ireland
+era 1					norway, ireland
+era 2					norway, ireland
 recruit_priority_offset	40
 
 type					Khazad-dum Guardians
@@ -6911,9 +6910,9 @@ stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_spearmen, sindar_spearmen_upg, sindar_spearmen_upg, sindar_spearmen_upg
 ownership				saxons, ireland, slave
-era 0					saxons
-era 1					saxons
-era 2					saxons
+era 0					saxons, ireland
+era 1					saxons, ireland
+era 2					saxons, ireland
 recruit_priority_offset	40
 
 type					Sindar Archers
@@ -6948,9 +6947,9 @@ stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_archers, sindar_archers_upg, sindar_archers_upg, sindar_archers_upg
 ownership				saxons, ireland, slave, normans
-era 0					saxons
-era 1					saxons
-era 2					saxons
+era 0					saxons, ireland
+era 1					saxons, ireland
+era 2					saxons, ireland
 recruit_priority_offset	40
 
 type					Sindar Axemen
@@ -6985,9 +6984,9 @@ stat_cost				3, 1200, 490, 200, 200, 1200, 3, 120
 armour_ug_levels 		3, 4, 5, 6
 armour_ug_models 		sindar_axemen, sindar_axemen_upg, sindar_axemen_upg, sindar_axemen_upg
 ownership				saxons, ireland, slave, normans
-era 0					saxons
-era 1					saxons
-era 2					saxons
+era 0					saxons, ireland
+era 1					saxons, ireland
+era 2					saxons, ireland
 recruit_priority_offset	40
 
 type					Noldorin Archers
@@ -7567,9 +7566,9 @@ stat_cost				4, 1300, 585, 200, 200, 1300, 2, 130
 armour_ug_levels		3, 4, 5, 5, 5
 armour_ug_models		mirkwood_arior_axemen, mirkwood_arior_axemen
 ownership				mongols, ireland, slave
-era 0					mongols
-era 1					mongols
-era 2					mongols
+era 0					mongols, ireland
+era 1					mongols, ireland
+era 2					mongols, ireland
 recruit_priority_offset	50
 
 type					Elvenkings Gateguard
@@ -7603,9 +7602,9 @@ stat_cost				4, 1300, 585, 200, 200, 1300, 2, 130
 armour_ug_levels		3, 4, 5, 5, 5
 armour_ug_models		mirkwood_arior_glaives, mirkwood_arior_glaives
 ownership				mongols, ireland, slave
-era 0					mongols
-era 1					mongols
-era 2					mongols
+era 0					mongols, ireland
+era 1					mongols, ireland
+era 2					mongols, ireland
 recruit_priority_offset	50
 
 type					Elvenkings Bowguard
@@ -7674,9 +7673,9 @@ stat_cost				4, 1450, 500, 200, 200, 1450, 2, 115
 armour_ug_levels		3, 4, 5, 5, 5
 armour_ug_models		Silvan_Marchwardens, Silvan_Marchwardens
 ownership				mongols, ireland, slave
-era 0					mongols
-era 1					mongols
-era 2					mongols
+era 0					mongols, ireland
+era 1					mongols, ireland
+era 2					mongols, ireland
 recruit_priority_offset	70
 
 type					Aredhirith
