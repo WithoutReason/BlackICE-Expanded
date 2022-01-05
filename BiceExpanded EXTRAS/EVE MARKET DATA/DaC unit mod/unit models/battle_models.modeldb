@@ -601,7 +601,11 @@
 21 mount_eorlingas_horse
 1 1
 63 unit_models/Mounts/nazgul_Horse/mount_eorlingas_horse_lod0.mesh 15000
-5
+6
+7 ireland
+64 unit_models/Mounts/Nazgul_Horse/textures/new_horse_rohan.texture
+65 unit_models/Mounts/Nazgul_Horse/textures/new_horse_normal.texture
+29 unit_sprites/rohan_sprite.spr
 6 russia
 64 unit_models/Mounts/Nazgul_Horse/textures/new_horse_rohan.texture
 65 unit_models/Mounts/Nazgul_Horse/textures/new_horse_normal.texture
@@ -631,7 +635,11 @@
 24 mount_shieldmaiden_horse
 1 1
 63 unit_models/Mounts/nazgul_Horse/mount_eorlingas_horse_lod0.mesh 15000
-5
+6
+7 ireland
+64 unit_models/Mounts/Nazgul_Horse/textures/new_horse_rohan.texture
+65 unit_models/Mounts/Nazgul_Horse/textures/new_horse_normal.texture
+29 unit_sprites/rohan_sprite.spr
 6 russia
 64 unit_models/Mounts/Nazgul_Horse/textures/new_horse_rohan.texture
 65 unit_models/Mounts/Nazgul_Horse/textures/new_horse_normal.texture
@@ -1959,7 +1967,11 @@
 14 gondor_archers
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goga2_ug0_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+49 unit_sprites/sicily_gondor_archers_ug0_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -1976,7 +1988,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 49 unit_sprites/sicily_gondor_archers_ug0_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor2_diff.texture
+47 unit_models/AttachmentSets/gondor2_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor2_diff.texture
 47 unit_models/AttachmentSets/gondor2_norm.texture 0
@@ -2000,7 +2015,11 @@
 18 gondor_archers_ug1
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goga2_ug1_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+49 unit_sprites/sicily_gondor_archers_ug1_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -2017,7 +2036,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 49 unit_sprites/sicily_gondor_archers_ug1_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor2_diff.texture
+47 unit_models/AttachmentSets/gondor2_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor2_diff.texture
 47 unit_models/AttachmentSets/gondor2_norm.texture 0
@@ -2041,7 +2063,11 @@
 18 gondor_archers_ug2
 1 1
 44 unit_models/_Units/NGU/archers_ug2_lod0.mesh 6400
-4
+5
+7 ireland
+57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
+57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
+45 unit_sprites/sicily_gondor_archers_sprite.spr
 6 sicily
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
@@ -2058,7 +2084,10 @@
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
 45 unit_sprites/sicily_gondor_archers_sprite.spr
-4
+5
+7 ireland
+60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
+60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
 6 sicily
 60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
 60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
@@ -2192,7 +2221,11 @@
 14 gondor_cavalry
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goin2_ug0_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+49 unit_sprites/sicily_gondor_cavalry_ug0_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -2209,7 +2242,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 49 unit_sprites/sicily_gondor_cavalry_ug0_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor1_diff.texture
 47 unit_models/AttachmentSets/gondor1_norm.texture 0
@@ -2233,7 +2269,11 @@
 18 gondor_cavalry_ug1
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goin2_ug1_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+49 unit_sprites/sicily_gondor_cavalry_ug1_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -2250,7 +2290,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 49 unit_sprites/sicily_gondor_cavalry_ug1_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor1_diff.texture
 47 unit_models/AttachmentSets/gondor1_norm.texture 0
@@ -2274,7 +2317,11 @@
 18 gondor_cavalry_ug2
 1 1
 46 unit_models/_Units/NGU/swordsmen_ug2_lod0.mesh 6400
-4
+5
+7 ireland
+57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
+57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
+45 unit_sprites/sicily_gondor_cavalry_sprite.spr
 6 sicily
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
@@ -2291,7 +2338,10 @@
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
 45 unit_sprites/sicily_gondor_cavalry_sprite.spr
-4
+5
+7 ireland
+60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
+60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
 6 sicily
 60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
 60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
@@ -2648,7 +2698,11 @@
 15 gondor_infantry
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goin2_ug0_lod0.mesh 6400
-7
+8
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+50 unit_sprites/sicily_gondor_infantry_ug0_sprite.spr
 6 russia
 64 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_umbar.texture
 71 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_umbar_normal.texture
@@ -2677,7 +2731,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 50 unit_sprites/sicily_gondor_infantry_ug0_sprite.spr
-7
+8
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 russia
 47 unit_models/AttachmentSets/gondoru_diff.texture
 47 unit_models/AttachmentSets/gondoru_norm.texture 0
@@ -2709,7 +2766,11 @@
 19 gondor_infantry_ug1
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/goin2_ug1_lod0.mesh 6400
-7
+8
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+50 unit_sprites/sicily_gondor_infantry_ug1_sprite.spr
 6 russia
 64 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_umbar.texture
 71 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_umbar_normal.texture
@@ -2738,7 +2799,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 50 unit_sprites/sicily_gondor_infantry_ug1_sprite.spr
-7
+8
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 russia
 47 unit_models/AttachmentSets/gondoru_diff.texture
 47 unit_models/AttachmentSets/gondoru_norm.texture 0
@@ -2770,7 +2834,11 @@
 19 gondor_infantry_ug2
 1 1
 46 unit_models/_Units/NGU/swordsmen_ug2_lod0.mesh 6400
-7
+8
+7 ireland
+57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
+57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
+46 unit_sprites/sicily_gondor_infantry_sprite.spr
 6 russia
 57 unit_models/_Units/NGU/textures/soldiers_umb_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_umb_norm.texture
@@ -2799,7 +2867,10 @@
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
 46 unit_sprites/sicily_gondor_infantry_sprite.spr
-7
+8
+7 ireland
+60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
+60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
 6 russia
 64 unit_models/AttachmentSets/soldiers_attachments_umb_diff.texture
 64 unit_models/AttachmentSets/soldiers_attachments_umb_norm.texture 0
@@ -2831,7 +2902,11 @@
 15 gondor_spearmen
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/gogs2_ug0_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+50 unit_sprites/sicily_gondor_spearmen_ug0_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -2848,7 +2923,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 50 unit_sprites/sicily_gondor_spearmen_ug0_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor1_diff.texture
 47 unit_models/AttachmentSets/gondor1_norm.texture 0
@@ -2871,7 +2949,11 @@
 19 gondor_spearmen_ug1
 1 1
 53 unit_models/_Units/EN_Lmail_Hmail/gogs2_ug1_lod0.mesh 6400
-4
+5
+7 ireland
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
+50 unit_sprites/sicily_gondor_spearmen_ug1_sprite.spr
 6 sicily
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
@@ -2888,7 +2970,10 @@
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_gondor.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/gondor0_normal.texture
 50 unit_sprites/sicily_gondor_spearmen_ug1_sprite.spr
-4
+5
+7 ireland
+47 unit_models/AttachmentSets/gondor1_diff.texture
+47 unit_models/AttachmentSets/gondor1_norm.texture 0
 6 sicily
 47 unit_models/AttachmentSets/gondor1_diff.texture
 47 unit_models/AttachmentSets/gondor1_norm.texture 0
@@ -2911,7 +2996,11 @@
 19 gondor_spearmen_ug2
 1 1
 45 unit_models/_Units/NGU/spearmen_ug2_lod0.mesh 6400
-4
+5
+7 ireland
+57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
+57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
+46 unit_sprites/sicily_gondor_spearmen_sprite.spr
 6 sicily
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
@@ -2928,7 +3017,10 @@
 57 unit_models/_Units/NGU/textures/soldiers_ug2_diff.texture
 57 unit_models/_Units/NGU/textures/soldiers_ug2_norm.texture
 46 unit_sprites/sicily_gondor_spearmen_sprite.spr
-4
+5
+7 ireland
+60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
+60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
 6 sicily
 60 unit_models/AttachmentSets/soldiers_attachments_diff.texture
 60 unit_models/AttachmentSets/soldiers_attachments_norm.texture 0
@@ -18754,7 +18846,11 @@
 17 rohan_mounted_axe
 1 1
 55 unit_models/_units/rohan/rohan_heavy_axemens2_lod0.mesh 6400
-3
+4
+7 ireland
+52 unit_models/_units/rohan/textures/spearmens3.texture
+57 unit_models/_units/rohan/textures/spearmens3_norm.texture
+47 unit_sprites/milan_rohan_mounted_axe_sprite.spr
 5 turks
 52 unit_models/_units/rohan/textures/spearmens3.texture
 57 unit_models/_units/rohan/textures/spearmens3_norm.texture
@@ -18767,7 +18863,10 @@
 52 unit_models/_units/rohan/textures/spearmens3.texture
 57 unit_models/_units/rohan/textures/spearmens3_norm.texture
 47 unit_sprites/milan_rohan_mounted_axe_sprite.spr
-3
+4
+7 ireland
+62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
 5 turks
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
@@ -18996,7 +19095,11 @@
 15 rohirrim_riders
 1 1
 47 unit_models/_units/rohan/rohan_riders_lod0.mesh 6400
-3
+4
+7 ireland
+52 unit_models/_units/rohan/textures/spearmens1.texture
+57 unit_models/_units/rohan/textures/spearmens1_norm.texture
+45 unit_sprites/milan_rohirrim_riders_sprite.spr
 6 russia
 52 unit_models/_units/rohan/textures/spearmens1.texture
 57 unit_models/_units/rohan/textures/spearmens1_norm.texture
@@ -19009,7 +19112,10 @@
 52 unit_models/_units/rohan/textures/spearmens1.texture
 57 unit_models/_units/rohan/textures/spearmens1_norm.texture
 45 unit_sprites/milan_rohirrim_riders_sprite.spr
-3
+4
+7 ireland
+62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0
 6 russia
 62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0
@@ -19057,7 +19163,11 @@
 9 eorlingas
 1 1
 44 unit_models/_units/rohan/eorlingas_lod0.mesh 6400
-4
+5
+7 ireland
+53 unit_models/_units/rohan/textures/spearmens2b.texture
+58 unit_models/_units/rohan/textures/spearmens2b_norm.texture
+39 unit_sprites/milan_eorlingas_sprite.spr
 4 merc
 53 unit_models/_units/rohan/textures/spearmens2b.texture
 58 unit_models/_units/rohan/textures/spearmens2b_norm.texture
@@ -19074,7 +19184,10 @@
 53 unit_models/_units/rohan/textures/spearmens2b.texture
 58 unit_models/_units/rohan/textures/spearmens2b_norm.texture
 39 unit_sprites/milan_eorlingas_sprite.spr
-4
+5
+7 ireland
+62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0
@@ -19098,7 +19211,11 @@
 13 eorlingas_upg
 1 1
 44 unit_models/_units/rohan/eorlingas_lod0.mesh 6400
-4
+5
+7 ireland
+53 unit_models/_units/rohan/textures/spearmens2u.texture
+58 unit_models/_units/rohan/textures/spearmens2u_norm.texture
+39 unit_sprites/milan_eorlingas_sprite.spr
 4 merc
 53 unit_models/_units/rohan/textures/spearmens2u.texture
 58 unit_models/_units/rohan/textures/spearmens2u_norm.texture
@@ -19115,7 +19232,10 @@
 53 unit_models/_units/rohan/textures/spearmens2u.texture
 58 unit_models/_units/rohan/textures/spearmens2u_norm.texture
 39 unit_sprites/milan_eorlingas_sprite.spr
-4
+5
+7 ireland
+62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_2_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_2_norm.texture 0

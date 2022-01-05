@@ -9548,33 +9548,34 @@ building elven_alliance_camp
 				recruit_pool "Woodmen Trackers"  2   0.35   3  0  requires factions { ireland, } 
 				recruit_pool "Woodmen Wardens"  2   0.35   3  0  requires factions { ireland, } 
 
-				recruit_pool "Sindar Spearmen"  2   0.25   5  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
-				recruit_pool "Sindar Archers"  2   0.25   5  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
-				recruit_pool "Sindar Axemen"  2   0.25   5  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
+				recruit_pool "Sindar Spearmen"  2   0.2   4  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
+				recruit_pool "Sindar Archers"  2   0.2   4  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
+				recruit_pool "Sindar Axemen"  2   0.2   4  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Vale or hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur or hidden_resource ResJ or hidden_resource ResH
 
 				recruit_pool "Elvenkings Gateguard"  1   0.18   2  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Mirkwood
 				recruit_pool "Elvenkings Axeguard"  1   0.18   2  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  0   0.18   1  1  requires factions { ireland, }   and region_religion elven 50 and hidden_resource Mirkwood
+				recruit_pool "Hin e-Daur"  0   0.18   2  1  requires factions { ireland, }   and region_religion elven 50 and hidden_resource Mirkwood
 
 				recruit_pool "Eotheod Cavalry"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Vale
 				recruit_pool "Carrock Guard"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Vale
 
 				recruit_pool "Dwarven Travellers"  3   0.35   5  0  requires factions { ireland, }  and hidden_resource mountains
 				recruit_pool "Khazad Volunteers"  3   0.35   5  0  requires factions { ireland, }  and hidden_resource mountains
-				recruit_pool "Legion Shieldguard"  1   0.18   3  0  requires factions { ireland, } and hidden_resource mountains
-				recruit_pool "Legion Hammerguard"  1   0.18   3  0  requires factions { ireland, } and hidden_resource mountains
+				recruit_pool "Legion Shieldguard"  1   0.18   2  0  requires factions { ireland, } and hidden_resource mountains
+				recruit_pool "Legion Hammerguard"  1   0.18   2  0  requires factions { ireland, } and hidden_resource mountains
 
 				recruit_pool "Dunedain Wardens"  2   0.25   5  0  requires factions { ireland, }  and hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur
-				recruit_pool "Dunedain Rangers"  2   0.18   3  0  requires factions { ireland, }  and hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur
-				recruit_pool "Dunedain Armsmen"  1   0.18   3  0  requires factions { ireland, }  and hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur
+				recruit_pool "Dunedain Rangers"  2   0.18   2  0  requires factions { ireland, }  and hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur
+				recruit_pool "Dunedain Armsmen"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Arthedain or hidden_resource Cardolan or hidden_resource Rhudaur
 
-				recruit_pool "Eored Skirmishers"  1   0.25   3  0  requires factions { ireland, }  and hidden_resource Rohan
+				recruit_pool "Eored Skirmishers"  1   0.2   3  0  requires factions { ireland, }  and hidden_resource Rohan
 				recruit_pool "Eored Lancers"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Rohan
 				recruit_pool "Riddermark Cavalry"  1   0.18   1  0  requires factions { ireland, } and hidden_resource Rohan
 
-				recruit_pool "Gondor Archers"  1   0.18   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Gondor Infantry"  1   0.18   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Gondor Spearmen"  1   0.18   3  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
+				;recruit_pool "Gondor Archers"  1   0.18   2  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				;recruit_pool "Gondor Cavalry"  1   0.1   1  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				;recruit_pool "Gondor Infantry"  1   0.2   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				;recruit_pool "Gondor Spearmen"  1   0.2   3  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
 				free_upkeep bonus 1 requires factions { ireland, }
 			}
 			material wooden

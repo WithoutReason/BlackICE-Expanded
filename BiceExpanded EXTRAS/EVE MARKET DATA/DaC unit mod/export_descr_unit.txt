@@ -458,10 +458,10 @@ stat_food				60, 300
 stat_cost				2, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_infantry, gondor_infantry_ug1, gondor_infantry_ug2, gondor_infantry_ug2
-ownership				sicily, united, slave, turks, russia
-era 0					sicily
-era 1					sicily
-era 2					sicily
+ownership				sicily, united, slave, turks, russia, ireland
+era 0					sicily, ireland
+era 1					sicily, ireland
+era 2					sicily, ireland
 recruit_priority_offset	40
 
 
@@ -532,10 +532,10 @@ stat_food				60, 300
 stat_cost				2, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_archers, gondor_archers_ug1, gondor_archers_ug2,  gondor_archers_ug2
-ownership				sicily, united, slave, turks
-era 0					sicily
-era 1					sicily
-era 2					sicily
+ownership				sicily, united, slave, turks, ireland
+era 0					sicily, ireland
+era 1					sicily, ireland
+era 2					sicily, ireland
 recruit_priority_offset	40
 
 
@@ -569,10 +569,10 @@ stat_food				60, 300
 stat_cost				2, 1050, 360, 125, 125, 1050, 4, 105
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_cavalry, gondor_cavalry_ug1, gondor_cavalry_ug2, gondor_cavalry_ug2
-ownership				sicily, united, slave, turks
-era 0					sicily
-era 1					sicily
-era 2					sicily
+ownership				sicily, united, slave, turks, ireland
+era 0					sicily, ireland
+era 1					sicily, ireland
+era 2					sicily, ireland
 recruit_priority_offset	40
 
 
