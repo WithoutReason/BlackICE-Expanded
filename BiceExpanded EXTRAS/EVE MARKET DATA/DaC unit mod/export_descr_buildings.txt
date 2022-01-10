@@ -9572,10 +9572,10 @@ building elven_alliance_camp
 				recruit_pool "Eored Lancers"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Rohan
 				recruit_pool "Riddermark Cavalry"  1   0.18   1  0  requires factions { ireland, } and hidden_resource Rohan
 
-				;recruit_pool "Gondor Archers"  1   0.18   2  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				;recruit_pool "Gondor Cavalry"  1   0.1   1  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				;recruit_pool "Gondor Infantry"  1   0.2   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				;recruit_pool "Gondor Spearmen"  1   0.2   3  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Archers"  1   0.18   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Cavalry"  1   0.1   1  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Infantry"  2   0.2   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Spearmen"  1   0.2   3  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
 				free_upkeep bonus 1 requires factions { ireland, }
 			}
 			material wooden
