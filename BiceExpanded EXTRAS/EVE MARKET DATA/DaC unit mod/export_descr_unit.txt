@@ -495,10 +495,10 @@ stat_food				60, 300
 stat_cost				2, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_spearmen, gondor_spearmen_ug1, gondor_spearmen_ug2, gondor_spearmen_ug2
-ownership				sicily, united, slave, turks
-era 0					sicily
-era 1					sicily
-era 2					sicily
+ownership				sicily, united, slave, turks, ireland
+era 0					sicily, ireland
+era 1					sicily, ireland
+era 2					sicily, ireland
 recruit_priority_offset	40
 
 
@@ -7708,10 +7708,10 @@ stat_food				60, 300
 stat_cost				4, 1500, 745, 200, 200, 1500, 2, 150
 armour_ug_levels		4, 5, 5, 5
 armour_ug_models		mirkwood_nobles
-ownership				mongols, slave
-era 0					mongols
-era 1					mongols
-era 2					mongols
+ownership				mongols, slave, ireland
+era 0					mongols, ireland
+era 1					mongols, ireland
+era 2					mongols, ireland
 recruit_priority_offset	70
 
 type					Woodland Horsearchers

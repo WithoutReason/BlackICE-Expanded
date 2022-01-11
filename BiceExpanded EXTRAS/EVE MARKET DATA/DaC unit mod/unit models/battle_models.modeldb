@@ -31101,7 +31101,11 @@
 15 mirkwood_nobles
 1 1
 55 unit_models/_units/my_units/mirk_elite_archer_lod0.mesh 6400
-3
+4
+7 ireland
+55 unit_models/_Units/my_units/textures/mirk_elite.texture
+60 unit_models/_Units/my_units/textures/mirk_elite_norm.texture
+47 unit_sprites/ireland_mirkwood_nobles_sprite.spr
 7 mongols
 55 unit_models/_Units/my_units/textures/mirk_elite.texture
 60 unit_models/_Units/my_units/textures/mirk_elite_norm.texture
@@ -31114,7 +31118,10 @@
 55 unit_models/_Units/my_units/textures/mirk_elite.texture
 60 unit_models/_Units/my_units/textures/mirk_elite_norm.texture
 47 unit_sprites/ireland_mirkwood_nobles_sprite.spr
-3
+4
+7 ireland
+49 unit_models/AttachmentSets/mirk_elite_att.texture
+54 unit_models/AttachmentSets/mirk_elite_att_norm.texture 0
 7 mongols
 49 unit_models/AttachmentSets/mirk_elite_att.texture
 54 unit_models/AttachmentSets/mirk_elite_att_norm.texture 0

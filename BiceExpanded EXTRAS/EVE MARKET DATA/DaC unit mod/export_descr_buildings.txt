@@ -2923,7 +2923,7 @@ building missiles
 				recruit_pool "Blackshield Archers"  1   0.075   2  0 requires factions { gundabad, }  and region_religion catholic 65
 				
 				recruit_pool "Lorien Archers"  1   0.08   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Gurveleg"  0   0.07   1  0  requires factions { ireland, }  and region_religion elven 60 and hidden_resource forest				
+				recruit_pool "Gurveleg"  0   0.1   1  0  requires factions { ireland, }  and region_religion elven 60 and hidden_resource forest				
 				recruit_pool "Lothlorien Marchwardens"  1   0.2   2  0  requires factions { ireland, }  and region_religion elven 50
 				recruit_pool "Galadhrim Archers"  1   0.25   1  0  requires factions { ireland, }  and region_religion elven 50
 				
@@ -3247,7 +3247,7 @@ building c_missiles
 				recruit_pool "Blackshield Archers"  1   0.066   2  0 requires factions { gundabad, }  and region_religion catholic 65
 				
 				recruit_pool "Lorien Archers"  1   0.08   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Gurveleg"  0   0.07   1  0  requires factions { ireland, }  and region_religion elven 60 and hidden_resource forest				
+				recruit_pool "Gurveleg"  0   0.1   1  0  requires factions { ireland, }  and region_religion elven 60 and hidden_resource forest				
 				recruit_pool "Lothlorien Marchwardens"  1   0.2   2  0  requires factions { ireland, }  and region_religion elven 50
 				recruit_pool "Galadhrim Archers"  1   0.25   2  0  requires factions { ireland, }  and region_religion elven 50
 				
@@ -9554,7 +9554,8 @@ building elven_alliance_camp
 
 				recruit_pool "Elvenkings Gateguard"  1   0.18   2  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Mirkwood
 				recruit_pool "Elvenkings Axeguard"  1   0.18   2  0  requires factions { ireland, }  and region_religion elven 50 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  0   0.18   2  1  requires factions { ireland, }   and region_religion elven 50 and hidden_resource Mirkwood
+				recruit_pool "Hin e-Daur"  1   0.18   2  1  requires factions { ireland, }   and region_religion elven 50 and hidden_resource Mirkwood
+				recruit_pool "Aredhirith"  1   0.1   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood
 
 				recruit_pool "Eotheod Cavalry"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Vale
 				recruit_pool "Carrock Guard"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Vale
@@ -9572,10 +9573,10 @@ building elven_alliance_camp
 				recruit_pool "Eored Lancers"  1   0.18   2  0  requires factions { ireland, }  and hidden_resource Rohan
 				recruit_pool "Riddermark Cavalry"  1   0.18   1  0  requires factions { ireland, } and hidden_resource Rohan
 
-				recruit_pool "Gondor Archers"  1   0.18   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Gondor Cavalry"  1   0.1   1  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Gondor Infantry"  2   0.2   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Gondor Spearmen"  1   0.2   3  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Archers"  1   0.2   3  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Cavalry"  1   0.18   2  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Infantry"  2   0.25   4  0  requires factions { ireland, } and hidden_resource GondorWest or hidden_resource GondorEast
+				recruit_pool "Gondor Spearmen"  2   0.25   4  0  requires factions { ireland, }  and hidden_resource GondorWest or hidden_resource GondorEast
 				free_upkeep bonus 1 requires factions { ireland, }
 			}
 			material wooden
