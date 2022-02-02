@@ -1,0 +1,126 @@
+political_decisions = {
+	#byz_change_prov_names = {
+	#	potential = {
+	#		tag = BYZ
+	#		NOT = {
+	#			has_country_flag = byz_prov_names
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#		is_greater_power = yes
+	#		prestige = 45
+	#		war = no
+	#	}
+	#	
+	#	effect = {
+	#		2068 = {
+	#			change_province_name = "Salisbury"
+	#			state_scope = {
+	#				change_region_name = "Southern Rhodesia"
+	#				any_owned = {
+	#					add_core = RHO
+	#				}
+	#			}
+	#		}
+	#		set_country_flag = byz_prov_names
+	#	}
+	#}
+	
+	byz_claim_south_italy = {
+		potential = {
+			tag = BYZ
+			NOT = {
+				exists = ITA
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			exists = SIC
+		}
+		
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = SIC
+				}
+				add_core = BYZ
+			}
+			SIC = {
+				add_casus_belli = {
+					target = THIS
+					type = conquest
+					months = 6
+				}
+			}
+			RUS = {
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+			FRA = {
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+			AUS = {
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+			SPA = {
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+			any_country = {
+				limit = {
+					is_culture_group = italian
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+		}
+	}
+	
+	#byz_core_south_italy = {
+	#	potential = {
+	#		tag = BYZ
+	#		is_greater_power = yes
+	#		NOT = {
+	#			exists = ITA
+	#			exists = SIC
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#		is_greater_power = yes
+	#		prestige = 45
+	#		war = no
+	#		SIC = {
+	#			all_core = {
+	#				owned_by = THIS
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		add_accepted_culture = south_italian
+	#		any_owned = {
+	#			limit = {
+	#				is_core = SIC
+	#			}
+	#			add_core = BYZ
+	#		}
+	#	}
+	#}
+}
