@@ -564,8 +564,7 @@ building equestrian
 			capability
 			{
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH
-				recruit_pool "Lorien Lancers"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
+				recruit_pool "Lorien Lancers"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.035   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.035   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -573,9 +572,8 @@ building equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1   0.035   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Arthirochon"  1   0.035   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC
-				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1   0.035   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 
 				recruit_pool "Dale Cavalry"  1   0.08   2  0  requires factions { scotland, }  and region_religion northmen 25
 				
@@ -628,8 +626,7 @@ building equestrian
 			capability
 			{
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH
-				recruit_pool "Lorien Lancers"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
+				recruit_pool "Lorien Lancers"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.045   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.045   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -637,9 +634,8 @@ building equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1   0.045   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Arthirochon"  1   0.045   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC
-				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1   0.045   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 
 				recruit_pool "Dale Cavalry"  1   0.096   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Aihwothiuda Horseguards"  1   0.072   1  0  requires factions { scotland, }  and region_religion northmen 50 and hidden_resource Rhovanion
@@ -772,8 +768,7 @@ building equestrian
 				recruit_pool "Serpent Archers"  1   0.074   1  0  requires factions { spain, }  and region_religion orthodox 75
 
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH
-				recruit_pool "Lorien Lancers"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
+				recruit_pool "Lorien Lancers"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.058   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.058   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -781,9 +776,8 @@ building equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1   0.058   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Arthirochon"  1   0.058   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC
-				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1   0.058   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 				
 				recruit_pool "Dale Cavalry"  1   0.096   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Aihwothiuda Horseguards"  1   0.072   1  0  requires factions { scotland, }  and region_religion northmen 50 and hidden_resource Rhovanion
@@ -873,8 +867,7 @@ building c_equestrian
 			capability
 			{
 				recruit_pool "Lorien Scouts"  1   0.056   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.02  1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH
-				recruit_pool "Lorien Lancers"  1   0.02   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
+				recruit_pool "Lorien Lancers"  1   0.02  1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.056   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.02  1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.02   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -882,9 +875,8 @@ building c_equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.056   2  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1  0.02   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Arthirochon"  1   0.02   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC
-				recruit_pool "Woodland Horsearchers"  1   0.056   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1  0.02   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.02   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.056   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1  0.02   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 				
 				recruit_pool "Dale Cavalry"  1   0.05   2  0  requires factions { scotland, }  and region_religion northmen 25
 				
@@ -935,8 +927,7 @@ building c_equestrian
 			capability
 			{
 				recruit_pool "Lorien Scouts"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH
-				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
+				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.036   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -944,9 +935,8 @@ building c_equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC
-				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 				
 				recruit_pool "Dale Cavalry"  1   0.066   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Aihwothiuda Horseguards"  1   0.042   1  0  requires factions { scotland, }  and region_religion northmen 50 and hidden_resource Rhovanion
@@ -1042,8 +1032,7 @@ building c_equestrian
 				recruit_pool "Serpent Archers"  1   0.044   1  0  requires factions { spain, }  and region_religion orthodox 75
 
 				recruit_pool "Lorien Scouts"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 33
-				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH 
-				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL 
+				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital
 				recruit_pool "Lorien Scouts"  1   0.036   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Vale and hidden_resource ResH and event_counter elven_union 1
 				recruit_pool "Lorien Lancers"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
@@ -1051,9 +1040,8 @@ building c_equestrian
 				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL 
 				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC 
-				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter elven_union 1
-				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
+				recruit_pool "Woodland Horsearchers"  1   0.036   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Arthirochon"  1   0.028   1  0  requires factions { ireland, } and region_religion elven 75  and hidden_resource silvan_capital and event_counter elven_union 1
 				
 				recruit_pool "Dale Cavalry"  1   0.066   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Aihwothiuda Horseguards"  1   0.042   1  0  requires factions { scotland, }  and region_religion northmen 50 and hidden_resource Rhovanion
@@ -1828,9 +1816,9 @@ building barracks
 				recruit_pool "Woodland Spearmen"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Warriors"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Wardens"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 50
-				recruit_pool "Woodland Spearmen"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.02   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.02   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
 
 				recruit_pool "Dalian Swordsmen"  1   0.05   2  0  requires factions { scotland, }  and region_religion northmen 25 
 				recruit_pool "Dalian Billmen"  1   0.05   2  0  requires factions { scotland, }  and region_religion northmen 25 	
@@ -1995,11 +1983,11 @@ building barracks
 				recruit_pool "Woodland Wardens"  1   0.036   1  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Maethyr i-Thewair"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Elder Council"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 75
-				recruit_pool "Woodland Spearmen"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.02   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Maethyr i-Thewair"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elder Council"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.02   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Maethyr i-Thewair"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elder Council"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 or hidden_resource SilvanCore
 
 				recruit_pool "Dalian Swordsmen"  1   0.066   2  1  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Dalian Billmen"  1   0.066   2  1  requires factions { scotland, }  and region_religion northmen 25		
@@ -2232,13 +2220,13 @@ building barracks
 				recruit_pool "Maethyr i-Thewair"  1   0.036   2  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Elvenkings Axeguard"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 75
 				recruit_pool "Elvenkings Gateguard"  1   0.028   1  0  requires factions { mongols, }  and region_religion elven 75
-				recruit_pool "Woodland Spearmen"  1   0.044   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.044   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.028   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elder Council"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Maethyr i-Thewair"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elvenkings Axeguard"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elvenkings Gateguard"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.044   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.044   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.028   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elder Council"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Maethyr i-Thewair"  1   0.036   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elvenkings Axeguard"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Elvenkings Gateguard"  1   0.028   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
 
 				recruit_pool "Dalian Swordsmen"  1   0.082   3  1  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Dalian Billmen"  1   0.082   3  1  requires factions { scotland, }  and region_religion northmen 25		
@@ -2527,9 +2515,9 @@ building castle_barracks
 				recruit_pool "Woodland Spearmen"  1   0.058   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Warriors"  1   0.058   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Wardens"  1   0.042   1  0  requires factions { mongols, }  and region_religion elven 50
-				recruit_pool "Woodland Spearmen"  1   0.058   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.058   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.042   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.058   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.058   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.042   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
 
 				recruit_pool "Dalian Swordsmen"  1   0.08   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Dalian Billmen"  1   0.08   2  0  requires factions { scotland, }  and region_religion northmen 25			
@@ -2694,11 +2682,11 @@ building castle_barracks
 				recruit_pool "Woodland Wardens"  1   0.05   1  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Maethyr i-Thewair"  1   0.062   1  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Elder Council"  1   0.062   1  0  requires factions { mongols, }  and region_religion elven 75
-				recruit_pool "Woodland Spearmen"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.05   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Maethyr i-Thewair"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elder Council"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.05   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Maethyr i-Thewair"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elder Council"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
 
 				recruit_pool "Dalian Swordsmen"  1   0.096   2  1  requires factions { scotland, }  and region_religion northmen 25 
 				recruit_pool "Dalian Billmen"  1   0.096   2  1  requires factions { scotland, }  and region_religion northmen 25		
@@ -2930,13 +2918,13 @@ building castle_barracks
 				recruit_pool "Maethyr i-Thewair"  1   0.066   2  0  requires factions { mongols, }  and region_religion elven 50
 				recruit_pool "Elvenkings Axeguard"  1   0.062   1  0  requires factions { mongols, }  and region_religion elven 75
 				recruit_pool "Elvenkings Gateguard"  1   0.062   1  0  requires factions { mongols, }  and region_religion elven 75
-				recruit_pool "Woodland Spearmen"  1   0.074   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Warriors"  1   0.074   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Wardens"  1   0.058   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elder Council"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Maethyr i-Thewair"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elvenkings Axeguard"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Elvenkings Gateguard"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Spearmen"  1   0.074   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Warriors"  1   0.074   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Wardens"  1   0.058   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elder Council"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Maethyr i-Thewair"  1   0.066   2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Elvenkings Axeguard"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Elvenkings Gateguard"  1   0.062   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
 
 				recruit_pool "Dalian Swordsmen"  1   0.112   3  1  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Dalian Billmen"  1   0.112   3  1  requires factions { scotland, }  and region_religion northmen 25
@@ -3229,7 +3217,7 @@ building missiles
 				recruit_pool "Lorien Archers"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 
 				recruit_pool "Woodland Scouts"  1   0.074   1  0  requires factions { mongols, }  and region_religion elven 33				
-				recruit_pool "Woodland Scouts"  1   0.074   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Scouts"  1   0.074   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
 
 				recruit_pool "Dalian Longbowmen"  1   0.08   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Athala Rangers"  1   0.056   1  0  requires factions { scotland, }  and hidden_resource Logathavuld and hidden_resource ResC
@@ -3314,11 +3302,11 @@ building missiles
 				recruit_pool "Lorien Archers"  1   0.074   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Gurveleg"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 60 and hidden_resource forest and event_counter elven_union 1			
 				recruit_pool "Lothlorien Marchwardens"  1   0.066   1  0  requires factions { mongols, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Vale
-				
+
 				recruit_pool "Woodland Scouts"  1   0.078   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Sentinels"  1   0.074  1  0  requires factions { mongols, }  and region_religion elven 50
-				recruit_pool "Woodland Scouts"  1   0.078   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Sentinels"  1   0.074  1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Scouts"  1   0.078   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Sentinels"  1   0.074  1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
 
 				recruit_pool "Hearthguard"  1   0.064   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResC
 				recruit_pool "Hearthguard"  1   0.064   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResD				
@@ -3445,7 +3433,6 @@ building missiles
 				recruit_pool "Galadhrim Archers"  0   0.03   1  1  requires factions { ireland, }  and region_religion elven 75 and hidden_resource silvan_capital
 				recruit_pool "Berio I Ngelaidh"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResJ and event_counter elven_union 1
 				recruit_pool "Berio I Ngelaidh"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource silvan_capital and event_counter elven_union 1
-				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { ireland, } and region_religion elven 75 and hidden_resource silvan_capital and hidden_resource Mirkwood and event_counter elven_union 1
 				recruit_pool "Berio I Ngelaidh"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResJ and event_counter is_the_ai 1
 				recruit_pool "Berio I Ngelaidh"  1   0.066   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResH and event_counter is_the_ai 1	
 				
@@ -3461,12 +3448,13 @@ building missiles
 				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
 				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter is_the_ai 1
 				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter is_the_ai 1	
-				recruit_pool "Woodland Scouts"  1   0.082   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Sentinels"  1   0.078  2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  1   0.058   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  0   0.022   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood and hidden_resource silvan_capital
-				recruit_pool "Elvenkings Bowguard"  1   0.074   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				
+				recruit_pool "Woodland Scouts"  1   0.082   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Sentinels"  1   0.078  2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Hin e-Daur"  1   0.06   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Hin e-Daur"  0   0.02   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource silvan_capital
+				recruit_pool "Elvenkings Bowguard"  1   0.074   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { ireland, } and region_religion elven 75 and hidden_resource silvan_capital and event_counter elven_union 1
+
 				recruit_pool "Hearthguard"  1   0.064   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResC
 				recruit_pool "Hearthguard"  1   0.064   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResD					
 				recruit_pool "Dalian Longbowmen"  1   0.096   3  1  requires factions { scotland, }  and region_religion northmen 25
@@ -3610,7 +3598,7 @@ building c_missiles
 				recruit_pool "Lorien Archers"  1   0.036   1  0  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				
 				recruit_pool "Woodland Scouts"  1   0.044   1  0  requires factions { mongols, }  and region_religion elven 33	
-				recruit_pool "Woodland Scouts"  1   0.044   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Scouts"  1   0.044   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
 				
 				recruit_pool "Dalian Longbowmen"  1   0.05   2  0  requires factions { scotland, }  and region_religion northmen 25
 				recruit_pool "Athala Rangers"  1   0.026   1  0  requires factions { scotland, }  and hidden_resource Logathavuld and hidden_resource ResC
@@ -3700,8 +3688,8 @@ building c_missiles
 				
 				recruit_pool "Woodland Scouts"  1   0.048   1  0  requires factions { mongols, }  and region_religion elven 33
 				recruit_pool "Woodland Sentinels"  1   0.044  1  0  requires factions { mongols, }  and region_religion elven 50
-				recruit_pool "Woodland Scouts"  1   0.048   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Sentinels"  1   0.044  1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Scouts"  1   0.048   1  0  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Sentinels"  1   0.044  1  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
 
 				recruit_pool "Hearthguard"  1   0.034   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResC
 				recruit_pool "Hearthguard"  1   0.034   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResD				
@@ -3832,7 +3820,7 @@ building c_missiles
 				recruit_pool "Berio I Ngelaidh"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResJ and event_counter elven_union 1
 				recruit_pool "Berio I Ngelaidh"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResJ and event_counter is_the_ai 1
 				recruit_pool "Berio I Ngelaidh"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 75 and hidden_resource Vale and hidden_resource ResH and event_counter is_the_ai 1
-				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { ireland, } and region_religion elven 75 and hidden_resource silvan_capital and hidden_resource Mirkwood and event_counter elven_union 1
+				recruit_pool "Aredhirith"  1   0.066   1  0  requires factions { ireland, } and region_religion elven 75 and hidden_resource silvan_capital and event_counter elven_union 1
 				recruit_pool "Lorien Archers"  1   0.052   2  1  requires factions { mongols, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Vale
 				recruit_pool "Gurveleg"  1   0.044   1  0  requires factions { mongols, }  and region_religion elven 60 and hidden_resource forest and event_counter elven_union 1			
 				recruit_pool "Lothlorien Marchwardens"  1   0.044   1  0  requires factions { mongols, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Vale
@@ -3850,11 +3838,11 @@ building c_missiles
 				recruit_pool "Aredhirith"  1   0.036   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter elven_union 1
 				recruit_pool "Aredhirith"  1   0.036   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResL and event_counter is_the_ai 1
 				recruit_pool "Aredhirith"  1   0.036   1  0  requires factions { mongols, } and region_religion elven 75  and hidden_resource Mirkwood and hidden_resource ResC and event_counter is_the_ai 1	
-				recruit_pool "Woodland Scouts"  1   0.075   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Woodland Sentinels"  1   0.048  2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  1   0.028   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
-				recruit_pool "Hin e-Daur"  1   0.022   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood and hidden_resource silvan_capital
-				recruit_pool "Elvenkings Bowguard"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood
+				recruit_pool "Woodland Scouts"  1   0.075   2  1  requires factions { ireland, }  and region_religion elven 33 and event_counter elven_union 1
+				recruit_pool "Woodland Sentinels"  1   0.048  2  0  requires factions { ireland, }  and region_religion elven 50 and event_counter elven_union 1
+				recruit_pool "Hin e-Daur"  1   0.048   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
+				recruit_pool "Hin e-Daur"  1   0.022   1  1  requires factions { ireland, }   and region_religion elven 75 and event_counter elven_union 1 and hidden_resource silvan_capital
+				recruit_pool "Elvenkings Bowguard"  1   0.036   1  0  requires factions { ireland, }  and region_religion elven 75 and event_counter elven_union 1 and hidden_resource Mirkwood or hidden_resource SilvanCore
 
 				recruit_pool "Hearthguard"  1   0.034   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResC
 				recruit_pool "Hearthguard"  1   0.034   1  0  requires factions { scotland, }  and region_religion northmen 75 and hidden_resource Logathavuld and hidden_resource ResD				
@@ -4143,18 +4131,18 @@ building siege
 			convert_to 0
 			capability
 			{
-				recruit_pool "Elven Ballista"  1   0.02   2  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Ballista"  1   0.02   2  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Ballista"  1   0.02   2  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Ballista"  1   0.028   2  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.028   2  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Ballista"  1   0.028   2  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.028   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.028   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Ballista"  1   0.036   2  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Ballista"  1   0.048   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Dwarven Ballista"  1   0.044   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				income_bonus bonus 50 requires event_counter is_the_ai 1
+				recruit_pool "Elven Ballista"  0   0.015   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Ballista"  0   0.015   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Ballista"  0   0.015   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Dwarven Ballista"  0   0.025   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  5
@@ -4170,34 +4158,34 @@ building siege
 			convert_to 1
 			capability
 			{
-				recruit_pool "Elven Ballista"  1   0.032   2  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Ballista"  1   0.024   2  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Ballista"  1   0.032   2  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Ballista"  1   0.048   2  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Ballista"  1   0.06   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Dwarven Ballista"  1   0.075   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				recruit_pool "Dwarven Ballista"  1   0.05   2  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
-				recruit_pool "Mordor Catapult"  1   0.02   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
-				recruit_pool "Mordor Catapult"  0.999   0.02   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
-				recruit_pool "Elven Catapult"  1   0.02   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Catapult"  1   0.02   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Catapult"  1   0.02   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Catapult"  1   0.028   1  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.028   1  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Catapult"  1   0.028   1  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.028   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.028   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Catapult"  1   0.036   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Catapult"  1   0.048   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Misty Mangonel"  1   0.040   1  0  requires factions { hre, }  and region_religion catholic 25
-				recruit_pool "Dwarven Catapult"  1   0.044   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				recruit_pool "Dwarven Catapult"  1   0.024   1  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
-				income_bonus bonus 50 requires event_counter is_the_ai 1 
+				recruit_pool "Elven Ballista"  0   0.02   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Ballista"  0   0.02   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Dwarven Ballista"  0   0.04   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				recruit_pool "Dwarven Ballista"  0   0.04   1  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
+				recruit_pool "Mordor Catapult"  0   0.02   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
+				;recruit_pool "Mordor Catapult"  0   0.02   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
+				recruit_pool "Elven Catapult"  0   0.02   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Catapult"  0   0.02   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Catapult"  0   0.02   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Misty Mangonel"  0   0.02   1  0  requires factions { hre, }  and region_religion catholic 25
+				recruit_pool "Dwarven Catapult"  0   0.02   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				recruit_pool "Dwarven Catapult"  0   0.02   1  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  5
@@ -4226,11 +4214,11 @@ building siege
 				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { venice, }  and region_religion orthodox 25
 				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
 				recruit_pool "Westron Ballista"  1   0.04   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Snaga Ballista"  1   0.06   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Snaga Ballista"  0   0.03   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
 				recruit_pool "Dwarven Ballista"  1   0.075   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
 				recruit_pool "Dwarven Ballista"  1   0.05   2  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
-				recruit_pool "Mordor Catapult"  1   0.032   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
-				recruit_pool "Mordor Catapult"  0.999   0.032   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
+				recruit_pool "Mordor Catapult"  0   0.032   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
+				recruit_pool "Mordor Catapult"  0   0.032   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
 				recruit_pool "Elven Catapult"  1   0.032   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
 				recruit_pool "Westron Catapult"  1   0.024   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
 				recruit_pool "Westron Catapult"  1   0.032   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
@@ -4240,10 +4228,10 @@ building siege
 				recruit_pool "Westron Catapult"  1   0.04   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
 				recruit_pool "Westron Catapult"  1   0.04   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
 				recruit_pool "Misty Mangonel"  1   0.040   1  0  requires factions { hre, }  and region_religion catholic 25
-				recruit_pool "Snaga Catapult"  1   0.06   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Snaga Catapult"  0   0.03   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
 				recruit_pool "Dwarven Catapult"  1   0.075   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
 				recruit_pool "Dwarven Catapult"  1   0.044   1  0  requires factions { normans, }  and region_religion wildmen 25 and event_counter bree_mercenary 1
-				income_bonus bonus 50 requires event_counter is_the_ai 1 
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  9
@@ -4268,18 +4256,18 @@ building castle_siege
 			convert_to 0
 			capability
 			{
-				recruit_pool "Elven Ballista"  1   0.05   2  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Ballista"  1   0.042   2  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Ballista"  1   0.05   2  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Ballista"  1   0.058   2  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.058   2  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Ballista"  1   0.058   2  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.058   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.058   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Ballista"  1   0.066   2  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Ballista"  1   0.078   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Dwarven Ballista"  1   0.074   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				income_bonus bonus 50 requires event_counter is_the_ai 1
+				recruit_pool "Elven Ballista"  0   0.02   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Ballista"  0   0.02   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Ballista"  0   0.02   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Dwarven Ballista"  0   0.03   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  4
@@ -4295,32 +4283,32 @@ building castle_siege
 			convert_to 1
 			capability
 			{
-				recruit_pool "Elven Ballista"  1   0.062   2  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Ballista"  1   0.054   2  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Ballista"  1   0.062   2  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Ballista"  1   0.07   2  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.07   2  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Ballista"  1   0.07   2  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.07   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Ballista"  1   0.07   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Ballista"  1   0.078   2  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Ballista"  1   0.09   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Dwarven Ballista"  1   0.105   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				recruit_pool "Mordor Catapult"  1   0.05   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
-				recruit_pool "Mordor Catapult"  0.999   0.05   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
-				recruit_pool "Elven Catapult"  1   0.05   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
-				recruit_pool "Westron Catapult"  1   0.042   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
-				recruit_pool "Westron Catapult"  1   0.05   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
-				recruit_pool "Westron Catapult"  1   0.058   1  0  requires factions { spain, }  and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.058   1  0  requires factions { russia, }  and region_religion kings 25
-				recruit_pool "Westron Catapult"  1   0.058   1  0  requires factions { venice, }  and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.058   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
-				recruit_pool "Westron Catapult"  1   0.058   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
-				recruit_pool "Westron Catapult"  1   0.066   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
-				recruit_pool "Snaga Catapult"  1   0.078   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
-				recruit_pool "Misty Mangonel"  1   0.080   1  0  requires factions { hre, }  and region_religion catholic 25
-				recruit_pool "Dwarven Catapult"  1   0.074   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				income_bonus bonus 50 requires event_counter is_the_ai 1 
+				recruit_pool "Elven Ballista"  0   0.03   2  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Ballista"  0   0.03   2  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Ballista"  0   0.03   2  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Dwarven Ballista"  0   0.05   2  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				recruit_pool "Mordor Catapult"  0   0.03   1  0  requires factions { england, poland, }  and region_religion catholic 25 and hidden_resource trolls
+				recruit_pool "Mordor Catapult"  0.001   0.05   0.999  0  requires factions { england, poland, }  and region_religion catholic 25 and not hidden_resource trolls
+				recruit_pool "Elven Catapult"  0   0.03   1  0  requires factions { mongols, ireland, saxons, }  and region_religion elven 33
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { normans, aztecs, teutonic_order, }  and region_religion wildmen 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { timurids, milan, scotland, byzantium, }  and region_religion northmen 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { spain, }  and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { russia, }  and region_religion kings 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { venice, }  and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { khand, }  and not event_counter civil_war 1 and region_religion orthodox 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { khand, }  and event_counter civil_war 1 and region_religion nomadic 25
+				recruit_pool "Westron Catapult"  0   0.03   1  0  requires factions { sicily, denmark, turks, }  and region_religion islam 25
+				recruit_pool "Snaga Catapult"  0   0.03   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
+				recruit_pool "Misty Mangonel"  0   0.03   1  0  requires factions { hre, }  and region_religion catholic 25
+				recruit_pool "Dwarven Catapult"  0   0.05   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  6
@@ -4364,7 +4352,7 @@ building castle_siege
 				recruit_pool "Misty Mangonel"  1   0.080   1  0  requires factions { hre, }  and region_religion catholic 25
 				recruit_pool "Snaga Catapult"  1   0.078   1  0  requires factions { england, poland, hre, gundabad, portugal, france, }  and region_religion catholic 25
 				recruit_pool "Dwarven Catapult"  1   0.074   1  0  requires factions { moors, norway, hungary, }  and region_religion dwarven 25
-				income_bonus bonus 50 requires event_counter is_the_ai 1 
+				income_bonus bonus 50 requires factions { sicily, england, moors, norway, }
 			}
 			material wooden
 			construction  8
